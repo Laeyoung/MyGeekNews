@@ -46,8 +46,8 @@ async function fetchPage(userId: string, page: number): Promise<GeekNewsArticle[
   const $ = cheerio.load(html);
   const articles: GeekNewsArticle[] = [];
 
-  // Target each article container
-  $('div.topic_row').each((index, element) => {
+  // Target each article container within the main content area
+  $('main > article > div.topics > div.topic_row').each((index, element) => {
       // Find the anchor tag within the title container
       const titleAnchor = $(element).find('div.topictitle > a').first();
 
@@ -170,3 +170,4 @@ export async function GET(request: NextRequest) {
 // Optional: Define configuration for the route
 export const dynamic = 'force-dynamic'; // Ensure the route is always executed dynamically
 // export const revalidate = 0; // Deprecated in App Router, use dynamic = 'force-dynamic' instead
+
