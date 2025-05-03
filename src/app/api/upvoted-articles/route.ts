@@ -21,6 +21,8 @@ async function fetchPage(userId: string, page: number): Promise<GeekNewsArticle[
       'Accept-Language': 'en-US,en;q=0.9,ko;q=0.8',
       'Cache-Control': 'no-cache',
       'Pragma': 'no-cache',
+      'Origin': GEEKNEWS_BASE_URL, // Specify the origin
+      'Referer': `${GEEKNEWS_BASE_URL}/upvoted_topics?userid=${userId}`, // Include Referer header
     },
      // Add cache busting? Maybe not necessary if serverless function
      // cache: 'no-store', // Uncomment if running in environments that cache aggressively
@@ -43,10 +45,6 @@ async function fetchPage(userId: string, page: number): Promise<GeekNewsArticle[
 
   const $ = cheerio.load(html);
   const articles: GeekNewsArticle[] = [];
-
-  // cheerio.load()로 불러온 $의 child를 print하기
-  console.log($('body').html());
-  console.log($('body').children());
 
   // Target each article container
   $('div.topic_row').each((index, element) => {
