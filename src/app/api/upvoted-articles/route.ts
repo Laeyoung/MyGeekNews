@@ -44,6 +44,10 @@ async function fetchPage(userId: string, page: number): Promise<GeekNewsArticle[
   const $ = cheerio.load(html);
   const articles: GeekNewsArticle[] = [];
 
+  // cheerio.load()로 불러온 $의 child를 print하기
+  console.log($('body').html());
+  console.log($('body').children());
+
   // Target each article container
   $('div.topic_row').each((index, element) => {
       // Find the anchor tag within the title container
