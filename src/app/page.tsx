@@ -2,15 +2,15 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import type { GeekNewsArticle } from '@/services/geeknews';
-// import { getAllUpvotedArticles } from '@/services/geeknews'; // Removed as fetching is now via API
 import SearchBar from '@/components/SearchBar';
 import ArticleCard from '@/components/ArticleCard';
 import PaginationControls from '@/components/PaginationControls';
 import { Skeleton } from "@/components/ui/skeleton";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Terminal } from "lucide-react";
+import { Terminal, AlertCircle } from "lucide-react";
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
+import { cn } from "@/lib/utils"; // Import cn utility
 
 const ARTICLES_PER_PAGE = 10;
 const GEEKNEWS_USER_ID = 'laeyoung'; // Replace with actual user ID or make configurable
@@ -19,29 +19,43 @@ export default function Home() {
   const [allArticles, setAllArticles] = useState<GeekNewsArticle[]>([]);
   const [filteredArticles, setFilteredArticles] = useState<GeekNewsArticle[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [isLoading, setIsLoading] = useState(false); // Initially not loading, triggered by button
-  const [isFetching, setIsFetching] = useState(false); // For manual fetch trigger
+  const [isLoading, setIsLoading] = useState(false); // Controls skeleton visibility
+  const [isFetching, setIsFetching] = useState(false); // Controls button disable state
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [dateFilter, setDateFilter] = useState('all'); // 'all', 'month', 'year'
   const { toast } = useToast();
 
   const fetchArticles = async () => {
-    setIsFetching(true);
+    setIsFetching(true); // Disable button immediately
     setError(null);
     setAllArticles([]); // Clear existing articles before fetching
     setFilteredArticles([]);
     setCurrentPage(1);
-    setIsLoading(true); // Show loading skeleton while fetching
+    setIsLoading(true); // Show loading skeleton
 
     try {
+      console.log("Attempting to fetch articles from API...");
       const response = await fetch(`/api/upvoted-articles?userId=${GEEKNEWS_USER_ID}`);
+      console.log("API Response Status:", response.status);
+
       if (!response.ok) {
-         const errorBody = await response.text();
-         console.error("API Error Response:", errorBody);
-         throw new Error(`Failed to fetch articles: ${response.status} ${response.statusText}`);
+         let errorData = { error: `HTTP error ${response.status}`, details: response.statusText };
+         try {
+           // Try to parse the error response from the API
+           errorData = await response.json();
+           console.error("API Error Data:", errorData);
+         } catch (parseError) {
+            console.error("Could not parse error response body:", parseError);
+            // Use status text if JSON parsing fails
+            errorData.details = response.statusText || "Unknown error";
+         }
+         // Construct a user-friendly message
+         const message = `Failed to fetch articles. ${errorData.error || 'Server error'} ${errorData.details ? `(${errorData.details})` : ''}`;
+         throw new Error(message);
       }
       const articles: GeekNewsArticle[] = await response.json();
+      console.log(`Successfully fetched ${articles.length} articles.`);
 
       setAllArticles(articles);
       toast({
@@ -50,16 +64,16 @@ export default function Home() {
       });
     } catch (err: any) {
       console.error("Failed to fetch articles:", err);
-      const errorMessage = err.message || "Could not fetch articles. Please check the console or try again later.";
-      setError(errorMessage);
+      const errorMessage = err.message || "An unexpected error occurred. Please try again.";
+      setError(errorMessage); // Set error state to display in the Alert component
        toast({
         variant: "destructive",
         title: "Fetch Error",
-        description: errorMessage,
+        description: errorMessage, // Show detailed error in toast as well
       });
     } finally {
-      setIsLoading(false);
-      setIsFetching(false);
+      setIsLoading(false); // Hide skeleton
+      setIsFetching(false); // Re-enable button
     }
   };
 
@@ -84,7 +98,7 @@ export default function Home() {
     //   } else if (dateFilter === 'year') {
     //     cutoffDate = new Date(now.setFullYear(now.getFullYear() - 1));
     //   }
-    //   results = results.filter(article => new Date(article.date) >= cutoffDate); // Assuming article has a 'date' field
+    //   results = results.filter(article => article.date && new Date(article.date) >= cutoffDate); // Assuming article has a 'date' field
     // }
 
     setFilteredArticles(results);
@@ -118,6 +132,10 @@ export default function Home() {
 
       <div className="mb-6 text-center">
           <Button onClick={fetchArticles} disabled={isFetching}>
+              <svg className={cn("animate-spin -ml-1 mr-3 h-5 w-5 text-white", {"hidden": !isFetching})} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
               {isFetching ? 'Fetching Articles...' : 'Fetch/Refresh Upvoted Articles'}
           </Button>
           <p className="text-xs text-muted-foreground mt-1">(Fetches all upvoted articles from news.hada.io)</p>
@@ -127,7 +145,7 @@ export default function Home() {
 
       {error && (
          <Alert variant="destructive" className="mb-6">
-           <Terminal className="h-4 w-4" />
+           <AlertCircle className="h-4 w-4" /> {/* Use AlertCircle for better visual indication */}
            <AlertTitle>Error Fetching Articles</AlertTitle>
            <AlertDescription>{error}</AlertDescription>
          </Alert>
@@ -135,15 +153,14 @@ export default function Home() {
 
       {isLoading ? (
         <div className="space-y-4">
-          <Skeleton className="h-24 w-full rounded-lg" />
-          <Skeleton className="h-24 w-full rounded-lg" />
-          <Skeleton className="h-24 w-full rounded-lg" />
-          <Skeleton className="h-24 w-full rounded-lg" />
-          <Skeleton className="h-24 w-full rounded-lg" />
+          {[...Array(5)].map((_, i) => (
+            <Skeleton key={i} className="h-24 w-full rounded-lg" />
+          ))}
         </div>
       ) : (
         <>
-          {filteredArticles.length > 0 ? (
+          {/* Only show articles if there's no error */}
+          {!error && filteredArticles.length > 0 && (
             <div className="transition-opacity duration-300 ease-in-out">
               {currentArticles.map((article) => (
                 <ArticleCard key={article.url} article={article} />
@@ -154,28 +171,26 @@ export default function Home() {
                 onPageChange={handlePageChange}
               />
             </div>
-          ) : (
-             // Show message only if not fetching and no error occurred during fetch
-             !isFetching && !error && allArticles.length === 0 && (
-               <Alert className="mt-6">
-                 <Terminal className="h-4 w-4" />
-                 <AlertTitle>No Articles Found</AlertTitle>
-                 <AlertDescription>
-                   {searchQuery || dateFilter !== 'all'
-                      ? "No articles match your current search/filter criteria."
-                      : "Click 'Fetch/Refresh Upvoted Articles' to load your data."
-                   }
-                 </AlertDescription>
-               </Alert>
-             )
           )}
-          {/* Show no results message if filtering yielded no results but there are fetched articles */}
-          {!isFetching && !error && allArticles.length > 0 && filteredArticles.length === 0 && (
+
+          {/* Initial state message or no articles found message */}
+          {!isLoading && !error && allArticles.length === 0 && (
+            <Alert className="mt-6">
+              <Terminal className="h-4 w-4" />
+              <AlertTitle>No Articles Loaded</AlertTitle>
+              <AlertDescription>
+                Click the 'Fetch/Refresh Upvoted Articles' button above to load your data from GeekNews.
+              </AlertDescription>
+            </Alert>
+          )}
+
+          {/* No results message after filtering */}
+          {!isLoading && !error && allArticles.length > 0 && filteredArticles.length === 0 && (
              <Alert className="mt-6">
                <Terminal className="h-4 w-4" />
                <AlertTitle>No Matching Results</AlertTitle>
                <AlertDescription>
-                 Try adjusting your search query or filters.
+                 No articles match your current search query or date filter. Try adjusting your search.
                </AlertDescription>
              </Alert>
           )}
