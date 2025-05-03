@@ -1,17 +1,14 @@
 import type {Metadata} from 'next';
-import {Geist, Geist_Mono} from 'next/font/google';
+import { Inter } from 'next/font/google'; // Import Inter instead of Geist
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"; // Import Toaster
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
+// Configure Inter font
+const inter = Inter({
+  subsets: ['latin'], // Keep latin subset
+  variable: '--font-sans', // Assign to a CSS variable
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
 
 export const metadata: Metadata = {
   title: 'GeekNews Personal Search',
@@ -25,7 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      {/* Use the Inter font variable */}
+      <body className={`${inter.variable} font-sans antialiased`}>
         {children}
         <Toaster /> {/* Add Toaster here */}
       </body>

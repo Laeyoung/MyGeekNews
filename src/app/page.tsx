@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import type { GeekNewsArticle } from '@/services/geeknews';
-import { getAllUpvotedArticles } from '@/services/geeknews';
+// import { getAllUpvotedArticles } from '@/services/geeknews'; // Removed as fetching is now via API
 import SearchBar from '@/components/SearchBar';
 import ArticleCard from '@/components/ArticleCard';
 import PaginationControls from '@/components/PaginationControls';
@@ -19,7 +19,7 @@ export default function Home() {
   const [allArticles, setAllArticles] = useState<GeekNewsArticle[]>([]);
   const [filteredArticles, setFilteredArticles] = useState<GeekNewsArticle[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false); // Initially not loading, triggered by button
   const [isFetching, setIsFetching] = useState(false); // For manual fetch trigger
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
@@ -29,74 +29,39 @@ export default function Home() {
   const fetchArticles = async () => {
     setIsFetching(true);
     setError(null);
+    setAllArticles([]); // Clear existing articles before fetching
+    setFilteredArticles([]);
+    setCurrentPage(1);
+    setIsLoading(true); // Show loading skeleton while fetching
+
     try {
-      // Simulate fetching - replace with actual call to getAllUpvotedArticles
-      // In a real app, this would likely fetch from a backend that has scraped the data.
-      // For this frontend-only example, we'll use the mock data directly.
-      // const articles = await getAllUpvotedArticles(GEEKNEWS_USER_ID);
-
-      // Using mock data for now as scraping isn't implemented here
-       const articles: GeekNewsArticle[] = [
-        { title: "Introduction to Next.js 14", url: "https://news.hada.io/topic/1" },
-        { title: "Advanced React Patterns", url: "https://news.hada.io/topic/2" },
-        { title: "State Management with Zustand", url: "https://news.hada.io/topic/3" },
-        { title: "Building Performant Web Apps", url: "https://news.hada.io/topic/4" },
-        { title: "Understanding Server Components", url: "https://news.hada.io/topic/5" },
-        { title: "CSS Tricks for Modern Layouts", url: "https://news.hada.io/topic/6" },
-        { title: "Database Optimization Techniques", url: "https://news.hada.io/topic/7" },
-        { title: "Web Security Fundamentals", url: "https://news.hada.io/topic/8" },
-        { title: "Deploying Apps with Vercel", url: "https://news.hada.io/topic/9" },
-        { title: "GraphQL vs REST APIs", url: "https://news.hada.io/topic/10" },
-        { title: "The Rise of AI in Development", url: "https://news.hada.io/topic/11" },
-        { title: "Mastering TypeScript Generics", url: "https://news.hada.io/topic/12" },
-      ];
-
-      // Simulate delay
-      await new Promise(resolve => setTimeout(resolve, 500));
-
+      const response = await fetch(`/api/upvoted-articles?userId=${GEEKNEWS_USER_ID}`);
+      if (!response.ok) {
+         const errorBody = await response.text();
+         console.error("API Error Response:", errorBody);
+         throw new Error(`Failed to fetch articles: ${response.status} ${response.statusText}`);
+      }
+      const articles: GeekNewsArticle[] = await response.json();
 
       setAllArticles(articles);
       toast({
         title: "Articles Fetched",
         description: `Successfully fetched ${articles.length} upvoted articles.`,
       });
-    } catch (err) {
+    } catch (err: any) {
       console.error("Failed to fetch articles:", err);
-      setError("Failed to fetch articles. Please try again later.");
+      const errorMessage = err.message || "Could not fetch articles. Please check the console or try again later.";
+      setError(errorMessage);
        toast({
         variant: "destructive",
         title: "Fetch Error",
-        description: "Could not fetch articles.",
+        description: errorMessage,
       });
     } finally {
       setIsLoading(false);
       setIsFetching(false);
     }
   };
-
-  // Initial fetch on component mount (or trigger manually)
-   useEffect(() => {
-    // In a real app, you might check local storage or fetch on button click
-    // fetchArticles();
-    // For now, load mock data immediately
-    setIsLoading(true);
-    const articles: GeekNewsArticle[] = [
-        { title: "Introduction to Next.js 14", url: "https://news.hada.io/topic/1" },
-        { title: "Advanced React Patterns", url: "https://news.hada.io/topic/2" },
-        { title: "State Management with Zustand", url: "https://news.hada.io/topic/3" },
-        { title: "Building Performant Web Apps", url: "https://news.hada.io/topic/4" },
-        { title: "Understanding Server Components", url: "https://news.hada.io/topic/5" },
-        { title: "CSS Tricks for Modern Layouts", url: "https://news.hada.io/topic/6" },
-        { title: "Database Optimization Techniques", url: "https://news.hada.io/topic/7" },
-        { title: "Web Security Fundamentals", url: "https://news.hada.io/topic/8" },
-        { title: "Deploying Apps with Vercel", url: "https://news.hada.io/topic/9" },
-        { title: "GraphQL vs REST APIs", url: "https://news.hada.io/topic/10" },
-        { title: "The Rise of AI in Development", url: "https://news.hada.io/topic/11" },
-        { title: "Mastering TypeScript Generics", url: "https://news.hada.io/topic/12" },
-      ];
-    setAllArticles(articles);
-    setIsLoading(false);
-   }, []);
 
   // Filter articles based on search query and date filter
   useEffect(() => {
@@ -109,7 +74,7 @@ export default function Home() {
       );
     }
 
-    // Apply date filter (requires article dates, which are not in the mock data)
+    // Apply date filter (requires article dates, which are not currently scraped)
     // This is a placeholder for where date filtering logic would go.
     // if (dateFilter !== 'all') {
     //   const now = new Date();
@@ -148,15 +113,14 @@ export default function Home() {
     <main className="container mx-auto p-4 md:p-8 min-h-screen">
       <header className="mb-8 text-center">
         <h1 className="text-3xl font-bold mb-2">My GeekNews</h1>
-        <p className="text-muted-foreground">Search your upvoted articles</p>
+        <p className="text-muted-foreground">Search your upvoted articles for user: <span className="font-mono">{GEEKNEWS_USER_ID}</span></p>
       </header>
 
-      {/* Manual Fetch Button - Remove if fetching automatically */}
       <div className="mb-6 text-center">
           <Button onClick={fetchArticles} disabled={isFetching}>
               {isFetching ? 'Fetching Articles...' : 'Fetch/Refresh Upvoted Articles'}
           </Button>
-          <p className="text-xs text-muted-foreground mt-1">(Manual trigger for fetching data)</p>
+          <p className="text-xs text-muted-foreground mt-1">(Fetches all upvoted articles from news.hada.io)</p>
       </div>
 
       <SearchBar onSearch={handleSearch} isFetching={isFetching} />
@@ -164,13 +128,15 @@ export default function Home() {
       {error && (
          <Alert variant="destructive" className="mb-6">
            <Terminal className="h-4 w-4" />
-           <AlertTitle>Error</AlertTitle>
+           <AlertTitle>Error Fetching Articles</AlertTitle>
            <AlertDescription>{error}</AlertDescription>
          </Alert>
       )}
 
       {isLoading ? (
         <div className="space-y-4">
+          <Skeleton className="h-24 w-full rounded-lg" />
+          <Skeleton className="h-24 w-full rounded-lg" />
           <Skeleton className="h-24 w-full rounded-lg" />
           <Skeleton className="h-24 w-full rounded-lg" />
           <Skeleton className="h-24 w-full rounded-lg" />
@@ -189,11 +155,27 @@ export default function Home() {
               />
             </div>
           ) : (
+             // Show message only if not fetching and no error occurred during fetch
+             !isFetching && !error && allArticles.length === 0 && (
+               <Alert className="mt-6">
+                 <Terminal className="h-4 w-4" />
+                 <AlertTitle>No Articles Found</AlertTitle>
+                 <AlertDescription>
+                   {searchQuery || dateFilter !== 'all'
+                      ? "No articles match your current search/filter criteria."
+                      : "Click 'Fetch/Refresh Upvoted Articles' to load your data."
+                   }
+                 </AlertDescription>
+               </Alert>
+             )
+          )}
+          {/* Show no results message if filtering yielded no results but there are fetched articles */}
+          {!isFetching && !error && allArticles.length > 0 && filteredArticles.length === 0 && (
              <Alert className="mt-6">
                <Terminal className="h-4 w-4" />
-               <AlertTitle>No Results Found</AlertTitle>
+               <AlertTitle>No Matching Results</AlertTitle>
                <AlertDescription>
-                 {allArticles.length === 0 && !isFetching ? "No articles fetched yet. Click 'Fetch/Refresh Upvoted Articles'." : "Try adjusting your search query or filters."}
+                 Try adjusting your search query or filters.
                </AlertDescription>
              </Alert>
           )}
