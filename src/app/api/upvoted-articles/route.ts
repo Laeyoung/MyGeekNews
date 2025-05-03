@@ -16,7 +16,7 @@ async function fetchPage(userId: string, page: number): Promise<GeekNewsArticle[
   const response = await fetch(url, {
     headers: {
       // Mimic a browser request to potentially avoid simple blocks
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
       'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
       'Accept-Language': 'en-US,en;q=0.9,ko;q=0.8',
       'Cache-Control': 'no-cache',
@@ -43,8 +43,12 @@ async function fetchPage(userId: string, page: number): Promise<GeekNewsArticle[
   const html = await response.text();
   // console.log(`[GeekNews Scraper] Fetched HTML for page ${page} (first 500 chars): ${html.substring(0, 500)}...`); // Optional: Log HTML for debugging
 
+  console.log("html: ", html)
+
   const $ = cheerio.load(html);
   const articles: GeekNewsArticle[] = [];
+
+  console.log($('main'))
 
   // Target each article container within the main content area
   $('main > article > div.topics > div.topic_row').each((index, element) => {

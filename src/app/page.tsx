@@ -12,8 +12,8 @@ import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { cn } from "@/lib/utils"; // Import cn utility
 
-const ARTICLES_PER_PAGE = 10;
-const GEEKNEWS_USER_ID = 'laeyoung'; // Replace with actual user ID or make configurable
+const ARTICLES_PER_PAGE = 20;
+const GEEKNEWS_USER_ID = 'xguru'; // Replace with actual user ID or make configurable
 
 export default function Home() {
   const [allArticles, setAllArticles] = useState<GeekNewsArticle[]>([]);
