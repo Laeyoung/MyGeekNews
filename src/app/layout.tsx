@@ -13,6 +13,32 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'My GeekNews Upvotes',
   description: 'Search your upvoted GeekNews articles.',
+  openGraph: {
+    title: 'My GeekNews Upvotes',
+    description: 'Search your upvoted GeekNews articles.',
+    url: 'https://my-geeknews-upvotes.vercel.app', // Assuming a URL or placeholder
+    siteName: 'My GeekNews Upvotes',
+    images: [
+      {
+        url: '/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'My GeekNews Upvotes',
+      },
+    ],
+    locale: 'ko_KR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'My GeekNews Upvotes',
+    description: 'Search your upvoted GeekNews articles.',
+    images: ['/opengraph-image.png'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/favicon.ico', // Ideally this should be a png, but using ico for now as placeholder
+  },
 };
 
 export default function RootLayout({
