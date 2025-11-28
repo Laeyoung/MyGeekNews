@@ -18,26 +18,22 @@ export default function ArticleCard({ article }: ArticleCardProps) {
     : `${GEEKNEWS_BASE_URL}${article.url.startsWith('/') ? '' : '/'}${article.url}`;
 
   return (
-    <Card className="mb-4 shadow-sm hover:shadow-md transition-shadow duration-200">
-      <CardHeader className="pb-2">
-        <CardTitle className="text-lg">{article.title}</CardTitle>
-        {article.description && (
-          <p className="text-sm text-muted-foreground mt-2 line-clamp-3">
-            {article.description}
-          </p>
-        )}
-      </CardHeader>
-      <CardContent>
-        <Button
-          variant="link"
-          asChild
-          className="p-0 h-auto text-primary hover:underline"
-        >
-          <a href={absoluteUrl} target="_blank" rel="noopener noreferrer">
+    <a href={absoluteUrl} target="_blank" rel="noopener noreferrer" className="block">
+      <Card className="mb-4 shadow-sm hover:shadow-md transition-shadow duration-200 hover:bg-accent/50 cursor-pointer">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-lg">{article.title}</CardTitle>
+          {article.description && (
+            <p className="text-sm text-muted-foreground mt-2 line-clamp-3">
+              {article.description}
+            </p>
+          )}
+        </CardHeader>
+        <CardContent>
+          <div className="flex items-center text-sm text-primary">
             View Original <ExternalLink className="ml-1 h-4 w-4" />
-          </a>
-        </Button>
-      </CardContent>
-    </Card>
+          </div>
+        </CardContent>
+      </Card>
+    </a>
   );
 }

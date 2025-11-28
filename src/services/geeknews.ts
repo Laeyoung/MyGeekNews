@@ -19,3 +19,11 @@ export interface GeekNewsArticle {
 }
 
 // Fetching logic is now handled by the API route: /api/upvoted-articles/route.ts
+
+export async function getUpvotedArticles(): Promise<GeekNewsArticle[]> {
+  const response = await fetch('/api/upvoted-articles');
+  if (!response.ok) {
+    throw new Error(`Failed to fetch articles: ${response.statusText}`);
+  }
+  return response.json();
+}
