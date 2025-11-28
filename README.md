@@ -1,4 +1,4 @@
-# GeekNews Personal Search
+# My GeekNews Upvotes
 
 A personal search engine for your upvoted articles on [GeekNews](https://news.hada.io/). This application allows you to scrape your upvoted topics and search through them with a fast, fuzzy search interface that supports Korean Chosung (initial consonant) matching.
 

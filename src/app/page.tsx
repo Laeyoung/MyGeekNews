@@ -80,7 +80,7 @@ export default function Home() {
   return (
     <main className="container mx-auto p-4 md:p-8 min-h-screen">
       <header className="mb-8 text-center">
-        <h1 className="text-3xl font-bold mb-2">GeekNews Upvotes</h1>
+        <h1 className="text-3xl font-bold mb-2">My GeekNews Upvotes</h1>
         <p className="text-muted-foreground">Search your upvoted articles</p>
       </header>
 

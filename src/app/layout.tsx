@@ -11,7 +11,7 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
-  title: 'GeekNews Personal Search',
+  title: 'My GeekNews Upvotes',
   description: 'Search your upvoted GeekNews articles.',
 };
 

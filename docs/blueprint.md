@@ -1,4 +1,4 @@
-# **App Name**: GeekNews Personal Search
+# **App Name**: My GeekNews Upvotes
 
 ## Core Features:
 
