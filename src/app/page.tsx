@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import type { GeekNewsArticle } from '@/services/geeknews';
+import { fuzzySearch } from '@/lib/searchUtils';
 import SearchBar from '@/components/SearchBar';
 import ArticleCard from '@/components/ArticleCard';
 import PaginationControls from '@/components/PaginationControls';
@@ -87,8 +88,8 @@ export default function Home() {
     // Apply search query
     if (searchQuery) {
       results = results.filter(article =>
-        article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (article.description && article.description.toLowerCase().includes(searchQuery.toLowerCase()))
+        fuzzySearch(article.title, searchQuery) ||
+        (article.description && fuzzySearch(article.description, searchQuery))
       );
     }
 
