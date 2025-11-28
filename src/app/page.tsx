@@ -81,7 +81,11 @@ export default function Home() {
     <main className="container mx-auto p-4 md:p-8 min-h-screen">
       <header className="mb-8 text-center">
         <h1 className="text-3xl font-bold mb-2">My GeekNews Upvotes</h1>
-        <p className="text-muted-foreground">Search your upvoted articles</p>
+        <p className="text-muted-foreground">
+          {allArticles.length > 0
+            ? `Search your ${allArticles.length} upvoted articles`
+            : 'Search your upvoted articles'}
+        </p>
       </header>
 
       <SearchBar onSearch={handleSearch} isFetching={isFetching} />
