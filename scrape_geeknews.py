@@ -46,7 +46,7 @@ def scrape():
     # A better check might be to see if we are redirected or check cookies, 
     # but let's proceed to scrape.
 
-    all_urls = []
+    all_topics = []
     page = 1
     
     while True:
@@ -60,51 +60,73 @@ def scrape():
             
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Find all topic links
-        # Based on typical structure, links are like /topic?id=...
-        # We look for <a> tags with href containing 'topic?id='
+        topic_rows = soup.find_all('div', class_='topic_row')
         
-        links = soup.find_all('a', href=True)
-        page_urls = []
-        
-        for link in links:
-            href = link['href']
-            if 'topic?id=' in href:
-                if '&go=comments' in href:
-                    continue
-                if href.startswith('http'):
-                    full_url = href
-                else:
-                    # Ensure leading slash
-                    if not href.startswith('/'):
-                        href = '/' + href
-                    full_url = f"https://news.hada.io{href}"
-                # Clean up URL (remove other params if any, though usually it's just id)
-                if full_url not in all_urls and full_url not in page_urls:
-                    page_urls.append(full_url)
-        
-        if not page_urls:
+        if not topic_rows:
+            if page == 1:
+                print("DEBUG: No topic rows found on page 1. HTML content:")
+                print(soup.prettify()[:1000])
             print(f"No more topics found on page {page}. Stopping.")
             break
             
-        print(f"Found {len(page_urls)} topics on page {page}")
-        all_urls.extend(page_urls)
+        page_topics = []
+        for row in topic_rows:
+            try:
+                topic_id = None
+                # Try getting ID from row id
+                row_id = row.get('id', '')
+                if row_id.startswith('topic_row'):
+                    topic_id = int(row_id.replace('topic_row', ''))
+                
+                # Try getting ID from vote span
+                if not topic_id:
+                    vote_span = row.select_one('.vote span[id^="vote"]')
+                    if vote_span:
+                        topic_id = int(vote_span['id'].replace('vote', ''))
+                
+                if not topic_id:
+                    # print("DEBUG: Could not find topic ID")
+                    continue
+                
+                title_elem = row.select_one('.topictitle h1')
+                title = title_elem.get_text(strip=True) if title_elem else "No Title"
+                
+                desc_elem = row.select_one('.topicdesc')
+                description = desc_elem.get_text(strip=True) if desc_elem else ""
+                
+                topic_url = f"https://news.hada.io/topic?id={topic_id}"
+                
+                topic_data = {
+                    'url': topic_url,
+                    'title': title,
+                    'description': description
+                }
+                
+                # Check for duplicates based on URL
+                if not any(t['url'] == topic_url for t in all_topics) and not any(t['url'] == topic_url for t in page_topics):
+                    page_topics.append(topic_data)
+            except Exception as e:
+                print(f"Error parsing row: {e}")
+                continue
+
+        print(f"Found {len(page_topics)} topics on page {page}")
+        all_topics.extend(page_topics)
         page += 1
         time.sleep(3) # Be nice to the server
 
-    print(f"Total unique URLs found: {len(all_urls)}")
+    print(f"Total unique topics found: {len(all_topics)}")
     
     # Sort by ID descending
-    def get_id(url):
+    def get_id(topic):
         try:
-            return int(url.split('id=')[1].split('&')[0])
+            return int(topic['url'].split('id=')[1])
         except:
             return 0
 
-    all_urls.sort(key=get_id, reverse=True)
+    all_topics.sort(key=get_id, reverse=True)
 
-    with open('laeyoung-upvote.json', 'w') as f:
-        json.dump(all_urls, f, indent=2)
+    with open('laeyoung-upvote.json', 'w', encoding='utf-8') as f:
+        json.dump(all_topics, f, indent=2, ensure_ascii=False)
     
     print("Saved to laeyoung-upvote.json")
 
