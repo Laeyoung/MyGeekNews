@@ -21,6 +21,11 @@ export default function ArticleCard({ article }: ArticleCardProps) {
     <Card className="mb-4 shadow-sm hover:shadow-md transition-shadow duration-200">
       <CardHeader className="pb-2">
         <CardTitle className="text-lg">{article.title}</CardTitle>
+        {article.description && (
+          <p className="text-sm text-muted-foreground mt-2 line-clamp-3">
+            {article.description}
+          </p>
+        )}
       </CardHeader>
       <CardContent>
         <Button
