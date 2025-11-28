@@ -26,11 +26,21 @@ A personal search engine for your upvoted articles on [GeekNews](https://news.ha
 
 ### 1. Setup Environment Variables
 
-Create a `.env` file in the root directory with your GeekNews credentials:
+Copy `.env.example` to `.env` and fill in your GeekNews credentials:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env`:
 
 ```env
 GEEKNEWS_ID=your_id
 PASSWORD=your_password
+# Optional
+# GEEKNEWS_DATA_PATH=/absolute/path/to/your/data.json
+# Or use a remote URL (e.g., GitHub Raw, Gist):
+# GEEKNEWS_DATA_PATH=https://gist.githubusercontent.com/username/gist_id/raw/geeknews_my_upvotes.json
 ```
 
 ### 2. Scrape Upvoted Articles
@@ -47,7 +57,7 @@ Run the scraping script:
 python3 scrape_geeknews.py
 ```
 
-This will create or update `geeknews_my_upvotes.json` with your upvoted articles.
+This will create or update `data/geeknews_my_upvotes.json` with your upvoted articles. Note that the `data/` directory is git-ignored to keep your personal data safe.
 
 ### 3. Run the Application
 
