@@ -32,4 +32,4 @@ python3 scrape_geeknews.py
 This will:
 1. Log in to GeekNews using credentials from `.env`.
 2. Iterate through pages of your upvoted topics.
-3. Save the unique topic URLs to `laeyoung-upvote.json`.
+3. Save the unique topic URLs to `geeknews_my_upvotes.json`.

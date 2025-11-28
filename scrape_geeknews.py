@@ -41,13 +41,21 @@ def scrape():
         print(f"Login failed with status code {response.status_code}")
         return
 
-    # Check if login was successful (usually redirects or sets cookies)
-    # We can assume success if we get a 200 OK from the POST and subsequent requests work.
-    # A better check might be to see if we are redirected or check cookies, 
-    # but let's proceed to scrape.
+    # Load existing topics
+    existing_topics = []
+    existing_urls = set()
+    if os.path.exists('geeknews_my_upvotes.json'):
+        try:
+            with open('geeknews_my_upvotes.json', 'r', encoding='utf-8') as f:
+                existing_topics = json.load(f)
+                existing_urls = set(t['url'] for t in existing_topics)
+            print(f"Loaded {len(existing_topics)} existing topics.")
+        except Exception as e:
+            print(f"Error loading existing file: {e}")
 
-    all_topics = []
+    new_topics = []
     page = 1
+    stop_scraping = False
     
     while True:
         url = f"https://news.hada.io/upvoted_topics?userid={userid}&page={page}"
@@ -96,25 +104,39 @@ def scrape():
                 
                 topic_url = f"https://news.hada.io/topic?id={topic_id}"
                 
+                # Check if we already have this topic
+                if topic_url in existing_urls:
+                    print(f"Found existing topic {topic_id}. Will stop after this page.")
+                    stop_scraping = True
+                    continue
+
                 topic_data = {
                     'url': topic_url,
                     'title': title,
                     'description': description
                 }
                 
-                # Check for duplicates based on URL
-                if not any(t['url'] == topic_url for t in all_topics) and not any(t['url'] == topic_url for t in page_topics):
+                # Check for duplicates within the current run (just in case)
+                if not any(t['url'] == topic_url for t in new_topics) and not any(t['url'] == topic_url for t in page_topics):
                     page_topics.append(topic_data)
             except Exception as e:
                 print(f"Error parsing row: {e}")
                 continue
 
-        print(f"Found {len(page_topics)} topics on page {page}")
-        all_topics.extend(page_topics)
+        if page_topics:
+            print(f"Found {len(page_topics)} new topics on page {page}")
+            new_topics.extend(page_topics)
+        
+        if stop_scraping:
+            break
+            
         page += 1
         time.sleep(3) # Be nice to the server
 
-    print(f"Total unique topics found: {len(all_topics)}")
+    print(f"Total new topics found: {len(new_topics)}")
+    
+    # Merge new and existing
+    all_topics = new_topics + existing_topics
     
     # Sort by ID descending
     def get_id(topic):
@@ -125,10 +147,10 @@ def scrape():
 
     all_topics.sort(key=get_id, reverse=True)
 
-    with open('laeyoung-upvote.json', 'w', encoding='utf-8') as f:
+    with open('geeknews_my_upvotes.json', 'w', encoding='utf-8') as f:
         json.dump(all_topics, f, indent=2, ensure_ascii=False)
     
-    print("Saved to laeyoung-upvote.json")
+    print("Saved to geeknews_my_upvotes.json")
 
 if __name__ == "__main__":
     scrape()
