@@ -9,11 +9,14 @@ import type { GeekNewsArticle } from '@/services/geeknews';
  */
 export async function GET(request: NextRequest) {
   try {
-    const filePath = path.join(process.cwd(), 'geeknews_my_upvotes.json');
+    const filePath = path.join(process.cwd(), 'data', 'geeknews_my_upvotes.json');
 
     if (!fs.existsSync(filePath)) {
-      console.error(`[GeekNews API] File not found: ${filePath}`);
-      return NextResponse.json({ error: 'Data file not found' }, { status: 404 });
+      console.warn(`[GeekNews API] File not found: ${filePath}`);
+      // Return empty array instead of error, so the UI can show "No Articles Loaded" state
+      // or we could return a specific error code if we want the UI to prompt for scraping.
+      // For now, let's return an empty list to avoid breaking the UI.
+      return NextResponse.json([]);
     }
 
     const fileContent = fs.readFileSync(filePath, 'utf-8');

@@ -44,9 +44,14 @@ def scrape():
     # Load existing topics
     existing_topics = []
     existing_urls = set()
-    if os.path.exists('geeknews_my_upvotes.json'):
+    data_file = os.path.join('data', 'geeknews_my_upvotes.json')
+    
+    # Ensure data directory exists
+    os.makedirs('data', exist_ok=True)
+
+    if os.path.exists(data_file):
         try:
-            with open('geeknews_my_upvotes.json', 'r', encoding='utf-8') as f:
+            with open(data_file, 'r', encoding='utf-8') as f:
                 existing_topics = json.load(f)
                 existing_urls = set(t['url'] for t in existing_topics)
             print(f"Loaded {len(existing_topics)} existing topics.")
@@ -147,10 +152,10 @@ def scrape():
 
     all_topics.sort(key=get_id, reverse=True)
 
-    with open('geeknews_my_upvotes.json', 'w', encoding='utf-8') as f:
+    with open(data_file, 'w', encoding='utf-8') as f:
         json.dump(all_topics, f, indent=2, ensure_ascii=False)
     
-    print("Saved to geeknews_my_upvotes.json")
+    print(f"Saved to {data_file}")
 
 if __name__ == "__main__":
     scrape()
