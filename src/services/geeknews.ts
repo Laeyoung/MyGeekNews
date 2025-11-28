@@ -10,8 +10,20 @@ export interface GeekNewsArticle {
    * The URL of the GeekNews article. URLs might be relative, ensure they are resolved correctly.
    */
   url: string;
+  /**
+   * The description or summary of the article.
+   */
+  description?: string;
   // Optional: Add a date field if available from the source for filtering
   // date?: string | Date;
 }
 
 // Fetching logic is now handled by the API route: /api/upvoted-articles/route.ts
+
+export async function getUpvotedArticles(): Promise<GeekNewsArticle[]> {
+  const response = await fetch('/api/upvoted-articles');
+  if (!response.ok) {
+    throw new Error(`Failed to fetch articles: ${response.statusText}`);
+  }
+  return response.json();
+}
