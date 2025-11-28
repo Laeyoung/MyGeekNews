@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import { Inter } from 'next/font/google'; // Import Inter instead of Geist
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"; // Import Toaster
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       {/* Use the Inter font variable */}
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
