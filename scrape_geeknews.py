@@ -44,10 +44,22 @@ def scrape():
     # Load existing topics
     existing_topics = []
     existing_urls = set()
-    data_file = os.path.join('data', 'geeknews_my_upvotes.json')
     
-    # Ensure data directory exists
-    os.makedirs('data', exist_ok=True)
+    custom_path = creds.get('GEEKNEWS_DATA_PATH')
+    if custom_path:
+        if custom_path.startswith('http://') or custom_path.startswith('https://'):
+            print(f"WARNING: GEEKNEWS_DATA_PATH is a URL ({custom_path}). Scraper cannot write to a URL.")
+            print("Falling back to default local path 'data/geeknews_my_upvotes.json'.")
+            data_file = os.path.join('data', 'geeknews_my_upvotes.json')
+            os.makedirs('data', exist_ok=True)
+        else:
+            data_file = custom_path
+            # Ensure directory for custom path exists
+            os.makedirs(os.path.dirname(os.path.abspath(data_file)), exist_ok=True)
+    else:
+        data_file = os.path.join('data', 'geeknews_my_upvotes.json')
+        # Ensure data directory exists
+        os.makedirs('data', exist_ok=True)
 
     if os.path.exists(data_file):
         try:

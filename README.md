@@ -37,6 +37,10 @@ Edit `.env`:
 ```env
 GEEKNEWS_ID=your_id
 PASSWORD=your_password
+# Optional
+# GEEKNEWS_DATA_PATH=/absolute/path/to/your/data.json
+# Or use a remote URL (e.g., GitHub Raw, Gist):
+# GEEKNEWS_DATA_PATH=https://gist.githubusercontent.com/username/gist_id/raw/geeknews_my_upvotes.json
 ```
 
 ### 2. Scrape Upvoted Articles
