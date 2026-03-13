@@ -1,8 +1,7 @@
 "use client";
 
 import type { GeekNewsArticle } from '@/services/geeknews';
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { ExternalLink, Calendar } from "lucide-react";
 
 interface ArticleCardProps {
@@ -17,11 +16,15 @@ export default function ArticleCard({ article }: ArticleCardProps) {
     ? article.url
     : `${GEEKNEWS_BASE_URL}${article.url.startsWith('/') ? '' : '/'}${article.url}`;
 
+  const topicId = article.url.match(/[?&]id=(\d+)/)?.[1] ?? article.url.replace(/\W+/g, '-');
+  const headingId = `article-${topicId}`;
+
   return (
+    <article aria-labelledby={headingId}>
     <a href={absoluteUrl} target="_blank" rel="noopener noreferrer" className="block">
       <Card className="mb-4 shadow-sm hover:shadow-md transition-shadow duration-200 hover:bg-accent/50 cursor-pointer">
         <CardHeader className="pb-2">
-          <CardTitle className="text-lg">{article.title}</CardTitle>
+          <h2 id={headingId} className="text-lg font-semibold leading-none tracking-tight">{article.title}</h2>
           {article.description && (
             <p className="text-sm text-muted-foreground mt-2 line-clamp-3">
               {article.description}
@@ -43,5 +46,6 @@ export default function ArticleCard({ article }: ArticleCardProps) {
         </CardContent>
       </Card>
     </a>
+    </article>
   );
 }

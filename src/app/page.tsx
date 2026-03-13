@@ -9,7 +9,7 @@ import ArticleCard from '@/components/ArticleCard';
 import InfiniteScrollTrigger from '@/components/InfiniteScrollTrigger';
 import { Skeleton } from "@/components/ui/skeleton";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Terminal, AlertCircle } from "lucide-react";
+import { Terminal, AlertCircle, Github } from "lucide-react";
 import { useToast } from '@/hooks/use-toast';
 
 const ARTICLES_PER_PAGE = 20;
@@ -80,7 +80,18 @@ export default function Home() {
   return (
     <main className="container mx-auto p-4 md:p-8 min-h-screen">
       <header className="mb-8 text-center">
-        <h1 className="text-3xl font-bold mb-2">My GeekNews Upvotes</h1>
+        <div className="flex items-center justify-center gap-2 mb-2">
+          <h1 className="text-3xl font-bold">My GeekNews Upvotes</h1>
+          <a
+            href="https://github.com/Laeyoung/MyGeekNews"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="GitHub Repository"
+          >
+            <Github className="h-5 w-5" />
+          </a>
+        </div>
         <p className="text-muted-foreground">
           {allArticles.length > 0
             ? `Search your ${allArticles.length} upvoted articles`
