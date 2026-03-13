@@ -60,7 +60,20 @@ Run the scraping script:
 python3 scrape_geeknews.py
 ```
 
-This will create or update `data/geeknews_my_upvotes.json` with your upvoted articles. Note that the `data/` directory is git-ignored to keep your personal data safe.
+This will create or update `data/geeknews_my_upvotes.json` with your upvoted articles. New articles will include a `date` field automatically. Note that the `data/` directory is git-ignored to keep your personal data safe.
+
+#### Backfill Dates for Existing Articles
+
+If you have previously scraped articles without date information, run the backfill script to fetch exact dates from each topic page:
+
+```bash
+python3 backfill_dates.py
+```
+
+This fetches `datePublished` from each topic's page metadata. Progress is saved every 50 articles, so you can safely interrupt and resume. Options:
+
+- `--sleep 2` — adjust delay between requests (default: 1 second)
+- `--data-path /path/to/data.json` — use a custom data file path
 
 ### 3. Run the Application
 

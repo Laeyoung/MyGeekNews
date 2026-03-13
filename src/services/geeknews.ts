@@ -14,8 +14,10 @@ export interface GeekNewsArticle {
    * The description or summary of the article.
    */
   description?: string;
-  // Optional: Add a date field if available from the source for filtering
-  // date?: string | Date;
+  /**
+   * The date the article was posted (YYYY-MM-DD format).
+   */
+  date?: string | null;
 }
 
 // Fetching logic is now handled by the API route: /api/upvoted-articles/route.ts

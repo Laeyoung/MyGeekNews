@@ -3,7 +3,7 @@
 import type { GeekNewsArticle } from '@/services/geeknews';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Calendar } from "lucide-react";
 
 interface ArticleCardProps {
   article: GeekNewsArticle;
@@ -29,8 +29,16 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           )}
         </CardHeader>
         <CardContent>
-          <div className="flex items-center text-sm text-primary">
-            View Original <ExternalLink className="ml-1 h-4 w-4" />
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div className="flex items-center text-sm text-primary">
+              View Original <ExternalLink className="ml-1 h-4 w-4" />
+            </div>
+            {article.date && (
+              <div className="flex items-center text-sm text-muted-foreground">
+                <Calendar className="mr-1 h-3.5 w-3.5" />
+                {article.date}
+              </div>
+            )}
           </div>
         </CardContent>
       </Card>

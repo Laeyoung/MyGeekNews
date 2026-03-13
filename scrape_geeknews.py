@@ -1,22 +1,32 @@
 import requests
 from bs4 import BeautifulSoup
-import os
 import json
 import time
+import re
+from datetime import datetime, timedelta
+from geeknews_utils import parse_env_file, get_data_path, extract_topic_id
 
-def get_credentials():
-    env_path = '.env'
-    creds = {}
-    if os.path.exists(env_path):
-        with open(env_path, 'r') as f:
-            for line in f:
-                if '=' in line:
-                    key, value = line.strip().split('=', 1)
-                    creds[key] = value
-    return creds
+_RELATIVE_DATE_PATTERNS = [
+    (re.compile(r'(\d+)\s*분\s*전'), lambda n: timedelta(minutes=n)),
+    (re.compile(r'(\d+)\s*시간\s*전'), lambda n: timedelta(hours=n)),
+    (re.compile(r'(\d+)\s*일\s*전'), lambda n: timedelta(days=n)),
+    (re.compile(r'(\d+)\s*달\s*전'), lambda n: timedelta(days=n * 30)),
+    (re.compile(r'(\d+)\s*년\s*전'), lambda n: timedelta(days=n * 365)),
+]
+
+def parse_relative_date(text, now=None):
+    """Convert Korean relative date text (e.g., '7시간전', '2일전') to YYYY-MM-DD string."""
+    if now is None:
+        now = datetime.now()
+    for pattern, make_delta in _RELATIVE_DATE_PATTERNS:
+        m = pattern.search(text)
+        if m:
+            return (now - make_delta(int(m.group(1)))).strftime('%Y-%m-%d')
+    return None
+
 
 def scrape():
-    creds = get_credentials()
+    creds = parse_env_file()
     userid = creds.get('GEEKNEWS_ID')
     password = creds.get('PASSWORD')
 
@@ -45,21 +55,7 @@ def scrape():
     existing_topics = []
     existing_urls = set()
     
-    custom_path = creds.get('GEEKNEWS_DATA_PATH')
-    if custom_path:
-        if custom_path.startswith('http://') or custom_path.startswith('https://'):
-            print(f"WARNING: GEEKNEWS_DATA_PATH is a URL ({custom_path}). Scraper cannot write to a URL.")
-            print("Falling back to default local path 'data/geeknews_my_upvotes.json'.")
-            data_file = os.path.join('data', 'geeknews_my_upvotes.json')
-            os.makedirs('data', exist_ok=True)
-        else:
-            data_file = custom_path
-            # Ensure directory for custom path exists
-            os.makedirs(os.path.dirname(os.path.abspath(data_file)), exist_ok=True)
-    else:
-        data_file = os.path.join('data', 'geeknews_my_upvotes.json')
-        # Ensure data directory exists
-        os.makedirs('data', exist_ok=True)
+    data_file = get_data_path(create_dirs=True)
 
     if os.path.exists(data_file):
         try:
@@ -73,6 +69,7 @@ def scrape():
     new_topics = []
     page = 1
     stop_scraping = False
+    scrape_time = datetime.now()
     
     while True:
         url = f"https://news.hada.io/upvoted_topics?userid={userid}&page={page}"
@@ -118,7 +115,13 @@ def scrape():
                 
                 desc_elem = row.select_one('.topicdesc')
                 description = desc_elem.get_text(strip=True) if desc_elem else ""
-                
+
+                date = None
+                info_elem = row.select_one('.topicinfo')
+                if info_elem:
+                    info_text = info_elem.get_text()
+                    date = parse_relative_date(info_text, now=scrape_time)
+
                 topic_url = f"https://news.hada.io/topic?id={topic_id}"
                 
                 # Check if we already have this topic
@@ -130,7 +133,8 @@ def scrape():
                 topic_data = {
                     'url': topic_url,
                     'title': title,
-                    'description': description
+                    'description': description,
+                    'date': date
                 }
                 
                 # Check for duplicates within the current run (just in case)
@@ -156,13 +160,7 @@ def scrape():
     all_topics = new_topics + existing_topics
     
     # Sort by ID descending
-    def get_id(topic):
-        try:
-            return int(topic['url'].split('id=')[1])
-        except:
-            return 0
-
-    all_topics.sort(key=get_id, reverse=True)
+    all_topics.sort(key=lambda t: extract_topic_id(t['url']) or 0, reverse=True)
 
     with open(data_file, 'w', encoding='utf-8') as f:
         json.dump(all_topics, f, indent=2, ensure_ascii=False)
