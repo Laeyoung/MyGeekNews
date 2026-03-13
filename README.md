@@ -83,8 +83,8 @@ You can set up a GitHub Actions workflow to scrape automatically once a day:
 2. Add two secrets:
    - `GEEKNEWS_ID` — your GeekNews user ID
    - `GEEKNEWS_PASSWORD` — your GeekNews password
-3. The workflow (`.github/workflows/daily-scrape.yml`) runs daily at 09:00 KST (00:00 UTC) and commits updated data to the repository
-4. You can also trigger it manually from the **Actions** tab → **Daily GeekNews Scrape** → **Run workflow**
+3. The workflow (`.github/workflows/daily-scrape.yml`) runs weekly on Mondays at 09:00 KST (00:00 UTC) and commits updated data to the repository
+4. You can also trigger it manually from the **Actions** tab → **Weekly GeekNews Scrape** → **Run workflow**
 
 ### 3. Run the Application
 
