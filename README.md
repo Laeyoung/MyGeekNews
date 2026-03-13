@@ -75,6 +75,17 @@ This fetches `datePublished` from each topic's page metadata. Progress is saved 
 - `--sleep 2` — adjust delay between requests (default: 1 second)
 - `--data-path /path/to/data.json` — use a custom data file path
 
+#### Automated Daily Scraping (GitHub Actions)
+
+You can set up a GitHub Actions workflow to scrape automatically once a day:
+
+1. Go to your repository's **Settings → Secrets and variables → Actions**
+2. Add two secrets:
+   - `GEEKNEWS_ID` — your GeekNews user ID
+   - `GEEKNEWS_PASSWORD` — your GeekNews password
+3. The workflow (`.github/workflows/daily-scrape.yml`) runs daily at 09:00 KST (00:00 UTC) and commits updated data to the repository
+4. You can also trigger it manually from the **Actions** tab → **Daily GeekNews Scrape** → **Run workflow**
+
 ### 3. Run the Application
 
 Install Node.js dependencies:
