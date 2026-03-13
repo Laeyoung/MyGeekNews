@@ -22,6 +22,13 @@ jobs:
       - name: Install Python dependencies
         run: pip install requests beautifulsoup4
 
+      - name: Verify secrets are set
+        run: |
+          if [ -z "${{ secrets.GEEKNEWS_ID }}" ] || [ -z "${{ secrets.GEEKNEWS_PASSWORD }}" ]; then
+            echo "::error::GEEKNEWS_ID and GEEKNEWS_PASSWORD secrets must be set in repository settings."
+            exit 1
+          fi
+
       - name: Create .env file
         run: |
           echo "GEEKNEWS_ID=${{ secrets.GEEKNEWS_ID }}" > .env
@@ -31,6 +38,7 @@ jobs:
         run: python3 scrape_geeknews.py
 
       - name: Commit and push if changed
+        if: ${{ hashFiles('data/geeknews_my_upvotes.json') != '' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
