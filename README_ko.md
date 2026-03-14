@@ -59,7 +59,31 @@ pip install requests beautifulsoup4
 python3 scrape_geeknews.py
 ```
 
-이 명령은 `data/geeknews_my_upvotes.json` 파일을 생성하거나 업데이트하여 추천한 기사를 저장합니다. `data/` 디렉토리는 개인 데이터를 보호하기 위해 git-ignored 처리되어 있습니다.
+이 명령은 `data/geeknews_my_upvotes.json` 파일을 생성하거나 업데이트하여 추천한 기사를 저장합니다. 새로 스크랩한 기사에는 `date` 필드가 자동으로 포함됩니다. `data/` 디렉토리는 개인 데이터를 보호하기 위해 git-ignored 처리되어 있습니다.
+
+#### 기존 기사 날짜 백필
+
+이전에 날짜 정보 없이 스크랩한 기사가 있다면, 백필 스크립트를 실행하여 각 토픽 페이지에서 정확한 날짜를 가져올 수 있습니다:
+
+```bash
+python3 backfill_dates.py
+```
+
+이 스크립트는 각 토픽 페이지의 메타데이터에서 `datePublished`를 가져옵니다. 50개 기사마다 진행 상황이 저장되므로, 안전하게 중단하고 재개할 수 있습니다. 옵션:
+
+- `--sleep 2` — 요청 간 지연 시간 조정 (기본값: 1초)
+- `--data-path /path/to/data.json` — 사용자 지정 데이터 파일 경로 사용
+
+#### 자동 스크랩 (GitHub Actions)
+
+GitHub Actions 워크플로우를 설정하여 자동으로 스크랩할 수 있습니다:
+
+1. 저장소의 **Settings → Secrets and variables → Actions**로 이동합니다
+2. 두 개의 시크릿을 추가합니다:
+   - `GEEKNEWS_ID` — GeekNews 사용자 ID
+   - `GEEKNEWS_PASSWORD` — GeekNews 비밀번호
+3. 워크플로우 (`.github/workflows/daily-scrape.yml`)는 매주 월요일 KST 09:00 (UTC 00:00)에 실행되며, 업데이트된 데이터를 저장소에 커밋합니다
+4. **Actions** 탭 → **Weekly GeekNews Scrape** → **Run workflow**에서 수동으로 실행할 수도 있습니다
 
 ### 3. 애플리케이션 실행하기
 
