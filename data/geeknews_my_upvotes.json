@@ -1,5 +1,17 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=27493",
+    "title": "NanoClaw를 Docker 샌드박스에서 실행하기",
+    "description": "- NanoClaw와 Docker의 협력으로, 한 줄 명령으로 각 AI 에이전트를 격리된 Docker 샌드박스에서 실행할 수 있게 됨  \n- 각 에이전트는 마이크로 V...",
+    "date": "2026-03-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27484",
+    "title": "TUI Studio – 터미널 UI 디자인 도구",
+    "description": "- 터미널 기반 애플리케이션 UI를 시각적으로 설계할 수 있는 Figma 유사 편집기 형태의 도구로, 드래그 앤 드롭 방식의 인터페이스 제공  \r\n- 20...",
+    "date": "2026-03-14"
+  },
+  {
     "url": "https://news.hada.io/topic?id=27427",
     "title": "JavaScript DRM의 허상: HotAudio 복사 보호를 3라운드 만에 무력화한 과정",
     "description": "- 브라우저에서 실행되는 JavaScript 기반 DRM은 복호화된 오디오 데이터가 결국 JavaScript 접근 가능한 영역을 통과해야 하므로 근본적으로 우회...",
