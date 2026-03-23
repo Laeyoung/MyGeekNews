@@ -1,5 +1,65 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=27718",
+    "title": "생각 — 빠르게, 느리게, 그리고 인공지능으로: AI가 인간의 사고 방식을 어떻게 재구성하고 있는가",
+    "description": "# Thinking—Fast, Slow, and Artificial  \r\n### AI는 도구가 아니라 ‘세 번째 사고 시스템’이라는 연구  \r\n  \r\n- 2026년 1월, 펜실베이니아대 와튼...",
+    "date": "2026-03-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27706",
+    "title": "Andrej Karpathy가 말하는 코드 에이전트, AutoResearch, 그리고 AI의 루피(Loopy) 시대 [유튜브]",
+    "description": "- AI 코드 에이전트의 등장으로 소프트웨어 개발 방식이 근본적으로 변화했으며, 2024년 12월을 기점으로 직접 코딩 비중이 80%에서 거의 0% 로 급...",
+    "date": "2026-03-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27662",
+    "title": "충분히 상세한 명세는 코드다",
+    "description": "- 에이전틱 코딩이면 \"명세 문서로 코드를 대체할 수 있다\"는 주장에 대해, 명세가 충분히 정밀해지면 결국 코드와 동일한 형태로 수렴할 수밖에 ...",
+    "date": "2026-03-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27658",
+    "title": "open-pencil - Figma 대체용 AI 기반 디자인 편집기",
+    "description": "- AI 중심 설계 철학을 가진 차세대 개방형 오픈소스 디자인 도구  \r\n- .fig 파일 직접 읽기·쓰기를 지원해 Figma 프로젝트를 그대로 열고 수정 가...",
+    "date": "2026-03-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27640",
+    "title": "Claude Code를 만들며 배운 것: 우리가 Skills를 사용하는 방법",
+    "description": "- 클로드 코드에서 Skills는 가장 많이 사용되는 확장 포인트 중 하나로, Anthropic 내부에서 수백 개의 스킬을 실제로 운용하며 축적한 실전 노하...",
+    "date": "2026-03-19"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27628",
+    "title": "MimikaStudio - 맥용 음성 복제 및 TTS 오픈소스",
+    "description": "- 음성 복제·텍스트 음성 변환·문서 낭독·오디오북 제작 기능을 통합 제공  \r\n- MLX 기반 Metal 가속을 활용해 macOS 환경에서 네이티브 성능 구현...",
+    "date": "2026-03-19"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27604",
+    "title": "Open SWE: 사내 코딩 에이전트를 위한 오픈소스 프레임워크",
+    "description": "- Stripe, Ramp, Coinbase 등 주요 엔지니어링 조직이 독립적으로 구축한 사내 코딩 에이전트들이 유사한 아키텍처 패턴으로 수렴하고 있으며, 이...",
+    "date": "2026-03-18"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27599",
+    "title": "Kagi Translate가 이제 '링크드인 스타일'로 번역 지원",
+    "description": "- Kagi가 일반 텍스트를 LinkedIn 특유의 과장된 말투로 변환해주는 AI 번역기를 출시  \r\n- \"I'm fired\"를 입력하면 \"새로운 챕터로의 전환을 발표...",
+    "date": "2026-03-18"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27570",
+    "title": "OpenGenerativeUI - AI기반 생성형 UI 프레임워크 오픈소스",
+    "description": "- Claude가 출시한 인터랙티브 시각 자료 생성 기능을 그대로 구현  \r\n- 단순 텍스트 응답이 아닌 차트, 다이어그램, 시각화 등의 자료를 자동 생...",
+    "date": "2026-03-17"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27531",
+    "title": "창업자를 위한 마케팅",
+    "description": "- SaaS·앱·스타트업의 첫 10·100·1000명 사용자 확보를 위한 실용 자료 모음  \r\n- 예산 없이 초기 사용자를 확보하려는 기술 창업자를 위한 실전 ...",
+    "date": "2026-03-16"
+  },
+  {
     "url": "https://news.hada.io/topic?id=27493",
     "title": "NanoClaw를 Docker 샌드박스에서 실행하기",
     "description": "- NanoClaw와 Docker의 협력으로, 한 줄 명령으로 각 AI 에이전트를 격리된 Docker 샌드박스에서 실행할 수 있게 됨  \n- 각 에이전트는 마이크로 V...",
@@ -10,6 +70,12 @@
     "title": "TUI Studio – 터미널 UI 디자인 도구",
     "description": "- 터미널 기반 애플리케이션 UI를 시각적으로 설계할 수 있는 Figma 유사 편집기 형태의 도구로, 드래그 앤 드롭 방식의 인터페이스 제공  \r\n- 20...",
     "date": "2026-03-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27448",
+    "title": "klaw.sh - AI 에이전트를 위한 kubectl",
+    "description": "- Kubernetes 운영 방식을 AI 워크로드 관리에 적용해 AI 에이전트들을 오케스트레이션하는 도구  \r\n- `klaw get agents`, `klaw logs`, `klaw des...",
+    "date": "2026-03-13"
   },
   {
     "url": "https://news.hada.io/topic?id=27427",
