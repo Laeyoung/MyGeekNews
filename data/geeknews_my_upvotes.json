@@ -1,5 +1,131 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=27933",
+    "title": "Vercel의 json-render - Generative UI 프레임워크",
+    "description": "- AI가 사용자 프롬프트를 받아 JSON 구조를 생성하고, 이를 미리 정의된 컴포넌트로 렌더링하는 생성형 UI 프레임워크   \r\n- 프롬프트로 부터 동...",
+    "date": "2026-03-28"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27911",
+    "title": "Anthropic, 차세대 모델 “Claude Mythos” 유출로 존재 확인 — “역대 가장 강력한 모델”",
+    "description": "Anthropic이 개발 중인 새 AI 모델 “Claude Mythos”의 존재가 데이터 유출로 드러났고, Anthropic이 이를 공식 인정했습니다.  \r\nFortune이 보도한...",
+    "date": "2026-03-27"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27906",
+    "title": "하루에 코딩은 4시간이 한계인 이유",
+    "description": "- 인지심리학 연구에 따르면 인간의 딥 워크(deep work) 한계는 하루 3~4시간이며, 그 이후에는 집중력과 코드 품질이 급격히 저하됨  \r\n- 25만 명...",
+    "date": "2026-03-27"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27902",
+    "title": "understudy - 시연으로 배우는 로컬 데스크톱 에이전트",
+    "description": "- 사용자가 한 번 보여주면 의도와 절차를 학습해 반복 수행하는 데스크톱 자동화 에이전트  \r\n- 별도 워크플로 빌더 없이 직접 시연으로 학습 가...",
+    "date": "2026-03-27"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27897",
+    "title": "온보딩은 거래(Transaction)다",
+    "description": "- 초기 스타트업들이 흔히 저지르는 실수는 온보딩을 최대한 짧게 줄이는 것이지만, 온보딩은 사용자의 완전한 주의력과 명확한 의도가 동시에 존...",
+    "date": "2026-03-27"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27880",
+    "title": "Chops - AI 에이전트 스킬을 한 곳에서 관리하는 macOS 앱",
+    "description": "Claude Code, Cursor, Codex, Windsurf, Amp 등 여러 AI 코딩 에이전트의 스킬 파일을 하나의 macOS 앱에서 탐색·편집·관리할 수 있는 오픈소스 도...",
+    "date": "2026-03-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27872",
+    "title": "Anthropic이 Claude Code Auto Mode를 설계한 방법",
+    "description": "- 클로드 코드 사용자의 93%가 권한 프롬프트를 그냥 승인하는 승인 피로 현상을 해결하기 위해, 모델 기반 분류기로 승인 결정을 자동화하는 auto...",
+    "date": "2026-03-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27865",
+    "title": "Expect - 에이전트가 실제 브라우저에서 코드를 테스트하는 도구",
+    "description": "- 코드 변경 사항을 분석해 실제 브라우저 기반 테스트 플랜을 자동 생성 및 실행하는 CLI  \r\n- Claude 또는 Codex를 에이전트 백엔드로 선택 가능...",
+    "date": "2026-03-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27863",
+    "title": "장기 실행 애플리케이션 개발을 위한 하네스 설계",
+    "description": "- Anthropic이 프론트엔드 디자인 품질 향상과 장기 자율 코딩이라는 두 가지 문제를 동시에 해결하기 위해 GAN에서 영감을 받은 멀티 에이전트 구...",
+    "date": "2026-03-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27859",
+    "title": "gitagent - AI 에이전트 정의 및 관리를 위한 Git 기반 표준",
+    "description": "- Git Repo를 클론 하는 것만으로 에이전트를 구성 가능하며, 버전 관리/협업/컴플라이언스 기능을 내장  \r\n- Claude Code, OpenAI, CrewAI, Lyzr ...",
+    "date": "2026-03-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27838",
+    "title": "Cloudflare Dynamic Worker Loader - 더 빠른 AI 에이전트 샌드박스",
+    "description": "- AI 에이전트의 코드 실행을 위한 경량 샌드박스, 컨테이너 대비 100배 빠른 기동 속도와 10~100배 높은 메모리 효율 제공  \r\n- V8 JavaScript 엔...",
+    "date": "2026-03-25"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27821",
+    "title": "Dozzle - 컨테이너 실시간 로그 뷰어",
+    "description": "- Docker, Swarm, K8s 등의 컨테이너 로그를 실시간으로 모니터링하기 위한 경량 웹앱  \r\n- 로그 파일을 저장하지 않고 라이브 스트리밍 전용 구조...",
+    "date": "2026-03-25"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27802",
+    "title": "emulate - 로컬에서 GitHub·Vercel·Google API를 완전 복제해 실행하기",
+    "description": "- Vercel에서 만든 CI 또는 네트워크 차단 환경용 로컬 API 에뮬레이터  \r\n- 단순 mock이 아니라 실제 프로덕션과 동일한 상태·응답 구조를 가짐  ...",
+    "date": "2026-03-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27784",
+    "title": "NixOS를 사랑하는 이유",
+    "description": "- Nix 패키지 관리자를 기반으로 한 NixOS는 시스템 전체를 코드로 정의하고, 언제든 결정적·재현 가능한 상태로 복원할 수 있는 구조를 가짐\n- 모...",
+    "date": "2026-03-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27779",
+    "title": "81,000명이 말한 AI의 진짜 쓰임새 (Anthropic “81k Interviews”)",
+    "description": "최근 Anthropic이 공개한 “81k Interviews” 프로젝트는 지금까지의 AI 논의에서 빠져 있던 중요한 질문을 던집니다. 우리는 AI를 이야기할 때 AGI,...",
+    "date": "2026-03-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27778",
+    "title": "최적화의 정석: 롤러코스터 타이쿤 내부 들여다 보기",
+    "description": "- 1999년작 RollerCoaster Tycoon은 거의 전부 어셈블리어로 작성된 시뮬레이션 게임으로, 수천 명의 손님을 실시간으로 처리하면서도 안정적인 성...",
+    "date": "2026-03-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27771",
+    "title": "세 가지 유형의 나쁜 매니저",
+    "description": "- 실리콘밸리에서 실제로 겪은 세 가지 유형의 나쁜 매니저(The Artist, The Dictator, The Knife)를 통해 매니저와 리더의 차이를 분석  \r\n- The ...",
+    "date": "2026-03-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27770",
+    "title": "여백 만들기: 덜 하는 것이 위대함을 만드는 방법",
+    "description": "- 집중(Focus) 은 스타트업과 대기업 모두에게 주어지는 단 하나의 조언이지만, 그 실질적 의미는 \"대부분의 일을 멈추는 것\"에서 시작됨  \r\n- 부...",
+    "date": "2026-03-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27759",
+    "title": "도그푸딩에 지쳤다면, 자기 회사 고객센터에 직접 전화해 보세요",
+    "description": "- 자사 제품을 직접 사용하는 도그푸딩은 테크 업계의 오랜 원칙이지만 실제 고객의 불만 경험까지 체험하는 데는 역부족  \r\n- 대기업의 고객센터 ...",
+    "date": "2026-03-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27756",
+    "title": "gstack - Claude Code로 만드는 가상 엔지니어링 팀",
+    "description": "- YC CEO Garry Tan이 만들어서 사용하는 AI로 구성된 오픈소스 소프트웨어 팩토리로 한 명이 20명 팀처럼 일하게 구성  \r\n- Think → Plan → Build...",
+    "date": "2026-03-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27750",
+    "title": "Impeccable - AI 하네스가 더 디자인 잘하게 만들기",
+    "description": "- Claude Code, Codex 등의 프론트엔드 품질 향상을 위해 디자인 어휘와 명령어 체계를 제공하는 오픈소스 스킬 패키지  \r\n- Anthropic의 `fronten...",
+    "date": "2026-03-23"
+  },
+  {
     "url": "https://news.hada.io/topic?id=27718",
     "title": "생각 — 빠르게, 느리게, 그리고 인공지능으로: AI가 인간의 사고 방식을 어떻게 재구성하고 있는가",
     "description": "# Thinking—Fast, Slow, and Artificial  \r\n### AI는 도구가 아니라 ‘세 번째 사고 시스템’이라는 연구  \r\n  \r\n- 2026년 1월, 펜실베이니아대 와튼...",
@@ -51,6 +177,12 @@
     "url": "https://news.hada.io/topic?id=27570",
     "title": "OpenGenerativeUI - AI기반 생성형 UI 프레임워크 오픈소스",
     "description": "- Claude가 출시한 인터랙티브 시각 자료 생성 기능을 그대로 구현  \r\n- 단순 텍스트 응답이 아닌 차트, 다이어그램, 시각화 등의 자료를 자동 생...",
+    "date": "2026-03-17"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27569",
+    "title": "NVIDIA NemoClaw - OpenClaw + Nemotron + OpenShell",
+    "description": "- OpenClaw에 프라이버시 및 보안 제어를 추가하는 오픈소스 스택, 단일 명령어로 상시 작동하는 자율 진화형 AI 에이전트를 설치해서 실행 가능  ...",
     "date": "2026-03-17"
   },
   {
