@@ -1,5 +1,89 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=28224",
+    "title": "Show GN: Micro Diffusion - 공부를 위한 작은 Diffusion 모델",
+    "description": "안녕하세요, 약 한 달 전에 텍스트 Diffusion 모델을 처음부터 구현해서 공개했습니다. 최근 Geeknews를 보다가 문득 생각나서 이제야 올려봅니다....",
+    "date": "2026-04-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28208",
+    "title": "LLM-Wiki - LLM을 활용하여 개인 지식저장소 구축 하기",
+    "description": "- Andrej Karpathy가 최근 자신은 코드보다 개인 지식 저장소 구축에 토큰을 더 많이 쓰고 있다며, 이 LLM 기반 위키를 생성하기 위한 아이디어 가...",
+    "date": "2026-04-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28182",
+    "title": "Marc Andreessen은 자기성찰에 대해 잘못 이해하고 있다",
+    "description": "- 벤처투자자 마카앤드리슨이 자기성찰(Introspection)을 20세기 초 Freud가 만든 개념으로 규정하며 이를 부정했으나, 이는 수천 년의 철학 전통...",
+    "date": "2026-04-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28106",
+    "title": "MiniStack — 무료 오픈소스 로컬 AWS 에뮬레이터",
+    "description": "- AWS 환경을 로컬에서 완전히 재현할 수 있는 무료 오픈소스 에뮬레이터로, 유료화된 LocalStack의 대체재로 개발됨\n- 34개 AWS 서비스를 단일 포...",
+    "date": "2026-04-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28101",
+    "title": "Hermes Agent — 경험으로부터 스킬을 생성·개선하는 자기 학습형 자율 AI 에이전트",
+    "description": "- 자기 학습 루프를 내장한 자율 에이전트로, 사용 중 스킬을 스스로 생성하고 개선하며, 세션 간에 사용자 모델을 점진적으로 심화시킴  \r\n- IDE...",
+    "date": "2026-04-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28097",
+    "title": "Show GN: AI와 대화하며 \"나\" 를 인터뷰 하는 서비스 - SelfView",
+    "description": "https://selfview.me/  \r\n  \r\nAI 와 대화하며 자기 자신을 인터뷰 해보고  \r\n인터뷰를 예쁜 아티클로 받아보실 수 있습니다.  \r\n  \r\n(아티클은 기...",
+    "date": "2026-04-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28050",
+    "title": "Show GN: 법망 - PostgreSQL 기반 한국 법령 전체를 JSON으로 제공하는 에이전트용 API",
+    "description": "- XML, HWP, PDF 사전 파싱 — 표 데이터 포함 모든 출력 JSON  \r\n- 국가법령정보센터 제공 법령 99.9%+ 수록, 매주 토요일 최신 동기화  \r\n- Postg...",
+    "date": "2026-03-31"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28033",
+    "title": "Wikipedia, AI 글쓰기 전면 금지, 40대 2 표결의 배경",
+    "description": "위키피디아(Wikipedia)가 AI(LLM)를 이용한 글쓰기와 수정을 전면 금지하는 정책을 도입.  \r\n수백 명의 자원봉사 에디터들이 참여한 토론 끝에 40...",
+    "date": "2026-03-31"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28032",
+    "title": "AI가 두려워 직업을 바꾼다, 미국 청년들의 커리어 피벗 현장",
+    "description": "AI 기술 발전으로 인한 일자리 불안이 미국 청년들의 실제 커리어 선택을 크게 바꾸고 있다는 내용.   \r\n아직 커리어가 유연한 젊은 세대에서 AI가...",
+    "date": "2026-03-31"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28023",
+    "title": "OpenAI의 Claude Code용 Codex 플러그인",
+    "description": "- 이제 클로드 코드안에서 OpenAI Codex를 직접 호출해 코드 리뷰 및 작업 위임 가능  \r\n- `/codex:review`, `/codex:adversarial-review` 등 슬래...",
+    "date": "2026-03-31"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28001",
+    "title": "Pretext – DOM 없이 텍스트 높이를 측정하는 순수 JS 레이아웃 라이브러리",
+    "description": "브라우저에서 텍스트가 몇 줄을 차지하는지 알아내는 건 생각보다 까다롭다. 보통은 getBoundingClientRect나 offsetHeight를 쓰는데, 이 방법들은...",
+    "date": "2026-03-30"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27998",
+    "title": "Keploy - 트래픽 기반 자동 API 테스트 생성기",
+    "description": "- 실제 사용자 트래픽에서 API 및 통합 테스트를 자동 생성하는 개발자용 도구   \r\n- 코드 수정 없이 `keploy record`로 실행하면 eBPF로 네트워크...",
+    "date": "2026-03-30"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27995",
+    "title": "Korean Law MCP - 대한민국 법령 검색·조회·분석 도구",
+    "description": "- 대한민국의 전체 법령시스템을 도구화해 AI 어시스턴트나 스크립트에서 바로 호출 가능  \r\n- 64개 법률 도구 — 법령, 판례, 행정규칙, 자치법규,...",
+    "date": "2026-03-30"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=27969",
+    "title": "Harness — Claude Code 에이전트 팀 & 스킬 아키텍트 플러그인",
+    "description": "- \"하네스 구성해줘\" 한 마디로 도메인에 맞는 전문 에이전트팀을 설계하고, 에이전트가 사용할 스킬까지 자동 생성해주는 메타 스킬  \r\n- 6가지 ...",
+    "date": "2026-03-29"
+  },
+  {
     "url": "https://news.hada.io/topic?id=27933",
     "title": "Vercel의 json-render - Generative UI 프레임워크",
     "description": "- AI가 사용자 프롬프트를 받아 JSON 구조를 생성하고, 이를 미리 정의된 컴포넌트로 렌더링하는 생성형 UI 프레임워크   \r\n- 프롬프트로 부터 동...",
