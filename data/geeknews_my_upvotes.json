@@ -1,8 +1,122 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=28403",
+    "title": "프랑스, 미국 기술 의존 줄이기 위해 Windows 대신 Linux로 전환",
+    "description": "프랑스 정부가 Microsoft Windows를 사용하는 일부 공공 부문 컴퓨터를 Linux로 전환해 미국 기술 의존도를 줄이고 디지털 주권을 강화하려는 계획...",
+    "date": "2026-04-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28376",
+    "title": "Claude Code, 에이전트가 필요할 때 깨워주는 Monitor Tool 기능 도입",
+    "description": "폴링으로 처리하는 대신, 클로드가 백그라운드 프로세스를 생성하고 표준 출력을 처리 상황 발생시 스레드를 차단하지 않고 대화창으로 스트리밍 \"...",
+    "date": "2026-04-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28372",
+    "title": "Show GN: 누구나 바로 이용 가능, 마이리얼트립 파트너 API & MCP 서버 공개",
+    "description": "안녕하세요, 마이리얼트립 마케팅파트너 팀입니다. 마케팅파트너 팀은 그동안 여행 크리에이터 중심의 어필리에이트 생태계를 만들어왔습니다. 이...",
+    "date": "2026-04-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28364",
+    "title": "strix - 앱의 취약점을 찾아 수정하는 오픈소스 AI 해커",
+    "description": "자율 AI 에이전트 방식으로 실제 해커처럼 코드를 직접 실행하고, 취약점을 발견한 뒤 실제 PoC(개념 증명) 로 검증하는 오픈소스 보안 테스트 도...",
+    "date": "2026-04-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28353",
+    "title": "Show GN: legalize-kr 법령을 코드처럼, 판례도 코드처럼. 모든 법령과 판례는 Markdown 파일, 모든 개정과 판결...",
+    "description": "legalize-kr가 무엇인가요? legalize-kr은 법제처의 국가법령정보 공동활용이 제공하는 대한민국의 법령 및 판례들을 Markdown + Git 히스토리로 ...",
+    "date": "2026-04-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28341",
+    "title": "AX팀을 만드는 순간, 당신의 조직은 AX에 실패한다",
+    "description": "AX 추진팀 신설은 계층을 줄여야 할 때 계층을 하나 더 쌓는 역설이다. MIT NANDA 연구에서 성공한 5%는 중앙 AI 랩이 아니라 현장 관리자가 주도...",
+    "date": "2026-04-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28335",
+    "title": "webreel - 브라우저 데모를 MP4 영상으로 자동 녹화하는 CLI 도구",
+    "description": "JSON 설정 파일에 클릭·타이핑·드래그 등 액션을 정의하면 헤드리스 Chrome이 자동으로 구동되어 ~60fps로 캡처 후 ffmpeg으로 인코딩 커서 애니메...",
+    "date": "2026-04-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28326",
+    "title": "Claude Managed Agents - 프로덕션 속도를 10배 더 빠르게",
+    "description": "클라우드 환경에서 대규모 에이전트를 구축·배포할 수 있는 조합형 API 제품군으로, 프로토타입을 며칠 내 프로덕션으로 전환 가능 보안 샌드박싱,...",
+    "date": "2026-04-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28324",
+    "title": "코드를 읽기 전에 실행하는 Git 명령들",
+    "description": "새로운 코드베이스를 접할 때 Git 이력 분석으로 프로젝트의 구조와 위험 구역을 파악해 효율적인 탐색 방향을 설정 최근 1년간 가장 자주 변경된 ...",
+    "date": "2026-04-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28323",
+    "title": "GBrain — 오픈소스 개인 지식 베이스",
+    "description": "YC CEO Garry Tan이 Karpathy의 LLMWiki 스타일로 만든 개인 지식 관리(Knowledge Brain) 도구 CLI/라이브러리로도 사용 가능하지만, OpenClaw와 ...",
+    "date": "2026-04-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28312",
+    "title": "macOS에 숨어있던 49일짜리 시한폭탄 — TCP 네트워킹이 완전히 멈추는 커널 버그 전말",
+    "description": "macOS XNU 커널에서 정확히 49일 17시간 2분 47초 연속 가동 후 TCP 네트워킹이 완전히 마비되는 버그가 발견됐다. 원인은 커널 내부 TCP 타임스탬...",
+    "date": "2026-04-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28305",
+    "title": "S3 Files와 변화하는 S3의 모습",
+    "description": "대규모 데이터 이동의 비효율을 줄이기 위해, S3 데이터를 파일 시스템처럼 직접 접근할 수 있게 하는 S3 Files가 도입됨 이 기능은 Amazon EFS와 ...",
+    "date": "2026-04-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28294",
+    "title": "agent-skills - AI 코딩 에이전트를 위한 프로덕션급 엔지니어링 스킬 모음",
+    "description": "AI 코딩 에이전트가 스펙·테스트·보안 리뷰를 건너뛰는 문제를 해결하기 위해, 구글 클라우드 AI 디렉터 Addy Osmani가 시니어 엔지니어 수준의 워...",
+    "date": "2026-04-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28293",
+    "title": "Anthropic의 최강 보안 AI \"Claude Mythos\", 일반 공개 대신 선택된 파트너에게만 제한 배포",
+    "description": "Anthropic이 신규 모델 Claude Mythos를 일반에 공개하지 않고, \"프로젝트 글래스윙(Project Glasswing)\" 이라는 제한적 프리뷰 프로그램을 통해 ...",
+    "date": "2026-04-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28283",
+    "title": "멀티 에이전트 오케스트레이션은 왜 잘 안 되는가?",
+    "description": "최근 AI로 “제로 휴먼 컴퍼니” 를 운영할 수 있게 해주는 ‘Paperclip’ 프로젝트가 이슈가 되었는데요. 에이전트들을 회사 조직도처럼 구성해서 CEO...",
+    "date": "2026-04-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28246",
+    "title": "Awesome Design.MD - 유명 웹사이트 디자인 시스템을 내 사이트에 적용하기",
+    "description": "DESIGN.md는 Google Stitch가 도입한 개념으로, AI 에이전트가 읽고 일관된 UI를 생성하기 위한 텍스트 디자인 문서 Figma, JSON 스키마, 별도 툴...",
+    "date": "2026-04-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28242",
+    "title": "Google AI Edge Gallery - 완전 오프라인 LLM 갤러리 앱 오픈소스",
+    "description": "온디바이스 생성형 AI 실행에 특화된 iOS/안드로이드 앱으로, 인터넷 연결 없이 완전 오프라인·프라이빗 환경에서 LLM을 구동 Gemma 4 패밀리 공식...",
+    "date": "2026-04-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28237",
+    "title": "기계는 괜찮아요. 나는 우리가 걱정됩니다.",
+    "description": "AI 도구가 연구 전 과정을 자동화하면서 이해 없이 결과만 생산하는 연구자가 늘어나며, 진짜 위기는 기술의 한계가 아니라 인간의 학습 과정 자체...",
+    "date": "2026-04-06"
+  },
+  {
     "url": "https://news.hada.io/topic?id=28224",
     "title": "Show GN: Micro Diffusion - 공부를 위한 작은 Diffusion 모델",
     "description": "안녕하세요, 약 한 달 전에 텍스트 Diffusion 모델을 처음부터 구현해서 공개했습니다. 최근 Geeknews를 보다가 문득 생각나서 이제야 올려봅니다....",
+    "date": "2026-04-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28209",
+    "title": "goose - Block이 만든 오픈소스 로컬 실행 자율 AI 개발 에이전트",
+    "description": "프로젝트 생성, 코드 실행·수정·테스트, 디버깅, 워크플로 오케스트레이션, 외부 API 연동까지 처음부터 끝까지 자율 수행하는 로컬 실행 AI 에이...",
     "date": "2026-04-05"
   },
   {
