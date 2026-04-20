@@ -1,5 +1,113 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=28650",
+    "title": "Is Your Site Agent-Ready? - 당신의 사이트는 에이전트에 대응하나요?",
+    "description": "Cloudflare가 만든 도구로, 자신의 웹사이트가 에이전트에 얼마나 적합한지 점수로 표시 AI 에이전트 대응 수준을 진단하고 인증·콘텐츠 포맷·접근...",
+    "date": "2026-04-18"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28645",
+    "title": "Gemma Gem - 브라우저에서 Google Gemma 4 모델을 완전 온디바이스로 실행하는 Chrome 확장",
+    "description": "Google의 Gemma 4 모델을 WebGPU 기반으로 완전 온디바이스 실행해서 브라우저 안에 상주하는 개인 AI 어시스턴트로 활용 API 키·클라우드·외부 데...",
+    "date": "2026-04-18"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28640",
+    "title": "Anthropic, Claude Design 공개",
+    "description": "Claude Opus 4.7 비전 모델 기반으로 디자인, 프로토타입, 슬라이드, 원페이저 등 완성도 높은 시각 작업물을 제작하는 협업형 시각 디자인 도구 ...",
+    "date": "2026-04-18"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28609",
+    "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+    "description": "알리바바 Qwen 팀이 2026년 4월에 오픈소스로 공개한 대규모 언어모델입니다. MoE(Mixture-of-Experts) 아키텍처를 사용합니다. MoE란 모델 내부에...",
+    "date": "2026-04-17"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28600",
+    "title": "pi-autoresearch: Karpathy의 \"AI 자율 실험\" 아이디어를 범용화한 오픈소스",
+    "description": "아이디어를 시도하고 → 측정하고 → 개선되면 유지, 아니면 버리고 → 영원히 반복한다. pi-autoresearch는 터미널 AI 코딩 에이전트 pi의 확장으로,...",
+    "date": "2026-04-16"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28584",
+    "title": "SuperGemma4 - 구글 Gemma 4 26B의 비검열/속도개선/양자화 모델",
+    "description": "Gemma 4 26B IT를 기반으로 애플 실리콘 MLX 최적화/4비트 양자화한 텍스트 전용 모델로, 약 13GB 크기 원본보다 똑똑하고, 동일 머신에서 더 빠르...",
+    "date": "2026-04-16"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28550",
+    "title": "BOJ 서비스 종료",
+    "description": "본문 일부를 옮깁니다. <내용> 2010년 3월부터 시작된 BOJ는 2026년 4월 28일을 끝으로 서비스를 종료합니다. 그동안 16년간 함께해주신 모든 이용...",
+    "date": "2026-04-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28546",
+    "title": "Ask GN: Ralph Loop이라는 허상에 대해 어떻게 생각하시나요?",
+    "description": "몇달전부터 한국 개발 바닥을 보다보면 \"토큰 사용량이 곧 실력이다\"와 같은 이상한 주장들이 돌아다니더군요. 그러면서 잘 만든 PRD 하나면 AI가 ...",
+    "date": "2026-04-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28541",
+    "title": "바이브 코딩으로 만든 환자 관리 앱의 보안 참사",
+    "description": "의료기관 직원이 AI 코딩 에이전트로 환자 관리 시스템을 직접 제작하며, 환자 데이터가 인터넷에 암호화 없이 노출됨 진료 대화 녹음이 두 개의 A...",
+    "date": "2026-04-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28538",
+    "title": "Claude Code(~100시간) vs. Codex(~20시간) 비교",
+    "description": "14년 경력의 시니어 엔지니어가 8만 줄 규모의 Python/TypeScript 프로젝트에서 Claude Code(Opus 4.6)와 Codex(GPT-5.4)를 실전 비교한 경험담 Cl...",
+    "date": "2026-04-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28533",
+    "title": "Claude Code Routines 공개",
+    "description": "일정, API 호출, GitHub 이벤트에 따라 자동 실행되는 클라우드 기반 코드 자동화 기능으로, Anthropic 인프라에서 동작 루틴은 프롬프트, 저장소,...",
+    "date": "2026-04-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28530",
+    "title": "구글, \"백버튼 하이재킹\"을 스팸으로 지정",
+    "description": "사용자가 브라우저의 뒤로 가기 버튼을 눌렀을 때 원래 페이지로 돌아가지 못하게 하거나, 원치 않는 광고·추천 페이지로 이동시키는 행위 이런 ‘...",
+    "date": "2026-04-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28517",
+    "title": "tmux를 보기 좋고 사용하기 쉽게 만드는 방법 (2024)",
+    "description": "~/.tmux.conf 설정 파일을 통해 키 바인딩, 색상, 상태바, 마우스 동작 등을 자유롭게 조정할 수 있음 기본 Prefix 키 C-b를 C-a로 변경하고, Caps...",
+    "date": "2026-04-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28511",
+    "title": "damn-my-slow-kt - KT 인터넷 SLA 미달 자동 측정 & 요금 감면 신청 도구",
+    "description": "KT의 SLA(최저속도 보장제도)를 활용해 매일 자동으로 속도를 측정하고, 계약 속도의 50% 미만일 경우 자동으로 이의신청까지 대행 KT는 매일 측정...",
+    "date": "2026-04-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28502",
+    "title": "소프트웨어 팀의 경제학: 대부분의 엔지니어링 조직이 재무적으로 ‘눈을 가린’ 이유",
+    "description": "대부분의 엔지니어링 조직이 팀 단위의 비용과 가치 창출을 수치로 파악하지 못한 채 운영되고 있으며, 이는 재무적 비효율로 이어짐 8명 규모 팀...",
+    "date": "2026-04-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28498",
+    "title": "누군가 워드프레스 플러그인 30개를 구매하고 그 모든 플러그인에 백도어를 심었음",
+    "description": "동일한 공격자가 30개 이상의 WordPress 플러그인을 매입한 뒤, 첫 커밋에서 백도어 코드를 삽입해 공급망을 감염시킴 악성 코드는 약 8개월간 잠...",
+    "date": "2026-04-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28464",
+    "title": "pgmicro - SQLite 기반으로 만든 인-프로세스 PostgreSQL",
+    "description": "PostgreSQL SQL을 SQLite 바이트코드로 직접 컴파일하는 인메모리 임베디드 데이터베이스 AI 에이전트 환경에서 급증하는 일시적·소규모 데이터베...",
+    "date": "2026-04-13"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28430",
+    "title": "Meta의 HyperAgents — 에이전트가 스스로 자신의 하네스를 설계할 때",
+    "description": "Meta와 UBC가 공동 발표한 HyperAgents는 작업 수행 코드뿐 아니라 개선 메커니즘 자체까지 스스로 수정하는 자기참조적 AI 에이전트 프레임워크 ...",
+    "date": "2026-04-12"
+  },
+  {
     "url": "https://news.hada.io/topic?id=28403",
     "title": "프랑스, 미국 기술 의존 줄이기 위해 Windows 대신 Linux로 전환",
     "description": "프랑스 정부가 Microsoft Windows를 사용하는 일부 공공 부문 컴퓨터를 Linux로 전환해 미국 기술 의존도를 줄이고 디지털 주권을 강화하려는 계획...",
