@@ -1,5 +1,131 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=28891",
+    "title": "mini-swe-agent - 100줄짜리 AI 에이전트로 GitHub 이슈 해결 및 커맨드라인 지원",
+    "description": "SWE-bench와 SWE-agent를 만든 Princeton·Stanford 팀이 개발한 최소주의 AI 코딩 에이전트 약 100줄의 Python 코드로 구성된 초경량 AI 소프트웨...",
+    "date": "2026-04-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28868",
+    "title": "Codex, Browser use로 웹사이트 구현 및 검증 지원",
+    "description": "Browser Use 플러그인으로 코덱스앱 내부에서 브라우저를 실행해 사용자가 실제로 클릭하듯 앱을 테스트 가능해짐 코덱스가 프론트엔드 코드를 빌...",
+    "date": "2026-04-25"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28867",
+    "title": "Google, Anthropic에 최대 400억 달러 (약 59조원) 투자",
+    "description": "Google이 Anthropic에 즉시 100억 달러를 현금 투자하고, 성과 목표 달성 시 추가 300억 달러를 투입하는 대규모 투자를 발표, 기업가치는 3,500억...",
+    "date": "2026-04-25"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28864",
+    "title": "노르웨이, 16세 미만 소셜미디어 금지 추진",
+    "description": "16세 미만 아동의 social media 접근 제한 법안이 Norway에서 추진되고 있으며, 아이들이 온라인에서 겪을 수 있는 잠재적 해악 우려에 대응하는 ...",
+    "date": "2026-04-25"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28861",
+    "title": "DESIGN.md — AI 코딩 도구를 위한 디자인 시스템 단일 파일 포맷 (한국어 정리)",
+    "description": "Google Labs가 Stitch 프로젝트에서 제안한 DESIGN.md 포맷이 흥미로워서 며칠 동안 스펙을 뜯어보다가, 혼자 보고 끝내기 아까워서 한국어로 풀어...",
+    "date": "2026-04-25"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28840",
+    "title": "Show GN: Piko – 네이버 플레이스 URL 하나로 가게 홈페이지 즉시 생성",
+    "description": "네이버 플레이스(지도) URL 하나만 붙여넣으면 가게 홈페이지가 딸깍 완성되는 서비스를 만들었습니다. 배경 소상공인 대부분이 네이버 플레이스에...",
+    "date": "2026-04-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28836",
+    "title": "Palantir 직원들이 자신들이 나쁜 편인지 고민하기 시작함",
+    "description": "이민 집행용 소프트웨어와 군사 지원 업무가 겹치면서, 내부에서는 시민적 자유를 지킨다는 기존 정체성보다 남용을 가능하게 하는 위치에 더 가까...",
+    "date": "2026-04-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28831",
+    "title": "Zed의 병렬 에이전트 기능 소개",
+    "description": "같은 창 안에서 여러 agent 스레드를 동시에 실행하고 조율할 수 있게 바뀌었고, 새 Threads Sidebar에서 각 스레드의 폴더·저장소 접근 범위를 제...",
+    "date": "2026-04-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28830",
+    "title": "GStack: Y Combinator CEO가 만든 AI 코딩 에이전트 프레임워크 유투브소개",
+    "description": "YC(Y Combinator) 대표이자 엔지니어 출신인 개리 탄(Garry Tan)이 자신의 AI 코딩 워크플로우를 오픈소스로 공개했습니다. GStack은 Claude Code...",
+    "date": "2026-04-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28824",
+    "title": "기술 부채, 인지 부채, 의도 부채",
+    "description": "LLM이 코드를 대량 생산하는 환경에서는 코드 자체의 문제만이 아니라 팀의 공유 이해와 시스템 목표 기록까지 함께 약해지며, 이를 기술 부채·인...",
+    "date": "2026-04-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28808",
+    "title": "vLLM Recipes 개편 - 모델+하드웨어 조합별 설정을 딸각 한방으로",
+    "description": "recipes.vllm.ai가 대폭 개편되었습니다. vLLM 으로 \"모델 X를 하드웨어 Y에서 어떻게 돌리지?\"에 대한 답을 인터랙티브하게 얻을 수 있습니다. 주...",
+    "date": "2026-04-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28800",
+    "title": "Show GN: 카톡 답장 귀찮아서, 폰 안에서 돌아가는 AI 자동응답을 만들었습니다",
+    "description": "카톡 답장은 귀찮은데, AI 자동응답을 붙이자니 대화 내용이 외부 서버로 나가는 건 찝찝했습니다. 그래서 카톡 자동답장 도우미를 만들었습니다. ...",
+    "date": "2026-04-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28793",
+    "title": "kumo - Go로 작성된 경량 AWS 서비스 에뮬레이터",
+    "description": "로컬 개발 및 CI/CD 테스트에서 실제 AWS 없이도 빠르게 호환 환경을 구성 가능 단일 바이너리로 가볍게 테스트 환경을 꾸밀수 있고, Docker 기반 ...",
+    "date": "2026-04-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28777",
+    "title": "Garry Tan의 \"Skillify\" — AI 에이전트의 실패를 영구적 구조 수정으로 바꾸는 방법론",
+    "description": "Y Combinator 대표 Garry Tan이 자신의 AI 에이전트 운용 경험을 바탕으로 제안한 \"Skillify\"라는 에이전트 품질 관리 방법론에 대한 글입니다. 1...",
+    "date": "2026-04-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28769",
+    "title": "Tim Cook의 완벽한 타이밍",
+    "description": "0에서 1 창조보다 이미 만들어진 체계를 확장하고 운영하는 데 강점을 보인 리더십 아래, Apple은 15년 동안 매출 303%, 이익 354%, 기업가치 1,25...",
+    "date": "2026-04-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28763",
+    "title": "ChatGPT Images 2.0 공개",
+    "description": "OpenAI가 이미지 생성 모델의 차세대 버전을 공개, 소개글 자체에 문자로 적지 않고 Images 2.0 이용해서 생성한 이미지에 넣은 텍스트로만 소개함...",
+    "date": "2026-04-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28749",
+    "title": "프로덕션 환경에서 바이브 코딩을 책임감 있게 하는 법 -  Vibe coding in prod | Code w/ Claude",
+    "description": "Anthropic의 코딩 에이전트 연구자 Eric이 바이브 코딩(AI에게 코드 작성을 전적으로 맡기는 방식)을 실제 서비스 환경에서 어떻게 안전하게 활용...",
+    "date": "2026-04-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28735",
+    "title": "2027년부터 EU에서 판매되는 모든 휴대전화에 교체 가능한 배터리 의무화",
+    "description": "2027년 2월 18일부터 EU에서 판매되는 스마트폰과 태블릿은 사용자가 전문 도구나 외부 도움 없이 배터리를 직접 제거·교체할 수 있도록 설계돼야 ...",
+    "date": "2026-04-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28732",
+    "title": "Cherri - 애플 단축어를 코드로 작성하는 프로그래밍 언어",
+    "description": "Siri Shortcuts를 텍스트 코드로 작성하면 실행 가능한 Shortcut 파일로 직접 컴파일해주는 도메인 특화 언어 단축어의 액션과 1대1 매핑으로, 컴...",
+    "date": "2026-04-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28701",
+    "title": "모든 공개 Notion 페이지는 모든 편집자들의 이메일 주소를 노출하고 있음",
+    "description": "공개 Notion 페이지에서 편집자 UUID가 인증 없이 노출되며, 한 번의 POST 요청으로 이름·이메일·프로필 사진을 얻을 수 있음 공개된 회사 위키나 ...",
+    "date": "2026-04-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=28653",
+    "title": "AI 코딩 시대, 성장이 멈추는 개발자의 뇌에서 일어나는 일",
+    "description": "TL;DR; AI를 잘 쓰는 핵심 역량은 출력물의 품질을 판단하고 교정하는 능력이며, 이 능력은 AI에 의존할수록 오히려 약화됨 Bjork의 \"바람직한 어...",
+    "date": "2026-04-18"
+  },
+  {
     "url": "https://news.hada.io/topic?id=28650",
     "title": "Is Your Site Agent-Ready? - 당신의 사이트는 에이전트에 대응하나요?",
     "description": "Cloudflare가 만든 도구로, 자신의 웹사이트가 에이전트에 얼마나 적합한지 점수로 표시 AI 에이전트 대응 수준을 진단하고 인증·콘텐츠 포맷·접근...",
