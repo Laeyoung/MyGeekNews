@@ -1,8 +1,134 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=29607",
+    "title": "No Title",
+    "description": "개발 서버 실행 중 발생하는 서버 로그, 브라우저 콘솔, 네트워크 요청, 자동 스크린샷, 사용자 인터랙션을 하나의 타임스탬프 로그로 통합 캡처하...",
+    "date": "2026-05-18"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29586",
+    "title": "No Title",
+    "description": "포가튼 사가 (1997 한국 DOS RPG) 를 소스포팅 하기 동기 30년 전, 초등학교 때 처음 산 패키지 게임이 포가튼 사가 인생 첫 RPG, 자연스럽게 깊이...",
+    "date": "2026-05-17"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29576",
+    "title": "No Title",
+    "description": "3개월간 Claude/Anthropic으로 코딩했지만 repo 규모 작업에서 신뢰성이 낮아져 별도 감시 워크플로가 필요해짐 4.7 시기에는 실제 구현이 약 40%...",
+    "date": "2026-05-17"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29549",
+    "title": "No Title",
+    "description": "미첼 하시모토: \"지금 많은 기업이 심각한 AI 집단 광기에 빠져 있으며, 그들과 이성적인 대화를 나누는 것은 불가능하다\" 클라우드 인프라 자동화...",
+    "date": "2026-05-16"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29547",
+    "title": "No Title",
+    "description": "로컬 클론 필요없이 소스 리모트에서 타겟 리모트로 ref와 오브젝트를 직접 스트리밍하며, 로컬 디스크에 저장소를 체크아웃하지 않음 Relay 전송 ...",
+    "date": "2026-05-16"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29515",
+    "title": "No Title",
+    "description": "AI 도구를 실제로 사용해본 적 없는 시니어 의사결정자들이 조직의 AI 도입을 좌우하는 반면, 22세 주니어는 오후 만에 프로덕션 코드를 작성하고 ...",
+    "date": "2026-05-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29493",
+    "title": "No Title",
+    "description": "Anthropic의 개발자 컨퍼런스: 온라인과 오프라인으로 진행되며, 오프라인 행사는 샌프란시스코 5/6, 런던 5/19, 도쿄 6/10에 열림. 샌프란 행사에...",
+    "date": "2026-05-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29487",
+    "title": "No Title",
+    "description": "중국 주요 AI 연구소들을 직접 방문하고 연구자들과 대화한 경험을 바탕으로, 중미 AI 생태계의 문화적 차이와 그것이 모델 개발에 미치는 영향을 ...",
+    "date": "2026-05-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29486",
+    "title": "No Title",
+    "description": "AI 업계에서 제품, 워크플로, 기술적 우위가 빠르게 수렴하고 복제 가능해지면서, 기업의 조직 구조 자체가 가장 강력한 경쟁 해자로 부상 위대한 ...",
+    "date": "2026-05-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29452",
+    "title": "No Title",
+    "description": "소프트웨어 설계는 강의보다 실제 프로젝트에서 책임을 맡고 문제가 자기 일이 될 때 더 깊게 배워짐 Conway’s Law는 소프트웨어가 조직의 사회적 ...",
+    "date": "2026-05-13"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29445",
+    "title": "No Title",
+    "description": "python3 -m http.server의 한계를 넘어, 단일 바이너리 하나로 HTTP/S, WebDAV, SFTP, SMB, LDAP/S 등 다양한 프로토콜을 즉시 구동 가능한 파일 ...",
+    "date": "2026-05-13"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29428",
+    "title": "No Title",
+    "description": "Claude Code에 목표 기반 자동 반복 실행 기능인 /goal 추가 목표가 완료될 때까지 Claude가 여러 턴을 자동으로 이어서 실행 각 턴 종료 후 fast ...",
+    "date": "2026-05-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29416",
+    "title": "No Title",
+    "description": "AI를 사용하면 해당 작업 수행에 대한 학습량이 줄어드는 것은 분명하지만, 그것이 AI를 거부할 이유는 되지 못함 AI가 장기적으로 엔지니어의 역...",
+    "date": "2026-05-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29410",
+    "title": "No Title",
+    "description": "애플 실리콘 맥에서 로컬 AI 모델을 구동하는 추론 엔진으로, Apple의 MLX 프레임워크 기반 네이티브 Metal 컴퓨트 커널 활용 Ollama 대비 최대 4....",
+    "date": "2026-05-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29409",
+    "title": "No Title",
+    "description": "Vercel Labs가 공개한 Zig 기반 데스크톱 앱 셸로, 웹 프론트엔드를 맥/윈/리눅스용 네이티브 앱으로 만드는 프레임워크 시스템 WebView 사용 시 ...",
+    "date": "2026-05-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29408",
+    "title": "No Title",
+    "description": "Obsidian용 오픈소스 동기화 플러그인 Synch를 만들고 있습니다. Obsidian Sync 같은 경험을 오픈소스로 만들 수 있을까 해서 시작했습니다. 목표...",
+    "date": "2026-05-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29406",
+    "title": "No Title",
+    "description": "Anthropic Mythos는 curl 취약점 5개를 보고했지만 실제로는 1개만 남음 curl 보안팀 검토 결과 3개는 오탐, 1개는 일반 버그로 분류됨 확인된 취...",
+    "date": "2026-05-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29393",
+    "title": "No Title",
+    "description": "Vercel Claude Code 플러그인 설치 시 ~/.claude/vercel-plugin-device-id에 영구 UUID를 자동 생성. 알림 없음, 만료 없음, 갱신 없음. 매 세션마...",
+    "date": "2026-05-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29389",
+    "title": "No Title",
+    "description": "커맨드라인 퍼지 파인더 fzf는 투자 대비 효과가 즉각적이고 고유한 가치를 제공하지만, 많은 개발자가 설치만 하고 활용법을 모른 채 포기하는 도...",
+    "date": "2026-05-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29385",
+    "title": "No Title",
+    "description": "24GB 메모리의 M4 MacBook Pro에서 로컬 LLM을 실행해 기본적인 코딩 작업, 리서치, 계획 수립 등을 인터넷 연결 없이 수행할 수 있는 실용적 세팅...",
+    "date": "2026-05-11"
+  },
+  {
     "url": "https://news.hada.io/topic?id=29372",
     "title": "Anthropic, 금융 서비스에 특화된 AI 에이전트/스킬/커넥터 오픈소스 공개",
     "description": "Claude Cowork 플러그인 또는 Managed Agents API 두 가지 방식으로 동일한 에이전트를 실행할 수 있는 금융 서비스 워크플로우 자동화 레퍼런스 ...",
+    "date": "2026-05-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29364",
+    "title": "No Title",
+    "description": "초기부터 AWS를 지지했지만, *복잡한 과금 체계와 플랫폼 전반의 복잡성 등 누적된 불만으로 더 이상 AWS를 좋아하지 않게 됨 DynamoDB의 높은 비...",
     "date": "2026-05-11"
   },
   {
@@ -69,6 +195,12 @@
     "url": "https://news.hada.io/topic?id=29261",
     "title": "프로그래밍은 여전히 형편없다",
     "description": "\"AI가 일자리를 빼앗는 것이 아니라 경영진의 탐욕과 단기 성과주의가 업계를 무너뜨리고 있음\" 기술 업계의 실제 업무는 깔끔한 계획과 완벽한 생...",
+    "date": "2026-05-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29250",
+    "title": "No Title",
+    "description": "Google Search Console, Google Ads, Meta Ads 데이터에 직접 접근해 트래픽 분석, 낭비 광고비 탐지, 크리에이티브 피로도 진단, 메타 태그 수정...",
     "date": "2026-05-07"
   },
   {
