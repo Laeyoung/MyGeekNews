@@ -1,121 +1,235 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=29750",
+    "title": "소프트웨어가 헤드리스로 가는가?",
+    "description": "Salesforce가 헤드리스 제품 출시를 통해 UI가 아닌 데이터 계층이 가치의 중심이라고 베팅하면서, 에이전트 시대 SaaS의 방어력이 어디에 남는지...",
+    "date": "2026-05-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29748",
+    "title": "제품의 시대는 끝나고, 두뇌의 시대가 온다",
+    "description": "소프트웨어의 한계 생산비용이 0에 수렴하면서 구매 동기 자체가 변화 중이며, 직접 만들 수 없어서가 아니라 만들 시간이나 유지보수 의지가 없기...",
+    "date": "2026-05-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29745",
+    "title": "AI 보조 코딩에 대해 틀리는 열두 가지 방식",
+    "description": "AI 보조 코딩의 가치는 코드 줄 수, 티켓 수, 만족도 같은 쉬운 숫자로 환원하기 어렵고, 평가 방식에 따라 결론이 왜곡될 수 있음 코드 줄 수와 ...",
+    "date": "2026-05-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29744",
+    "title": "공격적인 AI 스크래퍼가 위키 운영을 꽤 힘들게 만들고 있음",
+    "description": "AI 스크래퍼 트래픽은 공개 위키의 비용과 안정성을 흔들며, 완화하지 않으면 인간 활동 전체보다 약 10배 많은 컴퓨팅 자원을 쓸 수 있음 봇은 GP...",
+    "date": "2026-05-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29728",
+    "title": "Google이 이제 우리를 싫어하는 것 같다",
+    "description": "Pokémon Central Wiki는 15년 넘게 이탈리아어 Pokémon 정보의 주요 출처였지만, 현재 Google 검색 결과에서 거의 사라짐 wiki.pokemoncentral.it...",
+    "date": "2026-05-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29724",
+    "title": "AI-native 조직 (잭 도시 트위터 창업자)",
+    "description": "잭 도시(Block CEO)의 회사 운영 철학 전환: 위계 조직에서 인텔리전스 조직으로 이 대담에서 잭 도시(Block, 옛 Square의 CEO)와 루로프 보타(Seq...",
+    "date": "2026-05-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29721",
+    "title": "Visa와 Mastercard 안녕: 유럽인 1.3억 명, 독자 결제망으로 전환 예정",
+    "description": "유럽의 결제 주권(sovereign payments) 확보를 목표로 Bizum, Bancomat, MB WAY, Vipps MobilePay가 프랑스 Wero와 결합해 1억 3천만 활성 사용자...",
+    "date": "2026-05-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29717",
+    "title": "Google의 AI가 조작되고 있다. 검색 거인은 조용히 반격 중",
+    "description": "AI Overviews와 ChatGPT 같은 AI 검색 답변은 단일 웹페이지나 게시물만으로도 건강·금융 같은 민감한 주제에서 편향될 수 있음 BBC 실험에서 개인...",
+    "date": "2026-05-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29715",
+    "title": "OpenShorts - 무료 오픈소스 클립 생성기 & AI UGC 비디오 제작 도구",
+    "description": "긴 영상을 9:16 세로형 바이럴 숏츠로 자동 변환하는 셀프 호스팅 오픈소스, TikTok·Reels·YouTube Shorts 제작 지원 세 가지 도구를 하나로 통합 ...",
+    "date": "2026-05-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29711",
+    "title": "Gemini CLI는 2026년 6월 18일부터 작동을 중단할 예정",
+    "description": "Gemini CLI는 터미널에서 Gemini를 쓰는 도구로 성장했지만, Google은 멀티 에이전트 흐름에 맞춰 Antigravity CLI로 역량을 통합함 Gemini CLI는 ...",
+    "date": "2026-05-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29693",
+    "title": "What's new in Chrome from Google I/O 2026",
+    "description": "Chrome 개발자 데브렐팀을 이끄는 Paul Kinlan이 발표한 이번 키노트는 지난 6개월간 웹 개발 환경에 일어난 급격한 변화와, Chrome이 준비 중인 ...",
+    "date": "2026-05-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29692",
+    "title": "Show GN: 알한글: macOS용 HWP/HWPX Quick Look, Thumbnail으로 미리보고 편집하는 앱",
+    "description": "안녕하세요. macOS용 HWP/HWPX 유틸리티 앱 알한글(Alhangeul)을 만들고 있습니다. 알한글은 Mac에서 .hwp, .hwpx 파일을 Finder와 기본 앱 흐름 ...",
+    "date": "2026-05-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29685",
+    "title": "SideQuick - 사이드 프로젝트를 끝까지 완주하게 돕는 도구",
+    "description": "작업을 퀘스트(quest) 단위로 쪼개고 진행 상황을 추적해, 사이드 프로젝트가 흐지부지되는 패턴을 막아주는 데스크톱 앱 제작자가 GitHub 레포 13...",
+    "date": "2026-05-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29682",
+    "title": "LLM의 지난 6개월을 5분 만에 보기",
+    "description": "2025년 11월은 최근 LLM 변화의 기준점이 됐고, 코딩 에이전트의 실용화와 노트북 실행 모델의 약진이 핵심이었음 Claude Sonnet 4.5 이후 GPT-5.1...",
+    "date": "2026-05-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29674",
+    "title": "Andrej Karpathy, Anthropic에 합류",
+    "description": "LLM 분야의 최전선에서 보내는 향후 몇 년은 특히 중요한 경험이 될 것이라고 생각합니다. 팀에 조인하여 다시 R&D에 참여하게 되어 기쁩니다. 교...",
+    "date": "2026-05-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29670",
+    "title": "Gemini 3.5 Flash",
+    "description": "Gemini 3.5 Flash는 프런티어급 지능과 실행 능력을 결합한 첫 Gemini 3.5 모델로, 에이전트와 코딩의 장기 작업을 겨냥함 Flash 시리즈의 속도를 ...",
+    "date": "2026-05-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29640",
+    "title": "Datatype - 텍스트를 차트로 변환하는 가변 폰트",
+    "description": "\"데이터를 타이포그래피로(data as type)\" 라는 컨셉으로, JS/이미지/렌더링 라이브러리 없이 텍스트만으로 차트 표시 OpenType 합자 치환을 활용...",
+    "date": "2026-05-19"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29639",
+    "title": "Codex의 Goals를 활용하는 법",
+    "description": "Goals는 Codex 스레드가 정의된 결과를 향해 여러 턴에 걸쳐 작업을 지속하도록 만드는 영속적 목표(persistent objective) 기능 단일 프롬프트로 ...",
+    "date": "2026-05-19"
+  },
+  {
     "url": "https://news.hada.io/topic?id=29607",
-    "title": "No Title",
+    "title": "dev3000 - AI 디버깅을 위한 웹 앱 개발 타임라인 통합 캡처 도구",
     "description": "개발 서버 실행 중 발생하는 서버 로그, 브라우저 콘솔, 네트워크 요청, 자동 스크린샷, 사용자 인터랙션을 하나의 타임스탬프 로그로 통합 캡처하...",
     "date": "2026-05-18"
   },
   {
+    "url": "https://news.hada.io/topic?id=29606",
+    "title": "AI와 함께 일하며 복리처럼 쌓아 성장하는 법",
+    "description": "AI와의 협업에서 컨텍스트 제공, 취향 설정, 검증 자동화, 위임 확대, 피드백 루프라는 다섯 가지 원칙을 체계적으로 정리한 실무 가이드 모든 작...",
+    "date": "2026-05-18"
+  },
+  {
     "url": "https://news.hada.io/topic?id=29586",
-    "title": "No Title",
+    "title": "Show GN: 30년전 RPG (포가튼사가) 소스 포팅 하기",
     "description": "포가튼 사가 (1997 한국 DOS RPG) 를 소스포팅 하기 동기 30년 전, 초등학교 때 처음 산 패키지 게임이 포가튼 사가 인생 첫 RPG, 자연스럽게 깊이...",
     "date": "2026-05-17"
   },
   {
     "url": "https://news.hada.io/topic?id=29576",
-    "title": "No Title",
+    "title": "Claude와 몇 달간 씨름한 뒤 Codex는 바이브 코더의 꿈처럼 느껴짐",
     "description": "3개월간 Claude/Anthropic으로 코딩했지만 repo 규모 작업에서 신뢰성이 낮아져 별도 감시 워크플로가 필요해짐 4.7 시기에는 실제 구현이 약 40%...",
     "date": "2026-05-17"
   },
   {
     "url": "https://news.hada.io/topic?id=29549",
-    "title": "No Title",
+    "title": "지금 많은 기업이 AI 집단 광기에 빠져 있다고 믿는다",
     "description": "미첼 하시모토: \"지금 많은 기업이 심각한 AI 집단 광기에 빠져 있으며, 그들과 이성적인 대화를 나누는 것은 불가능하다\" 클라우드 인프라 자동화...",
     "date": "2026-05-16"
   },
   {
     "url": "https://news.hada.io/topic?id=29547",
-    "title": "No Title",
+    "title": "git-sync - 로컬 체크아웃 없이 Git 리모트 간 ref를 직접 미러링하는 CLI 도구",
     "description": "로컬 클론 필요없이 소스 리모트에서 타겟 리모트로 ref와 오브젝트를 직접 스트리밍하며, 로컬 디스크에 저장소를 체크아웃하지 않음 Relay 전송 ...",
     "date": "2026-05-16"
   },
   {
     "url": "https://news.hada.io/topic?id=29515",
-    "title": "No Title",
+    "title": "경험은 이제 세금이다",
     "description": "AI 도구를 실제로 사용해본 적 없는 시니어 의사결정자들이 조직의 AI 도입을 좌우하는 반면, 22세 주니어는 오후 만에 프로덕션 코드를 작성하고 ...",
     "date": "2026-05-15"
   },
   {
     "url": "https://news.hada.io/topic?id=29493",
-    "title": "No Title",
+    "title": "Code w/ Claude에서 발표한 모든 것들",
     "description": "Anthropic의 개발자 컨퍼런스: 온라인과 오프라인으로 진행되며, 오프라인 행사는 샌프란시스코 5/6, 런던 5/19, 도쿄 6/10에 열림. 샌프란 행사에...",
     "date": "2026-05-14"
   },
   {
     "url": "https://news.hada.io/topic?id=29487",
-    "title": "No Title",
+    "title": "중국 AI 연구소 내부에서 얻은 교훈",
     "description": "중국 주요 AI 연구소들을 직접 방문하고 연구자들과 대화한 경험을 바탕으로, 중미 AI 생태계의 문화적 차이와 그것이 모델 개발에 미치는 영향을 ...",
     "date": "2026-05-14"
   },
   {
     "url": "https://news.hada.io/topic?id=29486",
-    "title": "No Title",
+    "title": "AI 분야의 다음 최대 해자는 \"조직\"이다",
     "description": "AI 업계에서 제품, 워크플로, 기술적 우위가 빠르게 수렴하고 복제 가능해지면서, 기업의 조직 구조 자체가 가장 강력한 경쟁 해자로 부상 위대한 ...",
     "date": "2026-05-14"
   },
   {
     "url": "https://news.hada.io/topic?id=29452",
-    "title": "No Title",
+    "title": "소프트웨어 아키텍처 배우기",
     "description": "소프트웨어 설계는 강의보다 실제 프로젝트에서 책임을 맡고 문제가 자기 일이 될 때 더 깊게 배워짐 Conway’s Law는 소프트웨어가 조직의 사회적 ...",
     "date": "2026-05-13"
   },
   {
     "url": "https://news.hada.io/topic?id=29445",
-    "title": "No Title",
+    "title": "goshs - 개발자를 위한 다기능 단일 바이너리 파일 서버",
     "description": "python3 -m http.server의 한계를 넘어, 단일 바이너리 하나로 HTTP/S, WebDAV, SFTP, SMB, LDAP/S 등 다양한 프로토콜을 즉시 구동 가능한 파일 ...",
     "date": "2026-05-13"
   },
   {
     "url": "https://news.hada.io/topic?id=29428",
-    "title": "No Title",
+    "title": "Claude Code 에도 /goal 기능 추가",
     "description": "Claude Code에 목표 기반 자동 반복 실행 기능인 /goal 추가 목표가 완료될 때까지 Claude가 여러 턴을 자동으로 이어서 실행 각 턴 종료 후 fast ...",
     "date": "2026-05-12"
   },
   {
     "url": "https://news.hada.io/topic?id=29416",
-    "title": "No Title",
+    "title": "소프트웨어 엔지니어링은 더 이상 평생 직업이 아닐 수 있다",
     "description": "AI를 사용하면 해당 작업 수행에 대한 학습량이 줄어드는 것은 분명하지만, 그것이 AI를 거부할 이유는 되지 못함 AI가 장기적으로 엔지니어의 역...",
     "date": "2026-05-12"
   },
   {
     "url": "https://news.hada.io/topic?id=29410",
-    "title": "No Title",
+    "title": "Rapid-MLX - Apple Silicon 전용 초고속 로컬 AI 엔진",
     "description": "애플 실리콘 맥에서 로컬 AI 모델을 구동하는 추론 엔진으로, Apple의 MLX 프레임워크 기반 네이티브 Metal 컴퓨트 커널 활용 Ollama 대비 최대 4....",
     "date": "2026-05-12"
   },
   {
     "url": "https://news.hada.io/topic?id=29409",
-    "title": "No Title",
+    "title": "zero-native - Zig와 웹 UI로 데스크톱 + 모바일 앱 빌드",
     "description": "Vercel Labs가 공개한 Zig 기반 데스크톱 앱 셸로, 웹 프론트엔드를 맥/윈/리눅스용 네이티브 앱으로 만드는 프레임워크 시스템 WebView 사용 시 ...",
     "date": "2026-05-12"
   },
   {
     "url": "https://news.hada.io/topic?id=29408",
-    "title": "No Title",
+    "title": "Show GN: 3초 만에 동기화하는 오픈소스 Obsidian 플러그인",
     "description": "Obsidian용 오픈소스 동기화 플러그인 Synch를 만들고 있습니다. Obsidian Sync 같은 경험을 오픈소스로 만들 수 있을까 해서 시작했습니다. 목표...",
     "date": "2026-05-12"
   },
   {
     "url": "https://news.hada.io/topic?id=29406",
-    "title": "No Title",
+    "title": "Mythos가 curl 취약점을 발견하다",
     "description": "Anthropic Mythos는 curl 취약점 5개를 보고했지만 실제로는 1개만 남음 curl 보안팀 검토 결과 3개는 오탐, 1개는 일반 버그로 분류됨 확인된 취...",
     "date": "2026-05-12"
   },
   {
     "url": "https://news.hada.io/topic?id=29393",
-    "title": "No Title",
+    "title": "Claude Code Vercel 플러그인이 유저를 유니크 ID로 동의 없이 추적하고 있다.",
     "description": "Vercel Claude Code 플러그인 설치 시 ~/.claude/vercel-plugin-device-id에 영구 UUID를 자동 생성. 알림 없음, 만료 없음, 갱신 없음. 매 세션마...",
     "date": "2026-05-11"
   },
   {
     "url": "https://news.hada.io/topic?id=29389",
-    "title": "No Title",
+    "title": "fzf를 설치했습니다. 이제 뭘 해야 할까요? (2023)",
     "description": "커맨드라인 퍼지 파인더 fzf는 투자 대비 효과가 즉각적이고 고유한 가치를 제공하지만, 많은 개발자가 설치만 하고 활용법을 모른 채 포기하는 도...",
     "date": "2026-05-11"
   },
   {
     "url": "https://news.hada.io/topic?id=29385",
-    "title": "No Title",
+    "title": "M4 24GB 메모리에서 로컬 모델 실행하기",
     "description": "24GB 메모리의 M4 MacBook Pro에서 로컬 LLM을 실행해 기본적인 코딩 작업, 리서치, 계획 수립 등을 인터넷 연결 없이 수행할 수 있는 실용적 세팅...",
     "date": "2026-05-11"
   },
@@ -127,7 +241,7 @@
   },
   {
     "url": "https://news.hada.io/topic?id=29364",
-    "title": "No Title",
+    "title": "AWS로 돌아왔는데, 내가 왜 떠났는지 다시 깨달았다",
     "description": "초기부터 AWS를 지지했지만, *복잡한 과금 체계와 플랫폼 전반의 복잡성 등 누적된 불만으로 더 이상 AWS를 좋아하지 않게 됨 DynamoDB의 높은 비...",
     "date": "2026-05-11"
   },
@@ -199,7 +313,7 @@
   },
   {
     "url": "https://news.hada.io/topic?id=29250",
-    "title": "No Title",
+    "title": "Toprank - SEO 및 광고 관리용 Claude Code 플러그인",
     "description": "Google Search Console, Google Ads, Meta Ads 데이터에 직접 접근해 트래픽 분석, 낭비 광고비 탐지, 크리에이티브 피로도 진단, 메타 태그 수정...",
     "date": "2026-05-07"
   },
