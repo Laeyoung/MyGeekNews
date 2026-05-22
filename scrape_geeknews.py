@@ -15,6 +15,78 @@ _RELATIVE_DATE_PATTERNS = [
     (re.compile(r'(\d+)\s*년\s*전'), lambda n: timedelta(days=n * 365)),
 ]
 
+PLACEHOLDER_TITLES = {'', 'No Title', 'No title'}
+TITLE_SELECTORS = [
+    '.topictitle .topic-title-heading',
+    '.topictitle h1',
+    '.topictitle h2',
+    '.topictitle a[id^="tr"]',
+    '.topictitle a.bold',
+    '.topictitle a',
+]
+
+
+def is_placeholder_title(title):
+    return (title or '').strip() in PLACEHOLDER_TITLES
+
+
+def extract_title(container):
+    """Extract a topic title from current and legacy GeekNews markup."""
+    for selector in TITLE_SELECTORS:
+        title_elem = container.select_one(selector)
+        if title_elem:
+            title = title_elem.get_text(' ', strip=True)
+            if not is_placeholder_title(title):
+                return title
+    return "No Title"
+
+
+def extract_topic_id_from_row(row):
+    topic_id = row.get('data-topic-state-id')
+    if topic_id:
+        return int(topic_id)
+
+    row_id = row.get('id', '')
+    if row_id.startswith('topic_row'):
+        return int(row_id.replace('topic_row', ''))
+
+    vote_span = row.select_one('.vote span[id^="vote"]')
+    if vote_span:
+        return int(vote_span['id'].replace('vote', ''))
+
+    return None
+
+
+def fetch_topic_title(session, topic_url):
+    response = session.get(topic_url)
+    if response.status_code != 200:
+        print(f"Failed to fetch topic title from {topic_url}, status: {response.status_code}")
+        return None
+
+    soup = BeautifulSoup(response.text, 'html.parser')
+    title = extract_title(soup)
+    return None if is_placeholder_title(title) else title
+
+
+def repair_placeholder_titles(session, topics):
+    repaired_count = 0
+    for topic in topics:
+        if not is_placeholder_title(topic.get('title')):
+            continue
+
+        title = fetch_topic_title(session, topic['url'])
+        if title:
+            topic['title'] = title
+            repaired_count += 1
+            print(f"Repaired title for {topic['url']}: {title}")
+        time.sleep(1)
+
+    if repaired_count:
+        print(f"Repaired {repaired_count} placeholder titles.")
+
+    return repaired_count
+
+
 def parse_relative_date(text, now=None):
     """Convert Korean relative date text (e.g., '7시간전', '2일전') to YYYY-MM-DD string."""
     if now is None:
@@ -95,24 +167,12 @@ def scrape():
         page_topics = []
         for row in topic_rows:
             try:
-                topic_id = None
-                # Try getting ID from row id
-                row_id = row.get('id', '')
-                if row_id.startswith('topic_row'):
-                    topic_id = int(row_id.replace('topic_row', ''))
-                
-                # Try getting ID from vote span
-                if not topic_id:
-                    vote_span = row.select_one('.vote span[id^="vote"]')
-                    if vote_span:
-                        topic_id = int(vote_span['id'].replace('vote', ''))
-                
+                topic_id = extract_topic_id_from_row(row)
                 if not topic_id:
                     # print("DEBUG: Could not find topic ID")
                     continue
                 
-                title_elem = row.select_one('.topictitle h1')
-                title = title_elem.get_text(strip=True) if title_elem else "No Title"
+                title = extract_title(row)
                 
                 desc_elem = row.select_one('.topicdesc')
                 description = desc_elem.get_text(strip=True) if desc_elem else ""
@@ -159,6 +219,7 @@ def scrape():
     
     # Merge new and existing
     all_topics = new_topics + existing_topics
+    repair_placeholder_titles(session, all_topics)
     
     # Sort by ID descending
     all_topics.sort(key=lambda t: extract_topic_id(t['url']) or 0, reverse=True)
