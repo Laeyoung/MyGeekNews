@@ -26,14 +26,28 @@ export async function GET(request: NextRequest) {
         return NextResponse.json(articles);
       } catch (error: any) {
         console.error(`[GeekNews API] Error fetching remote data:`, error);
-        return NextResponse.json({ error: 'Failed to fetch remote data', details: error.message }, { status: 500 });
+        return NextResponse.json({ error: 'Failed to fetch remote data' }, { status: 500 });
       }
     }
 
-    // Local file handling
-    const filePath = customPath
-      ? (path.isAbsolute(customPath) ? customPath : path.join(process.cwd(), customPath))
-      : path.join(process.cwd(), 'data', 'geeknews_my_upvotes.json');
+    // Local file handling.
+    // GEEKNEWS_DATA_PATH must resolve to a file under cwd. Absolute or relative
+    // values that escape cwd are rejected so a misconfigured env var can't expose
+    // arbitrary filesystem paths.
+    let filePath: string;
+    if (customPath) {
+      const resolved = path.resolve(
+        path.isAbsolute(customPath) ? customPath : path.join(process.cwd(), customPath)
+      );
+      const cwd = path.resolve(process.cwd());
+      if (resolved !== cwd && !resolved.startsWith(cwd + path.sep)) {
+        console.error(`[GeekNews API] Refusing data path outside cwd: ${resolved}`);
+        return NextResponse.json({ error: 'Invalid data path' }, { status: 400 });
+      }
+      filePath = resolved;
+    } else {
+      filePath = path.join(process.cwd(), 'data', 'geeknews_my_upvotes.json');
+    }
 
     if (!fs.existsSync(filePath)) {
       console.warn(`[GeekNews API] File not found: ${filePath}`);
@@ -51,7 +65,7 @@ export async function GET(request: NextRequest) {
 
   } catch (error: any) {
     console.error(`[GeekNews API] Error reading data file:`, error);
-    return NextResponse.json({ error: 'Internal server error', details: error.message }, { status: 500 });
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }
 
