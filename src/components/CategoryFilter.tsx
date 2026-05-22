@@ -13,16 +13,9 @@ interface Props {
 
 export default function CategoryFilter({ counts, total, selected, onSelect }: Props) {
   return (
-    <div
-      className={cn(
-        "sticky z-30 bg-background border-b border-border px-4 md:px-8 py-3.5",
-        // top offset is the header height — adjust if header height changes.
-        // header: 14 (py) + 28 (icon row) + 14 (gap to search) + 44 (search) + 14 (py) = 114 mobile
-        //          20 (py) + 28          + 14              + 44              + 20 = 126 desktop
-        "top-[114px] md:top-[126px]"
-      )}
-    >
+    <div className="bg-background border-b border-border px-4 md:px-8 py-3.5">
       <div
+        className="max-w-[760px] mx-auto"
         style={{
           maskImage: "linear-gradient(to right, black calc(100% - 36px), transparent)",
           WebkitMaskImage: "linear-gradient(to right, black calc(100% - 36px), transparent)",

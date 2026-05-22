@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import type { GeekNewsArticle } from '@/services/geeknews';
 import { getUpvotedArticles } from '@/services/geeknews';
 import { fuzzySearch } from '@/lib/searchUtils';
@@ -25,7 +25,19 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
+  const [headerHeight, setHeaderHeight] = useState(0);
+  const headerRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
+
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const update = () => setHeaderHeight(el.offsetHeight);
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   const fetchArticles = useCallback(async () => {
     setIsFetching(true);
@@ -94,40 +106,44 @@ export default function Home() {
       >
         본문으로 건너뛰기
       </a>
-      <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border px-4 py-3.5 md:px-8 md:py-5">
-        <div className="max-w-[760px] mx-auto">
-          <div className="flex items-center gap-2 mb-3.5">
-            <span className="text-[17px] font-bold tracking-tight">geeknews</span>
-            <span className="text-[#b8552d]" aria-hidden="true">/</span>
-            <span className="font-mono text-[13px] text-muted-foreground">upvotes</span>
-            <span className="flex-1" />
-            {allArticles.length > 0 && (
-              <span className="hidden md:inline font-mono text-xs text-muted-foreground">
-                {allArticles.length.toLocaleString()} 글
-              </span>
-            )}
-            <a
-              href="https://github.com/Laeyoung/MyGeekNews"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-7 h-7 inline-flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="GitHub Repository"
-            >
-              <Github className="h-4 w-4" aria-hidden="true" />
-            </a>
+      <div ref={headerRef} className="fixed top-0 left-0 right-0 z-30 bg-background">
+        <header className="px-4 py-3.5 md:px-8 md:py-5">
+          <div className="max-w-[760px] mx-auto">
+            <div className="flex items-center gap-2 mb-3.5">
+              <h1 className="text-[17px] font-bold tracking-tight">My GeekNews Upvotes</h1>
+              <span className="flex-1" />
+              {allArticles.length > 0 && (
+                <span className="hidden md:inline font-mono text-xs text-muted-foreground">
+                  {allArticles.length.toLocaleString()} 글
+                </span>
+              )}
+              <a
+                href="https://github.com/Laeyoung/MyGeekNews"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-7 h-7 inline-flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="GitHub Repository"
+              >
+                <Github className="h-4 w-4" aria-hidden="true" />
+              </a>
+            </div>
+            <SearchBar onSearch={handleSearch} isFetching={isFetching} />
           </div>
-          <SearchBar onSearch={handleSearch} isFetching={isFetching} />
-        </div>
-      </header>
+        </header>
 
-      <CategoryFilter
-        counts={counts}
-        total={allArticles.length}
-        selected={selectedCategory}
-        onSelect={setSelectedCategory}
-      />
+        <CategoryFilter
+          counts={counts}
+          total={allArticles.length}
+          selected={selectedCategory}
+          onSelect={setSelectedCategory}
+        />
+      </div>
 
-      <div id="main-content" className="max-w-[760px] mx-auto px-4 md:px-14 py-10 pb-20">
+      <div
+        id="main-content"
+        style={{ paddingTop: headerHeight + 40 }}
+        className="max-w-[760px] mx-auto px-4 md:px-14 pb-20"
+      >
         {error && (
           <Alert variant="destructive" className="mb-6">
             <AlertCircle className="h-4 w-4" />
