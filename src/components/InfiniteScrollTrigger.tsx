@@ -10,27 +10,28 @@ interface InfiniteScrollTriggerProps {
 
 export default function InfiniteScrollTrigger({ onIntersect, isLoading, hasMore }: InfiniteScrollTriggerProps) {
     const observerTarget = useRef<HTMLDivElement>(null);
+    const onIntersectRef = useRef(onIntersect);
+    const hasMoreRef = useRef(hasMore);
+    const isLoadingRef = useRef(isLoading);
+
+    useEffect(() => { onIntersectRef.current = onIntersect; }, [onIntersect]);
+    useEffect(() => { hasMoreRef.current = hasMore; }, [hasMore]);
+    useEffect(() => { isLoadingRef.current = isLoading; }, [isLoading]);
 
     useEffect(() => {
+        const target = observerTarget.current;
+        if (!target) return;
         const observer = new IntersectionObserver(
             (entries) => {
-                if (entries[0].isIntersecting && hasMore && !isLoading) {
-                    onIntersect();
+                if (entries[0].isIntersecting && hasMoreRef.current && !isLoadingRef.current) {
+                    onIntersectRef.current();
                 }
             },
-            { threshold: 0.1 } // Trigger when 10% visible
+            { threshold: 0.1 }
         );
-
-        if (observerTarget.current) {
-            observer.observe(observerTarget.current);
-        }
-
-        return () => {
-            if (observerTarget.current) {
-                observer.unobserve(observerTarget.current);
-            }
-        };
-    }, [onIntersect, hasMore, isLoading]);
+        observer.observe(target);
+        return () => observer.disconnect();
+    }, []);
 
     if (!hasMore) return null;
 

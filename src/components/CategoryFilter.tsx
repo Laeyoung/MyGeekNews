@@ -22,6 +22,12 @@ export default function CategoryFilter({ counts, total, selected, onSelect }: Pr
         "top-[114px] md:top-[126px]"
       )}
     >
+      <div
+        style={{
+          maskImage: "linear-gradient(to right, black calc(100% - 36px), transparent)",
+          WebkitMaskImage: "linear-gradient(to right, black calc(100% - 36px), transparent)",
+        }}
+      >
       <div className="flex gap-1.5 overflow-x-auto scrollbar-hide">
         <Chip
           label="전체"
@@ -38,6 +44,7 @@ export default function CategoryFilter({ counts, total, selected, onSelect }: Pr
             onClick={() => onSelect(c)}
           />
         ))}
+      </div>
       </div>
     </div>
   );
@@ -58,16 +65,23 @@ function Chip({
     <button
       type="button"
       onClick={onClick}
+      aria-pressed={active}
+      aria-label={`${label} ${count.toLocaleString()}개`}
+      onFocus={(e) =>
+        e.currentTarget.scrollIntoView({ block: "nearest", inline: "nearest" })
+      }
       className={cn(
         "flex-shrink-0 inline-flex items-center gap-2 px-3 py-1.5 rounded-full",
         "text-sm border whitespace-nowrap transition-colors",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
         active
           ? "bg-foreground text-background border-foreground"
           : "bg-card text-foreground border-border hover:bg-accent"
       )}
     >
-      <span>{label}</span>
+      <span aria-hidden="true">{label}</span>
       <span
+        aria-hidden="true"
         className={cn(
           "font-mono text-xs",
           active ? "opacity-70" : "text-muted-foreground"

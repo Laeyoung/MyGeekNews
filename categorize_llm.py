@@ -22,6 +22,7 @@ import argparse
 import json
 import os
 import sys
+import tempfile
 import time
 from pathlib import Path
 
@@ -35,9 +36,30 @@ except ImportError:
 
 try:
     from anthropic import Anthropic
+    from anthropic import APIStatusError, APIConnectionError, RateLimitError
 except ImportError:
     print("Install: pip install anthropic", file=sys.stderr)
     sys.exit(1)
+
+
+def atomic_write_json(path: Path, data) -> None:
+    """Write JSON to `path` atomically via a sibling temp file + os.replace."""
+    payload = json.dumps(data, ensure_ascii=False, indent=2)
+    fd, tmp = tempfile.mkstemp(
+        prefix=f".{path.name}.", suffix=".tmp", dir=str(path.parent)
+    )
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            f.write(payload)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp, path)
+    except Exception:
+        try:
+            os.unlink(tmp)
+        except OSError:
+            pass
+        raise
 
 # Must mirror src/lib/categorize.ts exactly
 TAXONOMY = [
@@ -66,20 +88,39 @@ Description: {description}
 JSON:"""
 
 
-def classify_one(client: Anthropic, title: str, description: str) -> dict:
-    msg = client.messages.create(
-        model="claude-haiku-4-5",
-        max_tokens=120,
-        system=SYSTEM,
-        messages=[{
-            "role": "user",
-            "content": USER_TMPL.format(
-                taxonomy=", ".join(TAXONOMY),
-                title=title,
-                description=(description or "")[:600],
-            ),
-        }],
-    )
+def classify_one(client: Anthropic, title: str, description: str, max_retries: int = 3) -> dict:
+    last_err: Exception | None = None
+    for attempt in range(max_retries):
+        try:
+            msg = client.messages.create(
+                model="claude-haiku-4-5",
+                max_tokens=120,
+                system=SYSTEM,
+                messages=[{
+                    "role": "user",
+                    "content": USER_TMPL.format(
+                        taxonomy=", ".join(TAXONOMY),
+                        title=title,
+                        description=(description or "")[:600],
+                    ),
+                }],
+            )
+            break
+        except (RateLimitError, APIConnectionError) as e:
+            last_err = e
+            time.sleep(2 ** attempt)
+        except APIStatusError as e:
+            last_err = e
+            if 500 <= getattr(e, "status_code", 0) < 600:
+                time.sleep(2 ** attempt)
+            else:
+                raise
+    else:
+        raise last_err if last_err else RuntimeError("classify_one: exhausted retries")
+
+    if not msg.content:
+        raise ValueError("empty response from Claude (stop_reason="
+                         f"{getattr(msg, 'stop_reason', '?')})")
     text = msg.content[0].text.strip()
     # Tolerate code fences / stray prose
     if text.startswith("```"):
@@ -89,7 +130,11 @@ def classify_one(client: Anthropic, title: str, description: str) -> dict:
     except json.JSONDecodeError:
         # last-ditch: find first {...}
         start, end = text.find("{"), text.rfind("}")
-        out = json.loads(text[start:end + 1]) if 0 <= start < end else {}
+        if not (0 <= start < end):
+            raise ValueError(f"unparseable LLM response: {text[:200]!r}")
+        out = json.loads(text[start:end + 1])
+    if not isinstance(out, dict) or not out:
+        raise ValueError(f"empty/non-dict LLM response: {text[:200]!r}")
 
     cat = out.get("category", "기타")
     if cat not in TAXONOMY:
@@ -116,10 +161,14 @@ def main():
     articles = json.loads(data_path.read_text(encoding="utf-8"))
     client = Anthropic()  # picks up ANTHROPIC_API_KEY
 
-    todo = [
-        i for i, a in enumerate(articles)
-        if args.force or a.get("category") in (None, "", "기타") or "category" not in a
-    ]
+    def needs_classify(a: dict) -> bool:
+        if "category" not in a:
+            return True
+        if a.get("category") in (None, "", "기타") and a.get("category_source") != "llm":
+            return True
+        return False
+
+    todo = [i for i, a in enumerate(articles) if args.force or needs_classify(a)]
     if args.limit:
         todo = todo[: args.limit]
 
@@ -144,18 +193,12 @@ def main():
 
         # Save every 25
         if processed % 25 == 0:
-            data_path.write_text(
-                json.dumps(articles, ensure_ascii=False, indent=2),
-                encoding="utf-8",
-            )
+            atomic_write_json(data_path, articles)
             print(f"  -- checkpoint saved ({processed} done)")
 
         time.sleep(args.sleep)
 
-    data_path.write_text(
-        json.dumps(articles, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    atomic_write_json(data_path, articles)
     print(f"Done. Saved {data_path}")
 
 
