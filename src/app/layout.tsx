@@ -1,12 +1,24 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google'; // Import Inter instead of Geist
+import { Inter, JetBrains_Mono, Source_Serif_4 } from 'next/font/google';
 import './globals.css';
-import { Toaster } from "@/components/ui/toaster"; // Import Toaster
+import { Toaster } from "@/components/ui/toaster";
 
-// Configure Inter font
 const inter = Inter({
-  subsets: ['latin'], // Keep latin subset
-  variable: '--font-sans', // Assign to a CSS variable
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-jetbrains-mono',
+});
+
+const sourceSerif = Source_Serif_4({
+  subsets: ['latin'],
+  weight: ['400'],
+  style: ['italic'],
+  variable: '--font-source-serif',
 });
 
 
@@ -61,7 +73,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body
+        className={`${inter.variable} ${jetbrainsMono.variable} ${sourceSerif.variable} font-sans antialiased`}
+      >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

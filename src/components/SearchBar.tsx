@@ -15,24 +15,25 @@ export default function SearchBar({ onSearch, isFetching }: SearchBarProps) {
   useEffect(() => {
     const timer = setTimeout(() => {
       onSearch(query);
-    }, 300); // 300ms debounce
+    }, 300);
 
     return () => clearTimeout(timer);
   }, [query, onSearch]);
 
   return (
-    <div className="flex flex-col sm:flex-row gap-4 mb-6 p-4 bg-card rounded-lg shadow">
-      <div className="flex-grow relative">
-        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-        <Input
-          type="text"
-          placeholder="Search your upvoted articles..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          className="pl-10"
-          disabled={isFetching}
-        />
-      </div>
+    <div className="flex items-center gap-2.5 bg-card border border-border rounded-lg px-3.5 py-2.5">
+      <Search className="h-4 w-4 text-muted-foreground shrink-0" />
+      <Input
+        type="text"
+        placeholder="제목·요약·초성으로 검색"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        className="border-0 bg-transparent shadow-none p-0 h-auto text-sm focus-visible:ring-0 focus-visible:ring-offset-0"
+        disabled={isFetching}
+      />
+      <kbd className="hidden md:inline-flex font-mono text-[11px] text-muted-foreground border border-border px-1.5 py-0.5 rounded shrink-0">
+        ⌘K
+      </kbd>
     </div>
   );
 }
