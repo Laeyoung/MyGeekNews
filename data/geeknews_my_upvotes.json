@@ -1,5 +1,23 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=29817",
+    "title": "Google의 IBM화?",
+    "description": "Google의 수직 통합은 TSMC 실리콘, TPU, 자체 데이터센터, 모델, 검색엔진까지 가진 강점에서 조직과 제품의 부담으로 바뀐 상태로 보임 Railway...",
+    "date": "2026-05-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29780",
+    "title": "Zero - 에이전트를 위한 프로그래밍 언어",
+    "description": "Vercel Labs에서 에이전트가 주 사용자가 되는 환경을 가정해 처음부터 다시 설계된 실험적 프로그래밍 언어 즉석에서 배울 수 있고, Inspect·Repa...",
+    "date": "2026-05-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29775",
+    "title": "LLM 아키텍처의 최근 동향: KV 공유, mHC, 그리고 압축 어텐션",
+    "description": "최근 공개된 오픈 웨이트 LLM들이 장문 컨텍스트 효율성에 집중하면서, KV 캐시 크기·메모리 트래픽·어텐션 비용을 줄이기 위한 아키텍처 트릭이 ...",
+    "date": "2026-05-23"
+  },
+  {
     "url": "https://news.hada.io/topic?id=29750",
     "title": "소프트웨어가 헤드리스로 가는가?",
     "description": "Salesforce가 헤드리스 제품 출시를 통해 UI가 아닌 데이터 계층이 가치의 중심이라고 베팅하면서, 에이전트 시대 SaaS의 방어력이 어디에 남는지...",
@@ -22,6 +40,12 @@
     "title": "공격적인 AI 스크래퍼가 위키 운영을 꽤 힘들게 만들고 있음",
     "description": "AI 스크래퍼 트래픽은 공개 위키의 비용과 안정성을 흔들며, 완화하지 않으면 인간 활동 전체보다 약 10배 많은 컴퓨팅 자원을 쓸 수 있음 봇은 GP...",
     "date": "2026-05-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=29738",
+    "title": "Herdr - AI Agent 시대를 위한 tmux 스타일 터미널 워크스페이스",
+    "description": "Herdr는 터미널 안에서 동작하는 “agent-native” 워크스페이스 매니저입니다. tmux처럼 세션 유지(detach/reattach), pane 분할, SSH 환경 지원을 ...",
+    "date": "2026-05-22"
   },
   {
     "url": "https://news.hada.io/topic?id=29728",
