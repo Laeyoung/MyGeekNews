@@ -1,5 +1,167 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=30268",
+    "title": "Shortcat - 마우스없이 키보드로 맥 전체 제어하기",
+    "description": "macOS의 사용자 인터페이스를 인덱싱해 강력한 명령 팔레트로 제공, 마우스 없이 키보드만으로 Mac 조작 가능 클릭하려는 대상을 입력하면 해당 UI...",
+    "date": "2026-06-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30263",
+    "title": "취향(Taste)이 새로운 10x다",
+    "description": "AI 도구가 앱 스캐폴딩, 이메일 초안, 대시보드 스타일링, 문서 요약을 처리하며 실행(execution)의 하한선이 전반적으로 높아진 상황에서, 진짜 ...",
+    "date": "2026-06-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30222",
+    "title": "한국의 포럼/커뮤니티는 이제 모든 이미지를 AI 검열 도구로 검사해야 함",
+    "description": "전기통신사업법 변경으로 한국 인터넷 커뮤니티와 포럼 운영자에게 사용자가 업로드하는 모든 이미지와 영상을 AI로 검사하도록 요구함 AI 모델 실...",
+    "date": "2026-06-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30217",
+    "title": "Odysseus - 셀프 호스팅 AI 워크스페이스",
+    "description": "ChatGPT/Claude의 UI 경험을 자체 하드웨어에서 직접 운영하는 로컬 퍼스트 통합 AI 워크스페이스 구독자 1.1억명 유튜버인 PewDiePie가 12개월간 ...",
+    "date": "2026-06-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30215",
+    "title": "코드는 더 싸졌다",
+    "description": "AI 코딩 도구 확산으로 코드 작성 비용은 급격히 낮아졌지만, 정작 생성된 코드를 이해하는 비용은 더 커진 현실 LLM은 비결정적이고 원본 소스를 ...",
+    "date": "2026-06-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30195",
+    "title": "AI-네이티브 스타트업을 만드는 방법",
+    "description": "AI가 반복 업무를 야간에 처리하는 동안 창업자는 제품 개선에 집중하는 새로운 운영 모델로, 진짜 변화는 시간 사용이 아니라 회사가 학습·반복·...",
+    "date": "2026-06-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30191",
+    "title": "Trees - 파일 트리 렌더링 라이브러리 오픈소스",
+    "description": "VSCode의 파일 창과 비슷한 파일/디렉터리 구조를 그려주는 라이브러리 높은 커스터마이징 자유도와 성능과 유연성 중심으로 설계 수만 개 항목도 ...",
+    "date": "2026-06-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30188",
+    "title": "SpaceX IPO는 세기의 도둑질이 될 것",
+    "description": "곧 진행될 SpaceX IPO가 내부자에게는 막대한 이익을, 일반 은퇴 투자자에게는 손실을 안기는 구조라는 비판으로, S-1 등록서류에 담긴 사업 전망...",
+    "date": "2026-06-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30185",
+    "title": "2026년 4월 전 세계에서 풍력과 태양광이 가스보다 더 많은 전력을 생산했다",
+    "description": "풍력·태양광은 2026년 4월 한 달 전체 기준으로 처음 가스 발전량을 넘어서며 세계 전력 구성 변화의 이정표가 됨 Ember 분석에서 풍력·태양광은 ...",
+    "date": "2026-06-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30184",
+    "title": "VoidZero가 Cloudflare에 합류",
+    "description": "VoidZero는 Vite, Vitest, Rolldown, Oxc, Vite+를 만든 회사이며, 이제 VoidZero 팀 전원이 Cloudflare에 합류 하지만, 개발중인 프로젝트는 오픈...",
+    "date": "2026-06-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30175",
+    "title": "Show GN: Rune - Windows/MacOS/Linux 크로스플랫폼 마크다운 뷰어/에디터",
+    "description": "안녕하세요. 최근 Zed와 emacs를 써보며 Claude Code, Codex와 함께에이전틱 코딩의 세계에 발을 들이고 있는 개인 개발자입니다. 여러가지 사이드...",
+    "date": "2026-06-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30166",
+    "title": "대성당, 바자르, 그리고 윈체스터 미스터리 하우스 — AI 시대, 소프트웨어 개발의 세 번째 모델",
+    "description": "The Cathedral, the Bazaar, and the Winchester Mystery House 1998년 에릭 레이먼드가 발표한 '대성당과 바자르'는 오픈소스 운동의 출발점이 된...",
+    "date": "2026-06-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30160",
+    "title": "아니오, 인공지능은 의식이 없어요 – 테드 창",
+    "description": "생성형 AI의 유창한 문장 생성 능력을 의식이나 도덕적 주체성과 혼동할 경우, 챗봇 사용 시 책임 소재를 엉뚱한 대상에 돌리게 되는 심각한 오류 ...",
+    "date": "2026-06-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30153",
+    "title": "Uber의 월 1,500달러 AI 한도는 AI 도구 가격 책정에 유용한 신호",
+    "description": "Uber는 모든 직원에게 AI 코딩 도구별 월간 토큰 지출을 1,500달러로 제한해, 에이전트형 코딩 도구 비용 증가에 대응함 한도는 Cursor나 Claude C...",
+    "date": "2026-06-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30136",
+    "title": "작업별 맞춤 하네스: Claude Code의 동적 워크플로우",
+    "description": "동적 워크플로우 는 Claude Code가 작업에 맞는 하네스(harness) 를 즉석에서 직접 작성하는 기능으로, 기존에 별도로 구축하던 맞춤 하네스를 코...",
+    "date": "2026-06-03"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30130",
+    "title": "누구나 만들 수 있게 되면, 정말 중요한 것은 뭘까?",
+    "description": "AI로 누구나 제품을 만들 수 있게 되면서 속도는 더 이상 단독 차별화 요소가 아님 이제 차이를 만드는 건 방향과 완성도(craft) 상상과 현실 사이...",
+    "date": "2026-06-03"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30128",
+    "title": "OpenAI, Codex에서 웹사이트를 만들어 배포하는 Sites 플러그인 공개",
+    "description": "프롬프트/프로젝트에서 OpenAI가 호스팅하는 웹 사이트를 제작 가능 별도 배포 워크플로 구성 없이 웹사이트, 웹 앱, 게임을 프롬프트만으로 생성·...",
+    "date": "2026-06-03"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30091",
+    "title": "geo-seo-claude - Claude Code용 GEO 우선 SEO 스킬",
+    "description": "AI 검색 엔진(ChatGPT, Claude, Perplexity, Google AI 오버뷰)을 겨냥한 웹사이트 최적화를 수행하면서 전통 SEO 기반도 함께 유지하는 Claude Co...",
+    "date": "2026-06-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30088",
+    "title": "본질의 핵심에 도달하라",
+    "description": "제품 전략 논의에서 \"넓게 갈지, 깊게 갈지\" 같은 이분법적 프레이밍은 참석자 모두를 똑똑해 보이게 만들지만 실제 전략적 사고를 회피하게 만드...",
+    "date": "2026-06-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30086",
+    "title": "AI 시대의 기술 면접",
+    "description": "AI 도구가 코드 작성과 리뷰 영역까지 빠르게 침투하는 상황에서, 면접에서 AI 사용을 기본적으로 배제하고 기초 역량 중심으로 평가해야 함 좋은 ...",
+    "date": "2026-06-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30085",
+    "title": "Meta,  Instagram / Facebook /  WhatsApp 구독 요금제 출시",
+    "description": "Meta가 Instagram, Facebook, WhatsApp 소비자 구독 플랜을 전 세계에 출시하고 기업·크리에이터·Meta AI용 새 구독 테스트도 시작함 Instagram Pl...",
+    "date": "2026-06-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30084",
+    "title": "ChatGPT for Google Sheets가 프롬프트 인젝션으로 사용자 워크북을 외부 유출",
+    "description": "단일 시트에 숨겨진 간접 프롬프트 인젝션 하나로 피해자 계정 전반의 워크북이 유출되고 피싱 오버레이 공격까지 동시에 발생 이 공격은 사용자가...",
+    "date": "2026-06-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30075",
+    "title": "AI 시대의 소프트웨어 장인정신",
+    "description": "코드를 짓는 손에서 시스템을 설계하는 안목으로 오라일리(O'Reilly)는 3월 26일 세 번째 AI Codecon을 \"AI 시대의 소프트웨어 장인정신\"이라는 주...",
+    "date": "2026-06-01"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30066",
+    "title": "The Website Specification",
+    "description": "좋은 웹사이트가 갖춰야 할 기술 기능을 플랫폼과 무관하게 정리한 명세로, <title>부터 llms.txt까지 다룸 사람과 에이전트를 모두 대상으로 하며...",
+    "date": "2026-06-01"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30064",
+    "title": "Files SDK - 모든 blob 스토리지를 위한 단일 API",
+    "description": "\"Write Once, Store Anywhere\" S3, R2, GCS, Azure 등 29종의 객체/blob 스토리지를 하나의 통합 SDK로 처리 40개 이상의 어댑터를 단일 인터페이...",
+    "date": "2026-06-01"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30060",
+    "title": "LLM 시대의 엔지니어링",
+    "description": "LLM 시대에 제품과 개발 조직을 어떻게 만들 것인가에 대한 Reindeer에서의 1년 반의 고민을 정리한 글로, 휴먼 컨텍스트(human context)가 가장 ...",
+    "date": "2026-06-01"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30039",
+    "title": "도메인 전문성은 언제나 진짜 해자였다",
+    "description": "소프트웨어의 어려움은 코드 입력보다 급여·교통 같은 현실 규칙을 이해해 도메인 모델을 만드는 데 있었고, 코드는 그 이해의 산물이었음 에이전...",
+    "date": "2026-05-31"
+  },
+  {
     "url": "https://news.hada.io/topic?id=30036",
     "title": "지루한 기술을 선택하라, Revisited (2025)",
     "description": "검증 가능한 기술 스택에 집중하는 \"Choose Boring Technology\" 원칙은 AI 코딩 도구 시대에 더욱 중요해짐 기업은 한정된 \"innovation tokens\" 를...",
