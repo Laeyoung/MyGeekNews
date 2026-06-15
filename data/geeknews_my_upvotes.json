@@ -1,8 +1,188 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=30496",
+    "title": "re_gent - AI 코딩 에이전트를 위한 버전 관리",
+    "description": "AI 코딩 에이전트의 작업을 git처럼 추적·감사하는 도구로, 에이전트가 무엇을 했고 어떤 프롬프트가 각 줄을 작성했는지 단계별 확인 가능 핵심은...",
+    "date": "2026-06-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30494",
+    "title": "모두가 모든 일에 AI를 쓰는 것은 아니다",
+    "description": "채팅 인터페이스로 접근하는 생성형 AI 사용은 보편적 일상 도구라기보다 적극 사용, 간헐 사용, 비사용으로 나뉘는 연속선에 가까움 여러 사용 데...",
+    "date": "2026-06-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30492",
+    "title": "Claude Code 창시자, 소프트웨어 엔지니어의 종말을 말하다 [유튜브]",
+    "description": "에이전트형 코딩 도구 Claude Code는 코드 작성 자체보다, 제품을 만들고 업무 흐름을 재구성하는데 더 큰 변화를 일으킴 Microsoft 업무 AI 사용...",
+    "date": "2026-06-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30491",
+    "title": "소프트웨어는 죽는 게 아니라 진화 중이다",
+    "description": "AI로 코드 생성이 저렴해지며 \"기능을 먼저 만들었다\"라는 해자가 무너지고, 기능만 잔뜩 쌓아온 소프트웨들은 실시간으로 가치가 재평가(repriced...",
+    "date": "2026-06-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30488",
+    "title": "에이전트 코딩에 로컬 LLM 활용하기",
+    "description": "클라우드 플래그십 모델의 가격 급등 속에서, 비용 부담 없이 코딩 작업을 이어갈 수 있는 로컬 모델 활용법 정리 로컬 모델은 SOTA 모델 성능에 ...",
+    "date": "2026-06-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30474",
+    "title": "이 Fable 사안에 드리운 거대한 그림자",
+    "description": "강력한 AI 모델인 Fable 5와 Mythos 5는 미국 정부의 수출통제 지시 이후 모든 고객 접근이 갑자기 중단됨 미국 정부 지시는 미국 안팎의 외국 국...",
+    "date": "2026-06-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30446",
+    "title": "Anthropic, 미국 정부 지시로 Fable 5·Mythos 5 모델 전면 차단",
+    "description": "Anthropic이 미국 정부의 수출통제(export control) 지시에 따라 최신 AI 모델인 Fable 5와 Mythos 5의 사용을 전면 중단. 정부는 “국가안보(Natio...",
+    "date": "2026-06-13"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30438",
+    "title": "Cate - 무한 줌이 가능한 코딩용 캔버스 IDE",
+    "description": "무한 캔버스 위에 에디터/터미널/브라우저/문서/AI 에이전트를 자유롭게 펼쳐 배치하는 데스크톱 IDE 창과 탭 대신 자유로운 공간형(freeform spac...",
+    "date": "2026-06-13"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30421",
+    "title": "AI가 소프트웨어 엔지니어를 대체하지 않은 이유, 그리고 앞으로도 대체하지 못할 이유",
+    "description": "소프트웨어 엔지니어링은 AI 도입이 빠른 직군이지만, AI가 일정 능력에 도달하면 대규모 해고가 발생한다는 서사는 현재 증거로 지지되지 않음 Bl...",
+    "date": "2026-06-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30420",
+    "title": "직장에서 아무것도 하지 않기",
+    "description": "소프트웨어 엔지니어의 성과는 더 많은 시간·코드보다 적절한 시점의 고임팩트 작업에 좌우되며, 평소에는 하루 업무의 약 20%를 컴퓨터에서 떨어...",
+    "date": "2026-06-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30417",
+    "title": "우리 직장의 LLM 집단 망상",
+    "description": "자금난에 시달리는 직장에서 핵심 업무 예산은 깎이는데도 AI 도입에는 돈이 흘러가는 모순적 상황을 직접 겪은 경험 기록 수년간 보너스가 취소되...",
+    "date": "2026-06-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30412",
+    "title": "생산적인 개인이 생산적인 기업을 만들지는 않는다",
+    "description": "AI가 개인의 생산성을 10배 끌어올렸지만 그에 비례해 가치가 10배 오른 기업은 없는데, 늘어난 생산성은 어디로 갔을까? 1890년대 전기 도입기 뉴...",
+    "date": "2026-06-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30386",
+    "title": "DiffusionGemma: 4배 빠른 텍스트 생성",
+    "description": "DiffusionGemma는 텍스트 확산 방식으로 전체 텍스트 블록을 동시에 생성하는 Apache 2.0 라이선스의 26B MoE 실험용 공개 모델임 일반적인 자기회...",
+    "date": "2026-06-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30385",
+    "title": "소프트웨어 해커톤이여 안녕. 하드웨어 해커톤이여 영원하라",
+    "description": "48시간 해커톤에서 오래된 회전식 전화기에 Raspberry Pi를 연결해 양방향 오디오, 벨, 수화기 스위치를 서버와 연동하는 데모를 구현함 데모는 AI...",
+    "date": "2026-06-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30382",
+    "title": "\"The Lean Startup\" 저자이자 신간 \"Incorruptible\"을 낸 Eric Ries입니다 – 무엇이든 물어보세요",
+    "description": "The Lean Startup 집필 후 15년 동안 대기업, 작은 스타트업, NGO, 정부, 거의 모든 산업에서 여러 조직을 경험함 많은 사람들이 훌륭한 회사를 만...",
+    "date": "2026-06-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30380",
+    "title": "독일 판결, Google이 AI Overviews의 오답에 책임 있다고 선언",
+    "description": "AI Overviews는 검색 결과 목록이 아니라 Google이 자체 구조와 문장으로 생성한 콘텐츠로 분류돼, 허위 주장에 대해 Google의 직접 책임이 인정됨...",
+    "date": "2026-06-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30378",
+    "title": "Supermemory - AI를 위한 메모리 & 컨텍스트 엔진",
+    "description": "대화에서 사실(facts)을 자동 추출하고 사용자 프로필을 구축하는 AI용 메모리·컨텍스트 레이어로, 대화 간 정보를 기억하지 못하는 AI의 한계를 ...",
+    "date": "2026-06-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30346",
+    "title": "apple/container, Container Machine 기능 추가",
+    "description": "Mac에서 Linux 컨테이너를 경량 가상 머신 형태로 생성·실행하는 도구 WWDC26에서 새로 추가된 Container Machine 은 홈 디렉토리와 저장소가 자동...",
+    "date": "2026-06-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30340",
+    "title": "Microsoft의 오픈소스 도구가 해킹되어 AI 개발자들의 비밀번호 탈취에 악용됨",
+    "description": "GitHub에 호스팅된 수십 개의 오픈소스 프로젝트가 해커에 의해 침해되어 비밀번호 탈취 악성코드가 코드에 주입되면서, Microsoft가 해당 프로젝...",
+    "date": "2026-06-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30337",
+    "title": "Slumber - 터미널 기반 HTTP/REST 클라이언트",
+    "description": "터미널 환경에서 TUI 로 동작하는 HTTP 클라이언트 Recipe로 구성 가능한 HTTP 요청을 정의하고 실행하며 쉽게 공유 TUI, CLI, Python 패키지 세 ...",
+    "date": "2026-06-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30336",
+    "title": "루프 엔지니어링 - 에이전트를 프롬프트하는 시스템을 설계하기",
+    "description": "코딩 에이전트에게 매 턴마다 직접 프롬프트하던 방식을 끝내고, 에이전트를 대신 프롬프트하는 시스템을 설계하는 작업 방식으로의 전환 루프는 ...",
+    "date": "2026-06-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30330",
+    "title": "Ask HN: AI 등장 이후, 스스로를 위해 만든 도구는 무엇인가요?",
+    "description": "AI 코딩 도구의 보급으로 개발자 개인이 자신만의 도구를 직접 제작하는 흐름이 확산되며, 과거라면 시간 대비 효용이 낮아 포기했을 소규모·맞춤...",
+    "date": "2026-06-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30328",
+    "title": "Claude Fable 5/Mythos 5 공개, Anthropic의 5세대 프런티어 모델",
+    "description": "Anthropic이 며칠 단위의 장기, 비동기 작업을 위한 5세대 모델을 출시함. Fable 5는 Mythos급 모델을 일반 사용자용으로 안전하게 만든 버전이고,...",
+    "date": "2026-06-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30314",
+    "title": "AI가 둔화하고 있다",
+    "description": "생성형 AI 인프라는 데이터센터 투자와 컴퓨트 약정을 정당화하려면 2030년까지 연간 2조 달러가 넘는 AI 컴퓨트 매출을 만들어야 함 계획된 190GW...",
+    "date": "2026-06-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30306",
+    "title": "안티-소셜: 이제 소셜 미디어 피드를 지배하는 것은 친구가 아니라 유행",
+    "description": "Instagram·Facebook·TikTok·Snapchat의 피드는 지인 간 소통보다 짧은 영상 엔터테인먼트와 추천 콘텐츠 소비에 가까워지는 중 친구의 게시물을 거...",
+    "date": "2026-06-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30302",
+    "title": "mq - jq 스타일 Markdown 쿼리 언어",
+    "description": "jq와 유사한 문법으로 Markdown 문서를 질의·필터링·변환하는 CLI 도구로, JSON에서 jq가 하던 역할을 Markdown으로 옮겨옴 마크다운을 구조화된 ...",
+    "date": "2026-06-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30281",
+    "title": "Show GN: OCTOMO — 고객이 직접 문자를 보내는(MO) 방식의 휴대폰 본인인증 API",
+    "description": "서비스에 회원가입 본인인증을 붙일 때마다 SMS 발송 비용이 부담이라, 방향을 뒤집어서 만든 휴대폰 인증 API입니다. 기존 SMS 인증은 서비스가 ...",
+    "date": "2026-06-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30276",
+    "title": "Linear는 어떻게 이렇게 빠른가? 기술적 분석",
+    "description": "Linear는 이슈 관리 작업을 브라우저 내 데이터베이스와 로컬 우선 동기화로 처리해, 이슈 업데이트가 몇 밀리초 안에 UI에 반영되는 생산성 도구 ...",
+    "date": "2026-06-08"
+  },
+  {
     "url": "https://news.hada.io/topic?id=30268",
     "title": "Shortcat - 마우스없이 키보드로 맥 전체 제어하기",
     "description": "macOS의 사용자 인터페이스를 인덱싱해 강력한 명령 팔레트로 제공, 마우스 없이 키보드만으로 Mac 조작 가능 클릭하려는 대상을 입력하면 해당 UI...",
+    "date": "2026-06-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30267",
+    "title": "LLM이 내 소프트웨어 엔지니어링 커리어를 잠식하고 있으며 무엇을 해야 할지 모르겠다",
+    "description": "LLM 기반 개발 도구는 설계 문서 작성, 구현 계획, 코드 작성, 디버깅까지 관여하며 10년간 쌓은 결제·금융 백엔드 전문성의 차별화를 약화시킴 금...",
+    "date": "2026-06-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30264",
+    "title": "AI 시대, 가장 가치 있는 개발자는 장인이면서 빌더인 사람이 될 것",
+    "description": "AI 코딩 도구의 확산으로 누구나 빌더(builder) 가 될 수 있게 되면서, 손으로 코드를 짜는 장인(artisan) 의 가치가 재조명되는 중 2026년 4월 기...",
     "date": "2026-06-08"
   },
   {
@@ -10,6 +190,24 @@
     "title": "취향(Taste)이 새로운 10x다",
     "description": "AI 도구가 앱 스캐폴딩, 이메일 초안, 대시보드 스타일링, 문서 요약을 처리하며 실행(execution)의 하한선이 전반적으로 높아진 상황에서, 진짜 ...",
     "date": "2026-06-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30260",
+    "title": "미국 신규 대졸자의 실업률이 이제 평균 노동자보다 높아졌다",
+    "description": "대학 학위는 오랫동안 신규 졸업자의 고용 가능성을 높이는 완충재였지만, 이제 그 우위가 사라져 전체 노동자 대비 격차가 역대 최대 수준으로 확...",
+    "date": "2026-06-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30257",
+    "title": "창업자들이 털어놓은 최악의 VC 피칭 경험담",
+    "description": "스타트업 아이디어 팟캐스트 진행자로 유명한 Greg Isenberg가 자신의 VC 피칭 경험담이 정말 이상했다고 공개 트윗 다들 투자를 받고 싶어서 얘기...",
+    "date": "2026-06-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30234",
+    "title": "내 홈랩의 모든 IP KVM을 테스트했다",
+    "description": "IP KVM은 컴퓨터에 원격 제어 소프트웨어를 실행하지 않고도 IP 네트워크로 키보드·화면·마우스를 제어하고 BIOS 접근까지 가능하게 하는 장치임 R...",
+    "date": "2026-06-07"
   },
   {
     "url": "https://news.hada.io/topic?id=30222",
