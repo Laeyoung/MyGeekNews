@@ -1,5 +1,149 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=30906",
+    "title": "Show GN: NetTools – 가입·추적 없는 무료 네트워크/보안/개발 도구 45종",
+    "description": "네트워크 엔지니어/개발자가 매일 반복하는 계산·조회 작업을, 광고·가입·추적 없이 빠르게 하려고 만든 무료 도구 모음입니다. 주요 도구 (총 45...",
+    "date": "2026-06-28"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30901",
+    "title": "Paca - 인간과 AI 에이전트 협업을 위한 오픈소스 프로젝트 관리 도구",
+    "description": "AI 네이티브 셀프 호스팅 프로젝트 관리 플랫폼으로, Jira/Trello/ClickUp/Monday의 무료 오픈소스 대체제 AI 에이전트가 챗봇 애드온이 아니라 Sc...",
+    "date": "2026-06-28"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30899",
+    "title": "Reddit 안티스팸 내부를 엿보다",
+    "description": "2021년 Reddit의 일시적 오류로 보이는 현상 때문에, Relay for reddit에서 평소 Removed: Auto로 숨겨지던 사이트 전체 스팸 제거 사유와 내부 판...",
+    "date": "2026-06-28"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30872",
+    "title": "37signals의 의사결정 가이드",
+    "description": "회사를 사람들의 집단과 결정의 집합이라는 두 가지로 정의, 그 사람들이 어떻게 결정하느냐가 곧 비즈니스를 운영하는 기술 매일, 온종일 반복하...",
+    "date": "2026-06-27"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30863",
+    "title": "훔치기도 기술이다",
+    "description": "창작에서의 “훔치기”는 참고 수준을 넘어 타인의 작업을 직접 복제해 빠르게 기준점을 만들고, 자신이 바꿔야 할 부분을 배우는 방법임 Virgil Abl...",
+    "date": "2026-06-27"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30845",
+    "title": "모든 고객을 위한 Cloudflare OAuth",
+    "description": "Cloudflare는 고객이 직접 self-managed OAuth 앱을 만들 수 있게 해, Cloudflare API 접근을 표준 위임 승인 흐름으로 제공할 수 있게 함 예전에...",
+    "date": "2026-06-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30837",
+    "title": "auth.md — 에이전트가 사용자를 대신해 가입시키기 위한 오픈 프로토콜",
+    "description": "각 서비스가 자기 도메인 루트에 호스팅하는 auth.md 파일 표준 에이전트에게 사용자를 대신해 등록하는 방법을 알려줘서, 별도의 회원가입 폼 없...",
+    "date": "2026-06-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30833",
+    "title": "Hacker News 데이터로 살펴보는 18년간 기술 트렌드 변화",
+    "description": "Hacker Trends는 Hacker News에 축적된 약 4,500만 건의 게시글과 댓글을 분석하여 특정 기술, 제품, 기업, 인물의 언급량 변화를 시계열로 보여주...",
+    "date": "2026-06-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30813",
+    "title": "Cafe24, LLM Router 공개",
+    "description": "Claude, Gemini, Qwen, Llama, DeepSeek 등 100개 이상 모델을 단일 엔드포인트로 호출하는 통합 LLM 인프라 OpenAI 호환 단일 API를 제공해, Prov...",
+    "date": "2026-06-25"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30809",
+    "title": "Anthropic, Claude Tag 공개",
+    "description": "Claude와 협업하는 새로운 방식으로, Slack에 팀원처럼 합류해 채널 내 누구나 작업을 위임할 수 있는 기능 지정된 채널 접근 권한과 도구·데이터·...",
+    "date": "2026-06-25"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30805",
+    "title": "bumblebee - 공급망 침해 노출 점검용 스캐너",
+    "description": "맥/리눅스 개발자 머신에서 패키지/확장/개발 도구 메타데이터를 수집해, 공급망 침해 발생 시 즉시 확인하는 읽기 전용 인벤토리 수집기 SBOM(무...",
+    "date": "2026-06-25"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30767",
+    "title": "취업과 소프트웨어는 망했다",
+    "description": "AI가 증폭시킨 최악의 채용 시장이 만들어져, 규칙을 지키는 지원자일수록 불리해지는 구조로 바뀌고 있음 Coderpad, HackerRank, AI 감독관 시험 ...",
+    "date": "2026-06-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30759",
+    "title": "Show GN: gh-orbit – 여러 worktree의 열린 PR·CI·diff를 한 터미널 대시보드로 모으는 gh 익스텐션",
+    "description": "작업이 여러 worktree로 흩어질 때 — 동시에 굴리는 기능 브랜치 스택이든, 병렬로 돌리는 코딩 에이전트 몇 개든 — worktree마다 자기 커밋 그래...",
+    "date": "2026-06-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30747",
+    "title": "bigset - 세상의 모든 데이터를 가지고 있다면?",
+    "description": "자연어 한 문장으로 라이브 웹에서 구조화된 데이터셋을 생성하고, 설정한 주기마다 자동 갱신하는 오픈소스 도구 예: \"현재 엔지니어를 채용 중인...",
+    "date": "2026-06-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30744",
+    "title": "에이전틱 테스팅 - E2E 테스트 스택에서 에이전트의 역할",
+    "description": "Slack 엔지니어링팀이 에이전트 기반 E2E(End-to-End) 테스트가 기존 결정론적(deterministic) 테스트를 대체할지 검증하기 위해 200건 이상의 에...",
+    "date": "2026-06-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30741",
+    "title": "구글을 AI로 해킹해서 7억원 벌기",
+    "description": "AI를 시켜 Google의 API를 끊임없이 자동으로 찔러보게 한 결과, 3개월 만에 50만 달러의 버그 바운티 수익을 올린 보안 연구 사례 60,000개 이상...",
+    "date": "2026-06-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30729",
+    "title": "개인 웹사이트를 위한 JSON-LD 설명",
+    "description": "개인 웹사이트도 구조화 데이터를 넣으면 크롤러가 페이지와 인물, 글의 관계를 더 잘 이해하고 링크 미리보기와 검색 노출 품질을 개선할 수 있음...",
+    "date": "2026-06-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30720",
+    "title": "Show GN: 전국 학교 공시 데이터 검색·비교 서비스",
+    "description": "안녕하세요. 학교 정보를 찾을 때 여러 사이트와 엑셀 파일을 오가야 하는 불편을 줄여 보고 싶어서 우리학교어때를 만들었습니다. 개발 전 과정은...",
+    "date": "2026-06-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30713",
+    "title": "Show GN: 『내 문장이 그렇게 이상한가요?』에서 영감을 받아 grep으로 대충 훑지 않고 모든 문장을 LLM이 읽고 ...",
+    "description": "Claude code나 codex에서 글을 교정하라고 시키면 grep으로 읽어 단어를 빠뜨리곤 합니다. 그래서 모든 문장을 구분자 단위로 강제로 LLM한테 읽혀...",
+    "date": "2026-06-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30712",
+    "title": "훈련시킬 수 없는 것",
+    "description": "2026년 중반 투자자들 사이 \"AI 정신증\"적 절망론이 확산 중이며, 모델이 모든 것을 더 잘하게 되면 그 위에 세워진 회사는 모두 흡수될 얇은 래퍼...",
+    "date": "2026-06-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30710",
+    "title": "누가 지능의 가격을 정할 것인가?",
+    "description": "AI가 지능(intelligence)을 가격이 매겨지는 자원으로 바꾸면서, 시장의 모든 계층이 그 가격을 누가 통제할지를 두고 경쟁 중 AI 랩들은 사용량이...",
+    "date": "2026-06-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30702",
+    "title": "Reddit을 이용해 AI 검색을 조작하는 일은 너무 쉽다",
+    "description": "단 13단어 분량의 짧은 텍스트만으로도 ChatGPT와 Google AI 검색을 구동하는 AI 에이전트의 출력을 일관되게 스팸·스캠 콘텐츠로 바꿀 수 있음 Re...",
+    "date": "2026-06-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30701",
+    "title": "ponytail - AI 에이전트를 가장 게으른 시니어 개발자처럼 생각하게 만들기",
+    "description": "\"최고의 코드는 작성하지 않은 코드\" \"알죠? 긴 포니테일에 타원형 안경을 쓴 그 사람. 버전 관리 시스템보다 더 오래 회사에 다닌 사람. 당신이 ...",
+    "date": "2026-06-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30685",
+    "title": "Show GN: opencodex — Codex에서 아무 LLM이나 쓸 수 있는 로컬 프록시",
+    "description": "Codex는 OpenAI 모델만 된다. Claude 쓰고 싶으면? GLM-5.2로 코딩하고 싶으면? OpenAI가 추가해줄 때까지 기다려야 한다. opencodex는 이 문제를 ...",
+    "date": "2026-06-21"
+  },
+  {
     "url": "https://news.hada.io/topic?id=30677",
     "title": "open-code-review — Alibaba의 AI 코드 리뷰 도구",
     "description": "알리바바가 내부에서 사용하던 AI 코드 리뷰 어시스턴트로 2년간 수만 명의 개발자가 수백만 건의 코드 결함을 식별한 뒤 오픈소스로 공개 Git dif...",
