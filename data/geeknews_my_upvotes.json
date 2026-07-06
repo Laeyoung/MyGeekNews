@@ -1,5 +1,101 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=31128",
+    "title": "아프리카에서 Starlink 이용이 늘어나는 이유",
+    "description": "위성 인터넷 Starlink가 대륙의 열악한 통신망을 견디다 못한 아프리카 정부와 부유층 사이에서 빠르게 확산 중 현재는 모바일·광케이블보다 비싼 ...",
+    "date": "2026-07-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31106",
+    "title": "루프 엔지니어링의 미학 (The Art of Loop Engineering)",
+    "description": "에이전트를 안정적으로 유용한 작업에 활용하려면 좋은 모델만으로는 부족하며, 작업 집합에 맞게 설계된 하네스(harness) 가 필요함 가장 기본이 ...",
+    "date": "2026-07-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31101",
+    "title": "ClickHouse가 Observability 전쟁에서 앞서가는 이유",
+    "description": "로그는 작은 시스템의 grep 경험과 달리, 서비스와 소비자가 늘면 대용량·비정형·예측 불가 쿼리가 겹쳐 Observability에서 가장 다루기 어려운 데...",
+    "date": "2026-07-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31099",
+    "title": "저커버그, Meta의 해고가 효과 없었음을 ‘인정’",
+    "description": "Meta는 AI 에이전트 개발에 맞춰 조직을 크게 흔들었지만, Zuckerberg는 최근 4개월간 에이전트 개발 궤적이 기대만큼 가속하지 않았다고 말함 1~2...",
+    "date": "2026-07-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31097",
+    "title": "Alibaba, 백도어 위험 우려해 사내에서 클로드 코드 사용 금지 조치 예정",
+    "description": "중국 IT 대기업 Alibaba가 중국 연계 사용자 식별 기능으로 논란이 된 Anthropic의 Claude Code를 업무에서 사용하지 못하도록 직원들에게 금지 조...",
+    "date": "2026-07-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31075",
+    "title": "Senior SWE-Bench: 시니어 엔지니어급 에이전트 평가용 오픈소스 벤치마크",
+    "description": "Senior SWE-Bench는 코딩 에이전트를 과도하게 정리된 주니어 과제가 아니라, 실제 시니어 엔지니어가 맡는 기능 개발·버그 수정·성능 문제에 가깝...",
+    "date": "2026-07-03"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31029",
+    "title": "논쟁 대부분은 아이디어가 아니라 자아에 관한 것",
+    "description": "기술적 정확성을 앞세워 코드 리뷰와 설계 회의에서 논쟁하던 경험은 “맞았지만 사람을 잃는” 결과로 이어졌고, 논쟁의 효용과 한계를 다시 보게 ...",
+    "date": "2026-07-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31025",
+    "title": "supertree - 디시젼 트리 인터랙티브 시각화 도구",
+    "description": "의사결정 트리를 Jupyter, JupyterLab, Google Colab 노트북 안에서 인터랙티브하게 시각화하는 Python 패키지 노드 확대(Zoom)·이동(Pan)·접기(co...",
+    "date": "2026-07-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31018",
+    "title": "Google Copybara: 저장소 간 코드 이동",
+    "description": "Copybara는 Google 내부에서 쓰이는 도구로, 여러 저장소 사이에서 소스 코드를 변환하고 이동해 confidential 저장소와 public 저장소를 동기화하...",
+    "date": "2026-07-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31014",
+    "title": "Kubernetes를 브라우저로 포팅했어요",
+    "description": "webernetes는 Kubernetes 일부를 TypeScript로 옮겨 브라우저 안에서 클러스터를 실행하게 만든 프로젝트로, 2개월 동안 552개 커밋·629개 파일·거...",
+    "date": "2026-07-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30994",
+    "title": "개정된 엔지니어링 리더십 규칙",
+    "description": "AI 도구 전환과 빠른 성장(hypergrowth) 환경에서 지난 1년간 검증해 재정립한 엔지니어링 리더십 5대 규칙과 이를 뒷받침하는 실제 프로젝트 사례...",
+    "date": "2026-07-01"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30990",
+    "title": "Atlassian의 DESIGN.md 공개 - 이식 가능한 디자인 컨텍스트를 실전 테스트하며 얻은 교훈",
+    "description": "AI가 생성하는 UI가 브랜드 정체성 없이 일반화되는 \"slop\" 문제를 해결하기 위한 이식 가능한 Markdown 포맷으로, 디자인 시스템의 핵심 요소를 ...",
+    "date": "2026-07-01"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30977",
+    "title": "SSH를 위한 네이티브 그래픽 셸",
+    "description": "서버와 엣지 기기가 터미널만 노출하는 대신 브라우저 기반 그래픽 셸을 제공하면, 다른 기기에서 원격 앱을 더 자연스럽게 사용할 수 있음 이 셸...",
+    "date": "2026-07-01"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30951",
+    "title": "HackerRank 오픈소스 ATS, 같은 이력서 점수가 90점·74점·88점으로 흔들림",
+    "description": "같은 이력서와 같은 명령으로 HackerRank의 오픈소스 ATS 채용 에이전트를 반복 실행하자 점수가 66~99점까지 흔들렸고, 85점 컷오프에서는 65%가 ...",
+    "date": "2026-06-30"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30931",
+    "title": "Tokenmaxxing은 죽었다, Tokenmaxxing 만세",
+    "description": "기업의 AI 도입 초기에 토큰 사용량을 성과 평가와 연결한 tokenmaxxing은 무의미한 비용을 만들었지만, AI 도구 사용을 조직에 강제로 퍼뜨리는 ...",
+    "date": "2026-06-29"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=30922",
+    "title": "Foldkit - 정확성을 위한 프론트엔드 프레임워크",
+    "description": "Effect 위에 구축되고 Elm 아키텍처처럼 설계된 TypeScript 프론트엔드 프레임워크로, 렌더링만 해결하는 React/Vue/Svelte와 달리 아키텍처 자체...",
+    "date": "2026-06-29"
+  },
+  {
     "url": "https://news.hada.io/topic?id=30906",
     "title": "Show GN: NetTools – 가입·추적 없는 무료 네트워크/보안/개발 도구 45종",
     "description": "네트워크 엔지니어/개발자가 매일 반복하는 계산·조회 작업을, 광고·가입·추적 없이 빠르게 하려고 만든 무료 도구 모음입니다. 주요 도구 (총 45...",
