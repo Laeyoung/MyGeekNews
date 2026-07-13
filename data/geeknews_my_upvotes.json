@@ -1,5 +1,131 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=31385",
+    "title": "숏폼 동영상이 B2B 검색 결과와 AI 답변으로 영역을 확장하고 있다",
+    "description": "유튜브 쇼츠·인스타그램·틱톡의 세로형 동영상이 지난 6개월간 ‘best + software’ 검색 결과 상위권에 진입했으며, 프로젝트 관리·ERP·재고 관리처...",
+    "date": "2026-07-13"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31343",
+    "title": "Ghost Font - 사람은 읽지만 AI는 읽기 어려운 글꼴",
+    "description": "Ghost Font는 배경과 같은 점들의 움직임으로 글자를 만들어, 사람은 영상에서 메시지를 인식하지만 개별 프레임을 분석하는 AI는 쉽게 해독하지 ...",
+    "date": "2026-07-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31313",
+    "title": "Show GN: 대한민국 제도 100개를 한장씩 체계도로 만들었습니다.",
+    "description": "AI리터러시를 조금 다른 방향으로 고민해봤습니다. 일반인이 AI를 배우는 것이 아니라 AI를 통해서 다른 전문 영역의 리터러시를 높이는 것입니다....",
+    "date": "2026-07-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31294",
+    "title": "미첼 하시모토 인터뷰: Ghostty, Zig, 오픈소스 유지보수",
+    "description": "Mitchell Hashimoto는 Vagrant, Terraform, Vault 이후 Ghostty와 Vouch를 만들며, 터미널·Zig·오픈소스 유지보수·제품 품질에 대한 자신의 기준을...",
+    "date": "2026-07-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31287",
+    "title": "Microsoft, AI 에이전트용 시각화 언어 Flint 공개",
+    "description": "Flint는 AI 에이전트가 사람이 편집할 수 있는 짧은 명세로 표현력 있는 차트를 만들도록 돕는 시각화 중간 언어임 컴파일러가 데이터와 의미 타입...",
+    "date": "2026-07-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31275",
+    "title": "OpenAI GPT 5.6 출시",
+    "description": "OpenAI가 2026년 7월 9일, GPT-5.6 패밀리를 정식 출시(GA)했습니다. 6월 26일 프리뷰 이후의 정식 공개이며, Sol(플래그십), Terra(균형형), Luna...",
+    "date": "2026-07-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31247",
+    "title": "TrueType QR Code 폰트 - 폰트만으로 QR코드 만들기",
+    "description": "대괄호로 감싼 텍스트를 QR 코드로 바꾸는 TrueType/OpenType 폰트로, 이미지 생성 없이 문서 안에 QR 코드를 넣을 수 있음 변환은 폰트 내부의 Op...",
+    "date": "2026-07-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31243",
+    "title": "Davit - Apple Containers용 네이티브 macOS UI",
+    "description": "애플 실리콘 Mac에서 Apple의 컨테이너 플랫폼으로 Linux 컨테이너를 실행·관리하는 네이티브 macOS 앱이며, Docker Desktop 없이 쓸 수 있음 Appl...",
+    "date": "2026-07-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31225",
+    "title": "루프 시작하기",
+    "description": "코딩 에이전트에 매 프롬프트를 지시하는 방식 대신, 정지 조건이 충족될 때까지 작업 사이클을 반복하는 에이전트 운영 패턴으로 전환 중 Claude ...",
+    "date": "2026-07-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31224",
+    "title": "30 Papers - 일리야 서츠케버 추천 AI 핵심 논문 목록 요약",
+    "description": "일리야 서츠케버가 존 카맥에게 추천했다고 알려진 AI 핵심 논문 목록을 바탕으로, 머신러닝 핵심 논문을 초보자가 따라가기 쉽게 모은 사이트 목...",
+    "date": "2026-07-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31218",
+    "title": "Ternlight - 브라우저(WASM)에서 실행되는 7MB 임베딩 모델",
+    "description": "서버 호출 없이 브라우저 안에서 텍스트 임베딩과 유사도 검색을 수행해, 의미(Semantic) 검색을 빠르게 구성 GPU 없이 CPU만으로 동작하며, 기본 ...",
+    "date": "2026-07-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31216",
+    "title": "Show GN: gh-attach – CLI로 GitHub 이슈/PR에 이미지, 파일 첨부하기",
+    "description": "GitHub 이슈나 PR에 이미지를 첨부하려면 웹 UI에 직접 접속해서 업로드해야 했습니다. 첨부 파일 업로드를 지원하는 공식 API가 없기 때문입니다....",
+    "date": "2026-07-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31209",
+    "title": "GLM 5.2와 다가오는 AI 추론 마진 붕괴",
+    "description": "GLM 5.2는 오픈 가중치(open weights) 모델이 Opus·GPT급 에이전트 작업에 근접하면서, 폐쇄형 프런티어 모델의 높은 추론 마진을 압박할 수 있음...",
+    "date": "2026-07-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31206",
+    "title": "Show GN: 파비콘을 만들어주는 간단한 zsh 커맨드",
+    "description": "- 를 보고, 별도 도구를 이용하는 것보단 cli에서 처리하고 싶어져서 만든 스크립트입니다. imageMagick이 패스에 등록되어 있어야 정상적으로 작...",
+    "date": "2026-07-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31190",
+    "title": "Astryx - Meta가 공개한 오픈소스 디자인 시스템",
+    "description": "React와 StyleX 기반으로 완전한 커스터마이징과 에이전트 대응이 특징 접근성과 브랜드 테마 적용이 가능한 160개 이상의 React 컴포넌트를 갖추...",
+    "date": "2026-07-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31181",
+    "title": "Coursera로 컴퓨터 과학 학위 마치기",
+    "description": "학위 없이 21년 가까이 기술 경력을 쌓아온 소프트웨어 개발자/MLE가 런던대학교 컴퓨터과학(CS) 학사 과정를 Coursera로 수강해 전일제 근무와 병...",
+    "date": "2026-07-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31174",
+    "title": "Show GN: Jetendard 폰트 (JetBrains Mono Nerd Font + Pretendard)",
+    "description": "여밀 폰트 의 소스코드를 거의 그대로 사용했습니다. 여밀 폰트와 다른 점은 Geist mono font 대신에 JetBrains Mono Nerd Font Mono를 사용했습니...",
+    "date": "2026-07-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31166",
+    "title": "Figma는 다음에 무엇을 할 것인가?",
+    "description": "디자인을 멀티플레이어 협업으로 만든 문제를 해결하며 지난 10년간 가장 중요한 제품 도구로 자리 잡았으나, 무게 중심이 캔버스에서 코드로 이동...",
+    "date": "2026-07-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31161",
+    "title": "OpenPrinter - 수리 가능한 컴팩트 오픈 프린터",
+    "description": "OpenPrinter는 수리 가능한 구조와 리필 잉크를 앞세워, 프린터 유지보수 비용과 소모품 폐기물을 줄이려는 오픈 하드웨어 프로젝트임 흑백 600 dp...",
+    "date": "2026-07-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31159",
+    "title": "dbtrail - 모든 행 변경을 기억하고 되돌리기 가능한 MySQL용 타임머신",
+    "description": "MySQL의 바이너리 로그(binary log) 를 tail 하여 모든 행 변경을 완전한 before/after 이미지와 함께 검색 가능한 인덱스로 보관 Lock/스키마 변...",
+    "date": "2026-07-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31158",
+    "title": "OpenTag - Slack용 Claude Tag의 오픈소스 대안",
+    "description": "Slack 스레드를 읽고 답변하며 도구를 호출해 결과를 대화창에 바로 렌더링하는 셀프 호스팅 AI 에이전트 락인없이 런타임을 소유하며, 원하는 모...",
+    "date": "2026-07-06"
+  },
+  {
     "url": "https://news.hada.io/topic?id=31128",
     "title": "아프리카에서 Starlink 이용이 늘어나는 이유",
     "description": "위성 인터넷 Starlink가 대륙의 열악한 통신망을 견디다 못한 아프리카 정부와 부유층 사이에서 빠르게 확산 중 현재는 모바일·광케이블보다 비싼 ...",
