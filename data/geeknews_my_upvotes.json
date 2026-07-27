@@ -1,5 +1,107 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=31850",
+    "title": "Cerebras가 사내 지식 베이스를 구축한 방법",
+    "description": "Slack/코드 저장소/문서/내부 데이터베이스를 기존 위치에서 직접 수집하는 Cerebras Knowledge를 구축해 출시 3개월 만에 직원/자동화/에이전트로...",
+    "date": "2026-07-27"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31833",
+    "title": "DeepSeek, 미중 AI 격차 관련 발언 유출후 투자 유치 중단 (녹취록)",
+    "description": "DeepSeek가 두 번째 투자 유치에 참여하던 일부 투자자에게 예정됐던 계약 체결을 진행하지 않고 협상을 당분간 중단한다고 구두로 통보했으며, 향...",
+    "date": "2026-07-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31832",
+    "title": "8달러짜리 마이크로컨트롤러에서 2,890만 매개변수 LLM 실행하기",
+    "description": "ESP32-S3에서 서버 연결 없이 2,890만 매개변수 언어 모델을 구동해 작은 화면에 약 초당 9개 토큰으로 텍스트를 출력함 전체 매개변수 중 2,500만...",
+    "date": "2026-07-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31828",
+    "title": "재능이라는 허상",
+    "description": "많은 주니어가 취업난, AI, 뛰어난 주변 개발자들을 보며 \"나는 개발 재능이 없다\"고 생각하고 개발자를 포기한다. 하지만 우리가 흔히 생각하는 ...",
+    "date": "2026-07-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31783",
+    "title": "Anthropic Opus 5 출시",
+    "description": "Anthropic이 2026년 7월 24일, Claude Opus 5를 공개했습니다. Opus 티어의 \"세대 교체급\" 개선 모델로, Fable 5(프론티어 모델)에 근접한 지능을 ...",
+    "date": "2026-07-25"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31746",
+    "title": "큰 효과를 만드는 작은 UI 디자인 팁들",
+    "description": "UI 디자인은 예술적 감각보다 일관된 논리 규칙을 적용해 배치/간격/서체/색상 결정을 내릴 때 더 빠르고 예측 가능하게 개선할 수 있음 관련 요소...",
+    "date": "2026-07-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31743",
+    "title": "graphify - 코드베이스를 질의 가능한 지식 그래프로 바꾸는 도구",
+    "description": "AI 코딩 어시스턴트에서 /graphify . 하면 코드/문서/PDF/이미지/영상 전체가 지식 그래프로 매핑되어, 파일을 grep하는 대신 질문으로 탐색하는 ...",
+    "date": "2026-07-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31716",
+    "title": "Passkey는 소비자 심리를 전혀 이해하지 못한 엔지니어들이 만들었다",
+    "description": "X 프로덕트 헤드인 Nikita Bier는 Passkey의 개념과 저장 위치가 사용자에게 명확히 전달되지 않아, 앱 로그인 때 정체를 알 수 없는 “마법의 가루...",
+    "date": "2026-07-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31710",
+    "title": "OmniRoute — 흩어진 무료/저가 AI 티어를 하나로 묶는 게이트웨이",
+    "description": "하나의 로컬 엔드포인트(localhost:20128/v1)로 271개 프로바이더/500개 이상 모델을 연결하고 Claude Code/Codex/Cursor/Cline/Copilot 등 26개 ...",
+    "date": "2026-07-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31683",
+    "title": "AI 시대에 번영할 사람들",
+    "description": "AI 시대에 사람을 가르는 기준은 지능보다 정신적 노력과 맺는 관계이며, 지능이 흔해질수록 스스로 사고하고 성장하려는 의지(volition) 가 더 귀...",
+    "date": "2026-07-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31637",
+    "title": "해커가 루마니아 토지 등기 데이터베이스를 삭제",
+    "description": "해커가 ANCPI에 침입해 금품 요구가 실패하자 토지 등기 데이터베이스와 백업을 삭제하면서 루마니아 부동산 시장이 일주일간 사실상 멈춤 공격자...",
+    "date": "2026-07-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31634",
+    "title": "중국의 오픈 가중치 AI 전략이 앞서고 있음",
+    "description": "AI 모델은 브랜드 충성도와 피상적인 전환 비용 외에는 방어력이 크지 않아, 중국의 오픈 가중치 전략이 미국의 폐쇄형 모델보다 넓은 배포 생태계...",
+    "date": "2026-07-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31632",
+    "title": "monitor-input-rs - DDC/CI로 모니터 입력 소스를 바꾸는 커맨드라인 도구",
+    "description": "DDC/CI 프로토콜로 모니터의 입력 소스(DisplayPort, HDMI, USB-C 등)를 커맨드라인에서 전환하는 도구로, 윈/맥/리눅스 모두 지원 이름/인덱스 뒤...",
+    "date": "2026-07-21"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31601",
+    "title": "MIDI 레코더 2,500대를 판매하며 배운 것: 하드웨어는 그렇게 어렵지 않다",
+    "description": "피아노 연주를 자동으로 기록하는 Jamcorder는 출시 1년 반 만에 2,500대 이상 판매돼 독립적으로 유지 가능한 사업이 됨 개발에서 가장 어려웠던 ...",
+    "date": "2026-07-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31594",
+    "title": "OpenWiki - 코드베이스를 위한 에이전트용 문서를 작성하고 관리하는 CLI",
+    "description": "에이전트 전용으로 제작된 문서화 도구로, 코드베이스나 목적별 메모리용 위키를 작성/유지 내장 커넥터 또는 Git 저장소를 통해 로컬 지식 소스를...",
+    "date": "2026-07-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31593",
+    "title": "오픈소스 LLM vs 빅테크 LLM API: AI 사업의 비용과 리스크 정리",
+    "description": "GPT-4.5, 상업 수명 4.5개월 2025년 2월 출시된 당시 최고가 모델 GPT-4.5(입력 $75/출력 $150 per 1M 토큰)가 5개월이 되기 전 API에서 제거됨. O...",
+    "date": "2026-07-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=31587",
+    "title": "당신이 안 보는 사이 프론트엔드에 무슨 일이 있었나",
+    "description": "2008년경 프론트엔드를 떠난 개발자를 대상으로, 지난 20년간의 변화를 설명하는 글 모든 도구는 실제 문제(상처) 위에 생긴 흉터 조직이며 각 레...",
+    "date": "2026-07-20"
+  },
+  {
     "url": "https://news.hada.io/topic?id=31569",
     "title": "Mindwalk - 코딩 에이전트 세션을 코드베이스의 3D 지도 위에서 재생하는 시각화 도구",
     "description": "세션 로그는 에이전트가 무엇을 했는지 기록하지만, 작업을 어떻게 이해했는지(관련 영역 판단, 탐색 위치, 작업 범위 일치 여부)는 담지 못하며, ...",
