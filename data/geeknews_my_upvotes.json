@@ -1,5 +1,113 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=32282",
+    "title": "goshot - 코드 스크린샷 생성기",
+    "description": "Carbon/Silicon과 유사하게 코드와 터미널 출력을 아름다운 스크린샷으로 만드는 Go 라이브러리이자 CLI 문법 하이라이팅을 chroma 기반 수백 개 ...",
+    "date": "2026-08-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32276",
+    "title": "“코드는 결코 어려운 부분이 아니었다”는 말은 모든 프로그래머에 대한 모욕이다",
+    "description": "AI가 프로그래밍을 바꾸고 있지만 코딩을 쉬운 작업으로 치부하면, 오랫동안 요구된 기술·경험·노력과 소프트웨어가 여전히 버그투성이라는 현실을...",
+    "date": "2026-08-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32257",
+    "title": "평가 주도 개발 (Eval-driven development)",
+    "description": "Airbnb는 비결정적 출력과 주관적 정답, 검색·추론·도구 호출의 연쇄 실패를 다루기 위해 평가를 사후 검증이 아닌 핵심 엔지니어링 규율로 취급함...",
+    "date": "2026-08-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32253",
+    "title": "Orca - 여러 병렬 코딩 에이전트를 위한 오픈소스 ADE",
+    "description": "자신의 구독을 그대로 사용해, 터미널에서 실행되는 모든 CLI 에이전트(Codex/ClaudeCode/OpenCode/Pi 등)를 구동 Parallel Worktrees로 각 에이전...",
+    "date": "2026-08-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32218",
+    "title": "LLM은 ‘점프’할 수 없다",
+    "description": "현재 생성형 AI는 데이터에서 규칙을 찾는 귀납(Induction) 과 주어진 공리에서 결과를 도출하는 연역(Deduction) 은 빠르게 기계화하고 있지만, ...",
+    "date": "2026-08-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32216",
+    "title": "Qwen3.8 Max, Agentic Index 종합 1위",
+    "description": "Qwen3.8 Max가 도구 사용·계획·자율성·복합 문제 해결을 측정하는 Artificial Analysis Agentic Index에서 종합 최고 모델로 평가됨 Agentic Index...",
+    "date": "2026-08-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32192",
+    "title": "late.sh - 개발자를 위한 아늑한 터미널 클럽하우스",
+    "description": "SSH 클라이언트만으로 접속하는 터미널 우선 소셜 앱으로, ssh late.sh 한 줄이면 실시간 채팅/음악/게임/뉴스 등을 보는 공간에 들어가기 가능 단...",
+    "date": "2026-08-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32186",
+    "title": "Discovery Loop",
+    "description": "Jeff Dean, Sanjay Ghemawat, Quoc Le, Oriol Vinyals의 Discovery Loop는 반복적인 실험 과정을 AI로 자동화해 과학·공학 연구 속도를 높이고 결...",
+    "date": "2026-08-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32179",
+    "title": "자기 개선을 위한 하네스 엔지니어링",
+    "description": "재귀적 자기 개선(RSI)의 단기 경로는 모델이 직접 가중치를 고치는 것보다, 사고·도구·맥락·기억·평가를 조율하는 하네스 자체를 개선해 더 나은 ...",
+    "date": "2026-08-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32175",
+    "title": "소프트웨어 엔지니어링과 생성형 AI에 관한 8가지 오해",
+    "description": "생성형 AI는 일부 개발 작업을 빠르게 하지만, 실제 업무 구성과 조직 환경을 무시한 과장된 생산성 기대는 도입·측정·투자 결정을 왜곡할 수 있음...",
+    "date": "2026-08-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32162",
+    "title": "디자인 시스템의 미래 [유튜브]",
+    "description": "AI 시대의 디자인 시스템은 디자인을 코드로 넘기는 기존 흐름을 넘어, AI가 만든 제품을 역설계해 일관된 코드와 캔버스로 되돌리는 코드 중심 워...",
+    "date": "2026-08-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32160",
+    "title": "모든 사용자 인터페이스를 구성하는 10가지 GUI 디자인 요소",
+    "description": "거의 모든 화면은 버튼, 폼, 메뉴, 링크, 대화상자, 알림, 아이콘, 체크박스·라디오 버튼, 탭, 검색이라는 상호작용 알파벳으로 구성되며, 수십 년...",
+    "date": "2026-08-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32159",
+    "title": "Netflix가 AI 시대에 전문가보다 시스템 사고형 인재에 베팅하는 이유 (유튜브)",
+    "description": "생성형 AI로 PM·디자이너·데이터 과학자가 프로토타입과 코드 작성까지 맡게 됐지만, Netflix는 이를 직무의 소멸이 아닌 역할이 재편되는 stormin...",
+    "date": "2026-08-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32157",
+    "title": "kubara - 모범 사례 기반으로 Kubernetes 플랫폼을 부트스트랩하는 CLI",
+    "description": "GitOps-first 워크플로우로 Kubernetes 플랫폼을 부트스트랩하고 운영하는 Opionated CLI 플랫폼 스캐폴딩/환경 구성/프로덕션 기본값을 Go 기반 ...",
+    "date": "2026-08-05"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32128",
+    "title": "구글 서치 콘솔, X/인스타그램/틱톡/유튜브를 통한 유입 트래픽도 지원 시작",
+    "description": "Google 검색과 디스커버에서 소셜 및 동영상 게시물의 실적을 추적하는 새로운 Search Console 속성 유형인 플랫폼 속성 도입 Instagram, TikTok, ...",
+    "date": "2026-08-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32107",
+    "title": "Show GN: Book Studio",
+    "description": "그동안 PDF로 된 책을 웹 문서로 옮겨 혼자 읽어왔습니다. 챕터를 나눠 탐색하고, 필요한 내용을 검색하고, 밑줄과 메모를 남기니 일반 PDF 뷰어보...",
+    "date": "2026-08-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32075",
+    "title": "가장 빠른 AI-First 기업은 실제로 어떻게 일하는가",
+    "description": "빠른 AI-First 기업은 단순히 인원을 줄이고 도구를 도입하는 데 그치지 않고, AI를 동료로 취급하며 훌륭한 제품이라는 공동 목표에 맞춰 사람과 ...",
+    "date": "2026-08-03"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32073",
+    "title": "Diátaxis - 기술 문서 작성을 위한 체계적 접근법",
+    "description": "Diátaxis는 문서 사용자의 서로 다른 요구를 기준으로 기술 문서의 내용/형식/구조를 설계하는 체계적 접근법 사용자의 요구를 튜토리얼/방법 안내...",
+    "date": "2026-08-03"
+  },
+  {
     "url": "https://news.hada.io/topic?id=31969",
     "title": "매니저가 된다는 것의 진실",
     "description": "엔지니어링 매니저는 기술 업무를 넘어 어려운 결정과 갈등, 기밀, 조직의 불안을 감당하는 외롭고 책임이 큰 역할을 맡게 됨 직책이 바뀌면 팀과...",
