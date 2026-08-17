@@ -1,5 +1,131 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=32516",
+    "title": "hubble.md - 사람과 에이전트를 위한 노트패드",
+    "description": "Markdown과 HTML을 기반으로 하는 무료 오픈소스 노트 앱으로, 사람과 에이전트가 함께 사용하도록 설계 Notion/Apple Notes와 비슷한 작성 경험 ...",
+    "date": "2026-08-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32514",
+    "title": "Qwen3.8-27B, 17~19GB 메모리에서 4-bit 로컬 실행 가능",
+    "description": "Qwen3.8 Max에 이어, 개인 장비에서 돌릴 수 있는 27B 모델도 Unsloth GGUF/NVFP4로 공개돼 로컬에서 바로 실행 가능 27B 밀집형(dense) 모델이면...",
+    "date": "2026-08-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32484",
+    "title": "palmier-pro - AI를 위해 만든 macOS 영상 편집기",
+    "description": "타임라인 안에서 사용자와 에이전트가 함께 영상을 생성·편집할 수 있는 오픈소스 macOS 영상 편집기 Swift로 처음부터 새로 개발했으며, Premiere...",
+    "date": "2026-08-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32477",
+    "title": "Gemini 3.7 Flash",
+    "description": "Google이 3.6 Flash 출시 3주 만에 Gemini 3.7 Flash를 공개하며 소프트웨어 엔지니어링·지식 업무·웹 개발 성능을 높임 코드 벤치마크에서 Fronti...",
+    "date": "2026-08-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32455",
+    "title": "Unsloth Desktop - 로컬 AI 모델 실행/학습/에이전트를 하나로 묶은 오픈소스 앱",
+    "description": "빠른 파인튜닝 도구 Unsloth가 Desktop 버전을 출시 LLM뿐 아니라 diffusion 이미지/비디오, embedding, vision, TTS/STT 모델을 실행/학습하며, G...",
+    "date": "2026-08-13"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32454",
+    "title": "인간 중심에서 에이전틱 코드 리뷰로 - 더 빠른 결정이 더 나은 리뷰를 뜻하지는 않는다",
+    "description": "207개 GitHub 프로젝트의 102만 개 PR을 분석해, 코드 리뷰가 인간 중심/LLM 보조/AI 에이전트 참여 단계로 바뀌는 과정에서 리뷰 속도와 품질이 ...",
+    "date": "2026-08-13"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32453",
+    "title": "Delta - 에이전트와 함께 코딩하고 검토하는 멀티플레이어 환경",
+    "description": "개발자와 에이전트가 코드와 대화의 맥락을 공유하며 구현 결과를 검토하는 환경으로, 첫 사용자를 대상으로 비공개 베타를 시작함 DeltaDB가 대화...",
+    "date": "2026-08-13"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32449",
+    "title": "에이전틱 코드 리뷰에서 인간-AI 시너지 : 인간과 AI는 다르게 리뷰한다",
+    "description": "300개 GitHub 프로젝트의 27만여 개 인라인 코드 리뷰 대화를 분석해, 인간과 AI의 피드백이 실제 수정과 후속 대화로 어떻게 이어지는지 비교함 A...",
+    "date": "2026-08-13"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32447",
+    "title": "AI 사용을 그만두기로 한 이유",
+    "description": "20년 경력의 개발자가 LLM 코딩 도구를 1년 넘게 적극적으로 사용한 끝에 정신 건강·소프트웨어 품질·환경과 사회적 비용을 이유로 코딩을 포함한 ...",
+    "date": "2026-08-13"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32441",
+    "title": "AI가 소프트웨어 엔지니어링의 중산층을 없애고 있음",
+    "description": "AI는 구현 속도의 제한을 없애 취약한 엔지니어링 문화를 가진 프로젝트가 복구 불가능한 복잡성에 도달하는 시간까지 크게 단축함 하루 만에 수만...",
+    "date": "2026-08-13"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32429",
+    "title": "AI가 코드를 쓰는 시대, antirez는 왜 다시 C로 만드는가",
+    "description": "Redis를 만든 antirez가 이번에는 H3-metal - Mac용 MiniMax-H3 추론 엔진을 공개함 텍스트로 영상과 오디오를 함께 생성하는 모델을 Apple Silico...",
+    "date": "2026-08-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32428",
+    "title": "HOP - HWP/HWPX 문서를 보고 편집할 수 있는 오픈소스 데스크톱 앱",
+    "description": "HWP/HWPX 문서를 macOS, Windows, Linux에서 열고 편집할 수 있는 오픈소스 데스크톱 앱 Rust 기반 HWP/HWPX 파서·에디터인 rhwp를 문서 엔진으로 ...",
+    "date": "2026-08-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32417",
+    "title": "코드 리뷰도 배워야 하는 기술이다",
+    "description": "코드 리뷰는 단순한 승인 절차나 버그 탐지가 아니라 교육/규범 유지/게이트키핑/사고 예방을 함께 수행하며, 코드와 변경사항을 이해하고 팀의 지...",
+    "date": "2026-08-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32415",
+    "title": "Nvidia의 위험한 사업",
+    "description": "엔비디아는 AI 데이터센터를 투자 가능한 인프라 자산으로 만들기 위해 여러 투자회사로부터 5,000억 달러 이상의 제3자 자본을 조달하려 하지만, ...",
+    "date": "2026-08-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32405",
+    "title": "한 연구자가 noreply.net을 샀더니 기업 기밀이 쏟아짐",
+    "description": "보안 연구자가 구매한 noreply.net과 noreply.us로 기업 시스템이 고객·직원 정보와 내부 기밀을 자동 전송했으며, noreply.net에는 2024년 12월 ...",
+    "date": "2026-08-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32376",
+    "title": "엔지니어링 리더는 매일 무슨 일을 하는가",
+    "description": "엔지니어링 리더의 업무는 코드나 기능처럼 눈에 보이는 산출물보다 대화/결정/조율/개입을 통해 나타나며, 하루 대부분은 정보 수집 → 정보 공유 ...",
+    "date": "2026-08-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32327",
+    "title": "Show GN: API 키 없이 URL 하나로 쓰는 한국 주식 데이터 JSON·MCP 서버를 만들었습니다",
+    "description": "KOSPI·KOSDAQ 1,463종목의 확정 종가·DART 공시·분기 실적을 가입·API 키 없이 JSON으로 받거나, Claude/ChatGPT에 MCP로 붙일 수 있는 서비스를 ...",
+    "date": "2026-08-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32322",
+    "title": "모든 코드를, 항상 다시 작성하라",
+    "description": "AI로 코드 생성 비용이 계속 낮아지면 프로덕션 코드를 희소한 자산으로 유지할 이유가 사라지고, 대규모 코드베이스를 지속적으로 재작성하는 것...",
+    "date": "2026-08-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32321",
+    "title": "hallmark - AI 티가 안나는 디자인 스킬",
+    "description": "AI 코딩 어시스턴트가 만드는 뻔한 디자인을 피하기 위해, 타이포/색상/레이아웃/모션/인터랙션에 걸친 안티 슬롭(anti-AI-slop) 규칙을 하나로 묶...",
+    "date": "2026-08-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32318",
+    "title": "Chat2DB - AI 기반 데이터베이스 클라이언트 & SQL 워크스페이스",
+    "description": "개발자, DBA, 분석가, 데이터 팀을 위한 AI 기반 데이터베이스 클라이언트로, 완전한 SQL 워크스페이스와 AI 어시스턴트를 결합 윈/맥/리눅스에서 ...",
+    "date": "2026-08-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32301",
+    "title": "디더링 QR 코드 만들기",
+    "description": "QR 코드의 데이터 모듈 주변 공간에 오차 확산으로 사진을 표현하면, 이미지를 보여주면서도 스마트폰으로 읽을 수 있는 코드를 만들 수 있음 스캐...",
+    "date": "2026-08-10"
+  },
+  {
     "url": "https://news.hada.io/topic?id=32282",
     "title": "goshot - 코드 스크린샷 생성기",
     "description": "Carbon/Silicon과 유사하게 코드와 터미널 출력을 아름다운 스크린샷으로 만드는 Go 라이브러리이자 CLI 문법 하이라이팅을 chroma 기반 수백 개 ...",
