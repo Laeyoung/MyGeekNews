@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import os
+import sys
 import json
 import time
 import re
@@ -14,6 +15,13 @@ _RELATIVE_DATE_PATTERNS = [
     (re.compile(r'(\d+)\s*달\s*전'), lambda n: timedelta(days=n * 30)),
     (re.compile(r'(\d+)\s*년\s*전'), lambda n: timedelta(days=n * 365)),
 ]
+
+# GeekNews (CloudFront) returns 403 for bot-like User-Agents such as python-requests.
+BROWSER_USER_AGENT = (
+    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 '
+    '(KHTML, like Gecko) Chrome/128.0 Safari/537.36'
+)
+LOGIN_URL = 'https://news.hada.io/auth/gn_login'
 
 PLACEHOLDER_TITLES = {'', 'No Title', 'No title'}
 TITLE_SELECTORS = [
@@ -87,6 +95,29 @@ def repair_placeholder_titles(session, topics):
     return repaired_count
 
 
+def login(session, userid, password):
+    """Log in to GeekNews. Returns (ok, reason).
+
+    A successful login answers 302 with Location '/', a failed one 302 with
+    Location '/login?code=...'. Redirects are not followed on purpose: the
+    homepage rejects non-browser clients with 403, which would be mistaken for
+    a login failure.
+    """
+    response = session.post(
+        LOGIN_URL,
+        data={'userid': userid, 'password': password, 'remember': 'on'},
+        allow_redirects=False,
+    )
+    location = response.headers.get('Location', '')
+    if response.status_code in (301, 302, 303, 307, 308):
+        if location.startswith('/login'):
+            return False, f"redirected to {location} (wrong credentials?)"
+        return True, f"redirected to {location or '/'}"
+    if response.status_code == 200:
+        return True, "status 200"
+    return False, f"status code {response.status_code}"
+
+
 def parse_relative_date(text, now=None):
     """Convert Korean relative date text (e.g., '7시간전', '2일전') to YYYY-MM-DD string."""
     if now is None:
@@ -105,24 +136,17 @@ def scrape():
 
     if not userid or not password:
         print("Error: Could not find credentials in .env")
-        return
+        sys.exit(1)
 
     session = requests.Session()
-    
-    # Login
-    login_url = 'https://news.hada.io/auth/gn_login'
-    login_data = {
-        'userid': userid,
-        'password': password,
-        'remember': 'on'
-    }
-    
+    session.headers['User-Agent'] = BROWSER_USER_AGENT
+
     print(f"Logging in as {userid}...")
-    response = session.post(login_url, data=login_data)
-    
-    if response.status_code != 200:
-        print(f"Login failed with status code {response.status_code}")
-        return
+    ok, reason = login(session, userid, password)
+    if not ok:
+        print(f"Login failed: {reason}")
+        sys.exit(1)
+    print(f"Login succeeded ({reason}).")
 
     # Load existing topics
     existing_topics = []
