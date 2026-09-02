@@ -1,5 +1,179 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=33087",
+    "title": "학회에서 목격한 터무니없는 AI 사용: 질의응답까지 AI에 맡긴 발표자들",
+    "description": "한 학회의 발표 후 질의응답에서 함께 무대에 오른 패널 가운데 한 명을 제외한 전원이 질문을 녹음하고 AI로 답변을 만드는 모습이 목격됨 논평을...",
+    "date": "2026-08-31"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33021",
+    "title": "GeoLibre - Tauri 기반의 경량 클라우드 네이티브 데스크톱 GIS",
+    "description": "Tauri/React/TypeScript/MapLibre GL JS/DuckDB-WASM Spatial 기반의 경량 클라우드 네이티브 데스크톱 GIS 프로토타입 OpenFreeMap Liberty 베이...",
+    "date": "2026-08-29"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33017",
+    "title": "가짜 고양이 표준 cats.txt가 드러낸 llms.txt와 GEO의 허술한 근거",
+    "description": "llms.txt의 효과를 입증한다며 제시되는 기준을 시험하려고, 고양이의 직책·품종·애정도를 기록하는 가짜 표준 cats.txt 를 만들어 인터넷에 퍼뜨...",
+    "date": "2026-08-29"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33016",
+    "title": "인터넷은 사람의 약점을 먹고사는 거대한 사기판이 됐다",
+    "description": "초기 인터넷에서 변두리의 골칫거리에 불과했던 사기와 유해 콘텐츠가 이제는 취약한 사람을 찾아내고 성향을 분석해 결제까지 유도하는 약탈 구조...",
+    "date": "2026-08-29"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32958",
+    "title": "격동의 AI 시대가 시작됐다 - 빌게이츠",
+    "description": "AI는 인간의 인지를 대체하거나 능가하며 빠르게 확산해 역사상 가장 큰 평등화 수단이 될 수도, 최악의 불평등 원인이 될 수도 있지만 세계는 이 ...",
+    "date": "2026-08-27"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32932",
+    "title": "Engineerification - 전문직이 엔지니어처럼 변해간다",
+    "description": "수학자, 디자이너, 분석가, 법률가 등 서로 다른 전문직에서 저장소, 에이전트, 테스트, 자동화, 형식 명세, 피드백 루프를 활용하는 작업 방식이 ...",
+    "date": "2026-08-27"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32920",
+    "title": "Tailcat - Tailscale 계정 없이 두 머신을 연결하는 netcat",
+    "description": "Tailscale의 오픈소스 데이터 평면을 이용해, Tailscale 계정이나 제어 서버 없이 두 머신을 연결하는 netcat 형태의 CLI·Go 라이브러리 서버가 출...",
+    "date": "2026-08-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32916",
+    "title": "RAG는 생각보다 단순하다",
+    "description": "많은 RAG 시스템이 처음부터 임베딩·벡터 DB·재순위화 파이프라인을 도입하지만, 상당수 검색 문제는 BM25와 질의 재작성만으로 해결할 수 있음 데...",
+    "date": "2026-08-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32915",
+    "title": "wsrv.nl - 무료 오픈소스 이미지 CDN",
+    "description": "원본 이미지 URL을 넘겨주면 리사이즈·크롭·포맷 변환·압축 등을 실시간으로 처리하고 CDN에 캐싱해서 전달해주는 무료 이미지 프록시 서비스 별도...",
+    "date": "2026-08-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32896",
+    "title": "대학은 예비 창업가를 어떻게 준비시켜야 하는가",
+    "description": "YC가 찾는 유망한 창업가는 무언가를 잘 만들고 꾸준히 만들어온 사람이며, 대학은 별도의 창업 교육보다 컴퓨터과학·기계공학·분자생물학처럼 제...",
+    "date": "2026-08-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32891",
+    "title": "AI로 만든 웹사이트마다 전용 DB를 하나씩 제공하는 이유",
+    "description": "iMessage 기반 개인 비서 Poke는 사용자가 문자로 요청한 웹사이트를 만들어 Vercel에 배포하고, 생성된 사이트마다 별도의 Turso 데이터베이스(DB...",
+    "date": "2026-08-25"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32854",
+    "title": "AI 의존이 코딩 전문성의 성장 경로를 무너뜨릴 수 있음",
+    "description": "AI 코딩 도구는 숙련자가 조정·검토할 때 가장 유용하지만, 초보자가 전문성을 쌓는 데 필요한 시행착오와 마찰을 우회해 차세대 개발자의 성장 경...",
+    "date": "2026-08-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32846",
+    "title": "내가 17살이라면 LLM을 처음부터 만드는 법을 배우겠다",
+    "description": "Paul Graham은 지금 17살이라면 LLM을 처음부터 만드는 법을 배우고, 접근 가능한 하드웨어로 가능한 한 강력한 모델을 직접 학습해볼 것이라고 말...",
+    "date": "2026-08-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32843",
+    "title": "17만 곳 넘는 비영리단체가 데이터를 잃었다… Microsoft 책임인가?",
+    "description": "Microsoft가 무료 Microsoft 365 비영리 라이선스를 단계적으로 종료하면서 일부 소규모 단체의 OneDrive 데이터가 대비할 틈 없이 삭제됐고, 한 M...",
+    "date": "2026-08-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32829",
+    "title": "Show GN: Present - 호흡·요가·명상과 하루 기록을 위한 웹앱",
+    "description": "요가원을 한 달 다녔는데 매일 갈 수는 없어서, 집에서 제 속도로 이어가려고 만들었습니다. 호흡·요가·명상 세션을 하나 하고 하루를 한 줄 남기...",
+    "date": "2026-08-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32826",
+    "title": "Anthropic의 최고 AI 모델, 저렴한 도구의 성장 속에서 사용자 확보에 고전",
+    "description": "미국 기업들의 Anthropic 지출에서 최고급 모델 Fable 5가 차지하는 비중은 출시 두 달이 지나도록 약 11%에 머물렀으며, 이전처럼 기업 고객이 가...",
+    "date": "2026-08-24"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32818",
+    "title": "프로덕트 엔지니어의 사고방식 - 태스크 수행자에서 문제 해결의 주체로",
+    "description": "AI가 명확한 명세를 코드로 옮기는 일을 빠르게 수행하면서, 엔지니어의 차별점은 주어진 태스크를 잘 구현하는 능력보다 무엇을 해결해야 하는지 ...",
+    "date": "2026-08-23"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32764",
+    "title": "Vomit - Claude의 장황한 출력을 로컬 LLM으로 짧게 정리해주는 도구",
+    "description": "Claude Code가 길게 내놓는 메시지를 별도의 로컬 LLM에 다시 통과시켜 사람이 읽기 쉬운 형태로 정리하는 작은 도구 원래 작업이나 파일에는 접근...",
+    "date": "2026-08-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32756",
+    "title": "SSL에 대해 배운 모든 것이 더는 유효하지 않음 [유튜브]",
+    "description": "장기 인증서와 수동 갱신에 의존하던 운영 방식은 TLS 1.3, 단기 인증서와 ACME 자동화를 중심으로 바뀌었으며 기존 SSL 관행 대부분은 더는 안전...",
+    "date": "2026-08-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32755",
+    "title": "YC CEO Garry Tan이 말하는 창업자의 새로운 규칙 [유튜브]",
+    "description": "Web 1.0 붕괴 직후 유행을 좇아 웹 개발과 Palantir 기회를 놓친 경험은, 창업자가 시장의 평가보다 직접 경험과 자신만의 지식을 따라야 한다는 ...",
+    "date": "2026-08-22"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32714",
+    "title": "Kaneo - 필요한 것만 담은 오픈소스 프로젝트 관리 도구",
+    "description": "기능만 많은 복잡한 프로젝트 관리 플랫폼에 대한 대안으로 Jira/Linear 의 대체제를 목표로 함 도구가 아닌 작업에 집중하는 깔끔한 인터페이스, ...",
+    "date": "2026-08-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32708",
+    "title": "프로그래머를 위한 음악 이론",
+    "description": "악기를 다루지 못하는 개발자가 \"왜 하필 그 음들인가\"에 대한 설명 없이 암기만 시키는 음악 교육에 답답함을 느껴, Web Audio API와 JavaScript...",
+    "date": "2026-08-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32706",
+    "title": "AliExpress가 WebAudio 핑거프린팅으로 Bluetooth 멀티포인트 전환을 방해함",
+    "description": "알리익스프레스 홈페이지를 열면 소리도 나지 않는데 PC의 Bluetooth 오디오 경로가 계속 활성화돼, 멀티포인트 헤드폰이 휴대폰으로 다시 전환되...",
+    "date": "2026-08-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32633",
+    "title": "VisiGrid - 코드 에디터처럼 설계된 로컬 네이티브 스프레드시트",
+    "description": "Excel 같은 기존 스프레드시트보다 코드 에디터의 사용 방식을 가져온 오픈소스 스프레드시트로, 메뉴보다 키보드/Command Palette 중심으로 설계 ...",
+    "date": "2026-08-18"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32606",
+    "title": "Show GN: Codex 한도 차감 없이 ChatGPT 웹 채팅으로 코딩해보기",
+    "description": "ChatGPT 웹 채팅은 Codex 한도와 별도로 사용할 수 있습니다. 최근 변경 이후 ChatGPT는 무료 사용자에게도 관대한 (Luna 모델) 채팅 사용량을 제...",
+    "date": "2026-08-18"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32598",
+    "title": "Docbank - 사람과 에이전트가 함께 쓰는 로컬 우선 문서 기록 시스템",
+    "description": "사람과 에이전트가 함께 문서를 보관/검색/변경하고 이력과 무결성을 검증할 수 있는 자기주권형(self-sovereign) 문서 시스템 가상 트리에 문서 I...",
+    "date": "2026-08-17"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32593",
+    "title": "AI;DR(AI라서 읽지 않음)",
+    "description": "AI;DR은 검토·편집하지 않은 AI 생성물을 읽지 않겠다는 원칙으로, 늘어나는 장문의 저품질 AI 콘텐츠에 대응함 아이디어 발굴, 개요 작성, 문장 ...",
+    "date": "2026-08-17"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32573",
+    "title": "인재 밀도가 높은 팀을 만드는 법 - Cursor 인재 총괄 Adam Ward [유튜브]",
+    "description": "전통적인 ‘파멸의 퍼널(Funnel of Doom)’ 은 많은 사람에게 연락한 뒤 응답한 사람을 단계별로 탈락시키는 구조라, 처음부터 최고의 후보자를 찾는...",
+    "date": "2026-08-17"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=32572",
+    "title": "프로덕트 매니저 역할의 새로운 정의",
+    "description": "AI로 누구나 앱을 만들고 업무를 자동화할 수 있게 되어도 대부분의 사람과 기업은 도구를 만드는 방식으로 생각하지 않으며, 직접 만들려고 시도...",
+    "date": "2026-08-17"
+  },
+  {
     "url": "https://news.hada.io/topic?id=32516",
     "title": "hubble.md - 사람과 에이전트를 위한 노트패드",
     "description": "Markdown과 HTML을 기반으로 하는 무료 오픈소스 노트 앱으로, 사람과 에이전트가 함께 사용하도록 설계 Notion/Apple Notes와 비슷한 작성 경험 ...",
