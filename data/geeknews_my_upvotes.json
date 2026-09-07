@@ -1,8 +1,92 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=33210",
+    "title": "VC는 더 이상 VC가 아니다",
+    "description": "소수의 초대형 투자사가 전통적인 스타트업 투자를 넘어 막대한 자산과 정치적 영향력을 축적한 현상을 Cancer Capital로 규정하고, 이들을 금융회...",
+    "date": "2026-09-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33206",
+    "title": "CLIProxyAPI - AI 구독 계정을 호환 API로 노출하는 프록시",
+    "description": "ChatGPT Codex, Claude Code, Gemini, Grok Build, Antigravity 등의 OAuth 계정을 로컬 프록시에 연결해, 여러 표준 형식의 API로 제공 별도의 AP...",
+    "date": "2026-09-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33202",
+    "title": "GPT-6 Astra, ARC-AGI-3에서 99.9% 기록, 행동 효율은 인간을 넘어서다",
+    "description": "명시적 지시 없이 낯선 환경을 탐색하고 규칙과 목표를 알아내는 ARC-AGI-3에서 Standard 하네스 62.7%, OpenAI의 문맥 관리 기능을 활용한 Provid...",
+    "date": "2026-09-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33199",
+    "title": "OpenAI, GPT-6 Astra 공개",
+    "description": "사전학습, 강화학습과 정렬 연구를 결합해 코딩, 문서 제작, 과학 연구와 보안 작업까지 폭넓은 전문 업무를 수행하는 차세대 모델 컴퓨터와 브라...",
+    "date": "2026-09-04"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33182",
+    "title": "M4 Pro Mac mini로 구축한 로컬 LLM 환경",
+    "description": "48GB RAM의 M4 Pro Mac mini를 상시 LLM 서버로 운영하며, 추론·에이전트 작업에는 Qwen3.6-35B-A3B, 간단한 대화에는 Gemma-4-E4B를 사용해 약 30...",
+    "date": "2026-09-03"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33178",
+    "title": "원격근무가 아니라 서투른 비동기 소통이 문제다",
+    "description": "원격근무의 장점을 유지하려면 사무실 복귀보다 비동기 소통 방식을 개선해야 하며, 이를 통해 유연성과 생산성을 함께 지킬 수 있음 7,700명 대상...",
+    "date": "2026-09-03"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33176",
+    "title": "Claude로 커머스 에이전트 구축하기",
+    "description": "Anthropic이 소매, 여행, 통신, 티켓 플랫폼에서 쇼핑 에이전트와 판매자 에이전트를 며칠 안에 구축할 수 있는 블루프린트와 Claude Code 플러그...",
+    "date": "2026-09-03"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33174",
+    "title": "Vorssaint - 여러 Mac 유틸리티를 하나로 모은 메뉴 막대 앱",
+    "description": "앱별 음량 조절, 시스템 모니터, 앱 전환기, 창 관리, 클립보드, 화면 캡처, 파일 정리처럼 따로 구매하던 Mac 도구들을 하나의 메뉴 막대 아이콘...",
+    "date": "2026-09-03"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33149",
+    "title": "클릭하우스(ClickHouse) – 기적의 데이터베이스 기술",
+    "description": "차트메트릭 창업자 조성문이 ClickHouse를 도입하며 겪은 경험과 그 성능의 원리를 정리한 글 기존 DB의 한계에서 출발 MySQL/PostgreSQL 같은 관...",
+    "date": "2026-09-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33141",
+    "title": "Uber 규모의 소프트웨어 팩토리를 효율적으로 운영하는 법",
+    "description": "AI를 개발 전 과정에 적용한 결과, PR의 70% 이상을 로컬·클라우드 에이전트가 담당하고 3,600개가 넘는 에이전트 스킬이 하루 3만 회 이상 실행됨...",
+    "date": "2026-09-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33138",
+    "title": "TrueForge - LLM을 실제 에이전트로 실행하는 오픈소스 하네스",
+    "description": "모델 호출부터 도구 사용/샌드박스/승인/컨텍스트/세션까지 에이전트 실행 루프 전체를 관리하는 런타임 에이전트를 직접 구현할 때 필요한 스트리...",
+    "date": "2026-09-02"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33093",
+    "title": "Starboard - macOS Dock 옆에 항상 붙어 있는 터미널",
+    "description": "단축키로 불러내는 드롭다운 터미널이 아니라, macOS Dock 옆에 계속 표시되는 터미널 Dock의 위치와 높이를 실시간으로 따라가며 모든 Space와 전...",
+    "date": "2026-09-01"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33091",
+    "title": "조직이 커질수록 일이 느려지는 이유, 조정의 역풍 [171p 슬라이드]",
+    "description": "성공한 조직이 성장할수록 예전에는 간단했던 일까지 느려지는 이유는 누군가의 무능이나 방해가 아니라, 조정에 참여하는 사람과 불확실성이 늘면...",
+    "date": "2026-09-01"
+  },
+  {
     "url": "https://news.hada.io/topic?id=33087",
     "title": "학회에서 목격한 터무니없는 AI 사용: 질의응답까지 AI에 맡긴 발표자들",
     "description": "한 학회의 발표 후 질의응답에서 함께 무대에 오른 패널 가운데 한 명을 제외한 전원이 질문을 녹음하고 AI로 답변을 만드는 모습이 목격됨 논평을...",
+    "date": "2026-08-31"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33050",
+    "title": "좋은 조직문화가 AI보다 큰 생산성 향상을 만드는 이유",
+    "description": "AI 도구만 도입한다고 엔지니어의 생산성이 2배나 10배로 오르지는 않으며, 사람들이 협력하고 의사결정하는 조직 환경이 먼저 갖춰져야 함 경영진...",
     "date": "2026-08-31"
   },
   {
