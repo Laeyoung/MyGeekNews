@@ -223,5 +223,5 @@ function formatKDate(d: string): string {
   const datePart = d.slice(0, 10);
   const date = new Date(datePart + "T00:00:00");
   const days = ["일", "월", "화", "수", "목", "금", "토"];
-  return `${date.getMonth() + 1}월 ${date.getDate()}일 · ${days[date.getDay()]}`;
+  return `${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate()}일 · ${days[date.getDay()]}`;
 }
