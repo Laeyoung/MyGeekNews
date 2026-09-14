@@ -1,5 +1,83 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=33559",
+    "title": "Google 앱 광고에 220달러를 썼는데, 설치의 60%가 봇이었다",
+    "description": "퍼즐 앱 Dayzle의 Android 광고에서 2주간 과금된 설치 56건 중 33건이 봇으로 의심되는 행동을 보였으며, 실제 이용자로 분류된 사람은 13명이었...",
+    "date": "2026-09-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33550",
+    "title": "필즈상 수상자 25명의 경고: AI의 문제 풀이 경쟁이 놓치는 수학의 목적",
+    "description": "테렌스 타오를 포함한 필즈상 수상자 25명이 공동 선언을 내고, 난제 해결을 벤치마크로 삼는 AI 기업의 경쟁이 수학의 발전과 공동체를 해칠 수 ...",
+    "date": "2026-09-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33485",
+    "title": "Shopify, React Native에서 네이티브로 복귀",
+    "description": "코딩 에이전트가 같은 기능을 iOS와 Android에 각각 구현하는 비용을 크게 낮추면서, 모든 모바일 앱을 Swift와 Kotlin으로 전환하기로 함 React N...",
+    "date": "2026-09-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33462",
+    "title": "Addy Osmani, Google 떠나 Anthropic 합류",
+    "description": "웹 성능과 소프트웨어 개발 관련 글로 널리 알려진 Addy Osmani가 9월 8일 Anthropic 합류를 발표, Claude Code를 개발자들이 더 잘 사용할 수 있...",
+    "date": "2026-09-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33445",
+    "title": "나는 Google Ads에 ‘악성 소프트웨어’를 광고한다",
+    "description": "직접 만든 macOS 터미널 앱 RACE를 홍보하려고 Google Ads에 500달러를 쓴 개발자가 ‘악성 소프트웨어’와 ‘침해된 사이트’를 이유로 광고 계정을 ...",
+    "date": "2026-09-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33440",
+    "title": "AI의 수학적 돌파구는 어떻게 논란을 촉발했나",
+    "description": "OpenAI가 약 1만 개 AI 에이전트를 88시간 가동해 나비에-스토크스 방정식에서 물리적으로 실현될 수 없는 결과가 나오는 사례를 찾았다며 난제 해...",
+    "date": "2026-09-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33365",
+    "title": "독립 위키를 가두는 새로운 ‘Google 감옥’이 생겼다",
+    "description": "Fandom에서 벗어나 독립 위키를 만들어도 Google 검색에 메인 페이지만 나오고 개별 문서는 보이지 않는 현상이 독자 확보를 가로막고 있음 위키 ...",
+    "date": "2026-09-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33346",
+    "title": "Build vs Buy - AI로 개발은 싸졌지만, 3년 뒤 유지보수는 누가 맡을까?",
+    "description": "AI는 소프트웨어의 초기 개발 비용을 크게 낮췄지만, 수년간 유지보수와 보안, 장애 대응을 책임지는 운영 비용까지 없애지는 못함 직접 만들지는 ...",
+    "date": "2026-09-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33342",
+    "title": "Xteink X3, 70달러짜리 초소형 전자책 리더",
+    "description": "신용카드 크기의 자석식 전자책 리더 Xteink X3는 iPhone 뒷면에 붙여 부담 없이 휴대할 수 있어, 자투리 시간을 독서 시간으로 바꿔 줌 한 페이지...",
+    "date": "2026-09-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33337",
+    "title": "강남언니 약 22만 명 개인정보 유출…상담 사진과 실제 시술 내역까지 포함",
+    "description": "미용의료 플랫폼 강남언니 운영사 힐링페이퍼가 21만 9,665명의 개인정보 유출을 공지했으며, 이중 한국 이용자는 약 16만 명 이름과 연락처뿐 아...",
+    "date": "2026-09-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33305",
+    "title": "Databasus - 실제 복원까지 검증하는 셀프 호스팅 데이터베이스 백업 도구",
+    "description": "백업 일정과 저장 위치, 보관 기간을 관리하고 백업한 데이터가 실제로 복원되는지까지 자동으로 확인하는 도구 PostgreSQL/MySQL/MariaDB/MongoDB...",
+    "date": "2026-09-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33304",
+    "title": "브라운필드의 코끼리: AI로 개인은 빨라졌는데, 조직은 왜 그대로인가",
+    "description": "기존 시스템과 조직 구조가 자리 잡은 브라운필드 기업의 AI 전환에는 기술뿐 아니라, 자신의 역할과 팀의 권한을 정체성으로 여기는 문제가 걸려 ...",
+    "date": "2026-09-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33301",
+    "title": "GPT-6 Astra: 하네스가 곧 제품이다",
+    "description": "같은 GPT-6 Astra도 ARC-AGI-3의 동일한 High 추론 설정에서 하네스에 따라 54.8%와 99.9% 를 기록함. 즉, 장기 실행 에이전트는 모델뿐 아니라 메...",
+    "date": "2026-09-07"
+  },
+  {
     "url": "https://news.hada.io/topic?id=33210",
     "title": "VC는 더 이상 VC가 아니다",
     "description": "소수의 초대형 투자사가 전통적인 스타트업 투자를 넘어 막대한 자산과 정치적 영향력을 축적한 현상을 Cancer Capital로 규정하고, 이들을 금융회...",
@@ -33,6 +111,12 @@
     "url": "https://news.hada.io/topic?id=33178",
     "title": "원격근무가 아니라 서투른 비동기 소통이 문제다",
     "description": "원격근무의 장점을 유지하려면 사무실 복귀보다 비동기 소통 방식을 개선해야 하며, 이를 통해 유연성과 생산성을 함께 지킬 수 있음 7,700명 대상...",
+    "date": "2026-09-03"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33177",
+    "title": "마케팅 인텔리전스 레이어 - 흩어진 경험을 AI의 재사용 가능한 컨텍스트로 만들기",
+    "description": "문서·회의록·Slack 등에 흩어진 15년 이상의 경험을 구조화해, 다양한 AI 도구가 활용할 수 있는 마케팅 인텔리전스 레이어로 구축하는 법 /raw에 ...",
     "date": "2026-09-03"
   },
   {
