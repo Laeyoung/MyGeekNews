@@ -1,5 +1,101 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=33959",
+    "title": "Stagehand v4, Playwright보다 2배 빠르고 토큰 효율 80% 높은 브라우저 자동화",
+    "description": "AI 에이전트가 웹사이트를 조작하고 데이터를 추출하는 오픈소스 SDK로, Playwright와 비슷한 코드에 자연어 명령을 함께 사용할 수 있음 브라우저...",
+    "date": "2026-09-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33950",
+    "title": "가장 중요한 제품 결정은 무엇을 만들지 않을 것인가",
+    "description": "앱에 문서 목록과 알림 하나를 넣으려던 일이 요구사항을 더하다 보면 Google Drive와 Gmail을 어설프게 다시 만드는 작업으로 커질 수 있음 기능...",
+    "date": "2026-09-20"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33925",
+    "title": "Claude Code, 이제 AGENTS.md도 지원",
+    "description": "Claude Code 2.1.277부터 프로젝트에 \"CLAUDE.md\"가 없으면 \"AGENTS.md\"를 프로젝트 지침으로 자동 사용 여러 코딩 에이전트가 공통으로 사용하는 ...",
+    "date": "2026-09-19"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33880",
+    "title": "OpenAI 해킹: 포럼 이미지 업로드에서 내부 저장소 접근까지",
+    "description": "보안 연구팀 Hacktron이 포럼의 이미지 처리 취약점과 로그인 설정 오류를 연결해 OpenAI 직원들의 ChatGPT 계정을 탈취하고, Codex에 연결된 내부...",
+    "date": "2026-09-18"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33854",
+    "title": "Jevlike - 문장 대신 선택지별 확률을 반환하는 Jev 방식의 오픈소스 모델",
+    "description": "TypeSafe의 Jev처럼 문장 대신 선택지별 확률을 반환하는 모델을 직접 학습하고 실험할 수 있도록 만든 오픈소스 프로젝트 문맥과 매번 달라질 수 ...",
+    "date": "2026-09-18"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33842",
+    "title": "HarnessTax: 코딩 에이전트에서 하네스는 얼마나 중요할까?",
+    "description": "7개 모델을 Claude Code, Codex CLI, Pi에 연결해 비교한 결과, 같은 모델이 비슷한 작업 성공률을 내면서도 토큰 비용은 최대 5배 차이가 났음 읽...",
+    "date": "2026-09-17"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33800",
+    "title": "발표가 좋았다면 발표자에게 말해주세요",
+    "description": "발표가 좋았다면 짧게라도 발표자에게 직접 전할 가치가 있음. 발표자는 많은 노력을 들여 준비하며, 청중이 즐겼는지와 발표가 괜찮았는지 알고 ...",
+    "date": "2026-09-17"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33794",
+    "title": "LLM 시대의 프로그래밍 학습",
+    "description": "LLM으로 상당한 규모의 시스템을 만든 초보 개발자가 구현 능력과 이해 수준의 격차에 부딪힘. 작동할 때는 보이지 않던 격차가 제품화와 오류 수...",
+    "date": "2026-09-17"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33735",
+    "title": "아직도 코드를 읽나요?",
+    "description": "AI 활용 방식은 구현 이해를 유지하는 가속형 개발자와 구현 및 수정을 위임하는 바이브코더로 나뉨. 차이는 AI가 작성한 코드의 양이 아니라 결과...",
+    "date": "2026-09-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33729",
+    "title": "전 FTC 위원장 Khan, 1934년 판례 들며 “AI CEO들에게 수갑을 채워라”",
+    "description": "Lina Khan 전 FTC 위원장은 기존 법률만으로도 위험하거나 검증되지 않은 AI를 출시한 기업과, 일부 상황에서는 경영진에게 책임을 물을 수 있다며...",
+    "date": "2026-09-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33723",
+    "title": "dbt Charts - AI와 대화로 만들고 Git으로 관리하는 대시보드",
+    "description": "dbt Labs가 차트와 필터, 데이터 조회를 YAML 파일 하나로 정의하는 오픈소스 대시보드 언어 dbt Charts를 공개함 AI가 보고서 하나를 만들면서 여...",
+    "date": "2026-09-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33713",
+    "title": "Oracle, 오전 6시에 이메일로 추가 해고 통보 “오늘이 마지막 근무일”",
+    "description": "Oracle이 추가 감원에 착수하며 월요일 이른 아침 직원들에게 당일 해고를 통보함. 이번 감원 규모는 공개되지 않음 2026 회계연도 구조조정 비용 ...",
+    "date": "2026-09-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33700",
+    "title": "OpenArch - LLM 아키텍처를 모델별 한 파일로 구현한 PyTorch 코드 모음",
+    "description": "Llama, Qwen, DeepSeek 등 LLM의 내부 구조를 코드로 읽고 비교하며 공부할 수 있도록, 각 아키텍처를 하나의 PyTorch 파일로 직접 구현한 저장소 ...",
+    "date": "2026-09-15"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33696",
+    "title": "효과적인 소프트웨어 설계 문서 작성법",
+    "description": "설계 문서는 구현 전에 어려운 문제와 중요한 결정을 검토하고, 팀원 및 협력 팀의 피드백을 모아 잘못된 구현에 시간을 낭비하지 않도록 돕는 도...",
+    "date": "2026-09-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33664",
+    "title": "Diagram Design - AI가 만드는 다이어그램에 디자인 규칙을 더하는 스킬",
+    "description": "Claude Code/Codex/Pi 등에서 블로그와 문서, 발표 자료에 넣을 다이어그램을 자연어로 요청해 만드는 에이전트 스킬 비슷한 둥근 상자와 화살표를...",
+    "date": "2026-09-14"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33659",
+    "title": "스타트업을 강력하게 만드는 법",
+    "description": "매출을 늘리는 방법보다 회사를 더 강력하게 만드는 방법을 물으면, 점진적 개선을 넘어 기업 가치를 몇 자릿수나 키울 수 있는 전환을 발견하기도...",
+    "date": "2026-09-14"
+  },
+  {
     "url": "https://news.hada.io/topic?id=33559",
     "title": "Google 앱 광고에 220달러를 썼는데, 설치의 60%가 봇이었다",
     "description": "퍼즐 앱 Dayzle의 Android 광고에서 2주간 과금된 설치 56건 중 33건이 봇으로 의심되는 행동을 보였으며, 실제 이용자로 분류된 사람은 13명이었...",
@@ -10,6 +106,18 @@
     "title": "필즈상 수상자 25명의 경고: AI의 문제 풀이 경쟁이 놓치는 수학의 목적",
     "description": "테렌스 타오를 포함한 필즈상 수상자 25명이 공동 선언을 내고, 난제 해결을 벤치마크로 삼는 AI 기업의 경쟁이 수학의 발전과 공동체를 해칠 수 ...",
     "date": "2026-09-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33548",
+    "title": "AI 때문에 느끼는 슬픔",
+    "description": "AI로 생계를 잃을지 모른다는 걱정보다, 평생 취미이자 직업이며 정체성이었던 프로그래밍을 이제 쓸모없는 기술로 취급하는 태도가 더 깊은 슬픔...",
+    "date": "2026-09-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33506",
+    "title": "Google ARTEMIS - 자연어로 Android 앱을 조작/테스트하는 자동화 도구",
+    "description": "“로그인한 뒤 팝업이 뜨는지 확인해줘”처럼 작업을 설명하면 실제 Android 기기나 에뮬레이터를 조작해 수행 앱 테스트뿐 아니라 Google Maps에서 ...",
+    "date": "2026-09-11"
   },
   {
     "url": "https://news.hada.io/topic?id=33485",
