@@ -1,5 +1,41 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=34352",
+    "title": "OpenAI 연구원, “불법 복제 도서 사용이 Hacker News에 알려지면 곤란”",
+    "description": "작가들의 OpenAI·Microsoft 상대 저작권 소송에서 도서 학습 데이터와 작가 대체를 논의한 내부 발언이 공개됨. Authors Guild가 원고 측 제출 서...",
+    "date": "2026-09-27"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34313",
+    "title": "우리에게는 훨씬 더 많은 수학자가 필요할 것이다",
+    "description": "AI가 만들어낼 중대한 발견을 인간이 이해하고 그에 기여하려면, 수학적 역량을 갖춘 연구자 공동체를 줄이는 대신 크게 확대해야 함 AI의 속도를 ...",
+    "date": "2026-09-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34309",
+    "title": "이제 OS란 대체 무엇인가?",
+    "description": "프로그래머와 사용자 사이의 경계가 AI로 허물어지면서, 사용자가 자연어로 자신에게 필요한 프로그램을 직접 만드는 컴퓨팅 환경이 열리고 있음 ...",
+    "date": "2026-09-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34304",
+    "title": "계획 모드는 죽었다",
+    "description": "모델이 저장소를 탐색하고 합리적인 가정을 세우는 능력이 좋아지면서, 구현 방법을 사람이 미리 상세히 지시하는 계획(Plan) 모드의 필요성이 줄...",
+    "date": "2026-09-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34295",
+    "title": "알렉산더 왕: 내가 Muse를 만드는 이유",
+    "description": "사람들은 가족과 시간을 보내거나 가게를 열고 싶은 꿈이 있어도, 어디서 시작할지 몰라 실행하기도 전에 포기하는 경우가 많음 Muse가 지향하는 ...",
+    "date": "2026-09-26"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34091",
+    "title": "Transformer를 시각적으로 이해하기",
+    "description": "Transformer Explainer는 브라우저에서 1억 2,400만 매개변수의 GPT-2 small을 실행하며, 입력 텍스트가 다음 토큰 예측으로 이어지는 과정을 시각...",
+    "date": "2026-09-22"
+  },
+  {
     "url": "https://news.hada.io/topic?id=33959",
     "title": "Stagehand v4, Playwright보다 2배 빠르고 토큰 효율 80% 높은 브라우저 자동화",
     "description": "AI 에이전트가 웹사이트를 조작하고 데이터를 추출하는 오픈소스 SDK로, Playwright와 비슷한 코드에 자연어 명령을 함께 사용할 수 있음 브라우저...",
@@ -33,6 +69,12 @@
     "url": "https://news.hada.io/topic?id=33842",
     "title": "HarnessTax: 코딩 에이전트에서 하네스는 얼마나 중요할까?",
     "description": "7개 모델을 Claude Code, Codex CLI, Pi에 연결해 비교한 결과, 같은 모델이 비슷한 작업 성공률을 내면서도 토큰 비용은 최대 5배 차이가 났음 읽...",
+    "date": "2026-09-17"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=33804",
+    "title": "Dream-RSI - 과거 시도를 재생하며 에이전트의 탐색 전략을 개선하기",
+    "description": "코딩 에이전트가 문제를 풀 때 어느 시도를 이어가고, 병렬로 실행하거나 중단할지 정하는 전략을 반복적으로 개선하는 프레임워크 과거 시도와 결...",
     "date": "2026-09-17"
   },
   {
