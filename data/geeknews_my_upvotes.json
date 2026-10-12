@@ -1,5 +1,113 @@
 [
   {
+    "url": "https://news.hada.io/topic?id=35208",
+    "title": "jevgrep - 코드의 동작을 질문해 관련 파일을 찾는 코딩 에이전트용 CLI",
+    "description": "낯선 코드베이스에서 코딩 에이전트가 필요한 파일과 소스를 찾도록 돕는 검색 도구 \"인증을 어디서 검사해?\", \"재시도 동작을 검증하는 테스트는?...",
+    "date": "2026-10-12"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=35199",
+    "title": "북한의 지도 제작자 - 인터넷이 닫힌 나라의 상세한 지도는 누가 만들었을까?",
+    "description": "북한의 상세한 OpenStreetMap(OSM) 지도는 누가, 어떻게, 왜 만들었는지 기여 기록과 설문 답변으로 추적한 인터랙티브 프로젝트 프로젝트가 집계...",
+    "date": "2026-10-11"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=35105",
+    "title": "REA Reverse - 무엇이든 리버스 엔지니어링하기",
+    "description": "REA는 코딩 에이전트가 프로그램 자체를 검사하고 동작을 설명하도록 도구를 제공하며, 분석한 기능을 변경하거나 재구현하는 데 활용할 수 있음 ...",
+    "date": "2026-10-10"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=35070",
+    "title": "Fleeting - “지금 회의 중입니다”를 위한 가짜 회의 재생 서비스",
+    "description": "가상의 회의 음성과 화상회의 화면을 재생해 회의 중인 것처럼 보이게 하는 웹 서비스로, 주변의 방해 없이 시간을 확보하는 용도 개발팀 스탠드업...",
+    "date": "2026-10-09"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34987",
+    "title": "D2Coding 폰트 1.4.0 공개 - 숫자 0 선택 기능과 한글/코드 표시 개선",
+    "description": "네이버의 코딩 전용 글꼴 D2Coding 새 버전으로, 한글/영문/숫자/기호가 섞인 코드의 가독성과 정렬을 개선 기존의 빗금 있는 숫자 0 대신 가운데 ...",
+    "date": "2026-10-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34976",
+    "title": "Lemma - 사람과 AI 에이전트가 한 팀으로 일하는 오픈소스 작업 공간",
+    "description": "여러 사람이 같은 AI 동료와 업무 데이터·문서·작업 흐름을 공유하며 일하는 오픈소스 플랫폼 Claude Code, Codex, Cursor, OpenCode에 원하는 업...",
+    "date": "2026-10-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34967",
+    "title": "수학의 아포칼립스 - AI가 평생의 연구 문제를 풀어버린 뒤",
+    "description": "“엄마가 평생 연구한 문제를 로봇이 풀었다며?”라는 아홉 살 아들의 놀림이 현실이 됨. OpenAI가 공개한 수학 성과에는 Dana Moshkovitz가 오랫동...",
+    "date": "2026-10-08"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34920",
+    "title": "여러 팀의 시스템을 이해하기 위한 AI 집단 지성 구축하기",
+    "description": "SumUp의 여러 도메인에 걸친 시스템을 이해할 때마다 엔지니어 3~4명을 모으는 대신, 약 66개 저장소와 조직 맥락을 연결한 AI 에이전트 시스템을 ...",
+    "date": "2026-10-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34916",
+    "title": "Octop - 가족과 소규모 팀이 함께 쓰는 셀프 호스팅 AI 비서",
+    "description": "TencentCloud가 공개한 여러 사용자와 전문 에이전트를 지원하는 오픈소스 AI 비서 플랫폼으로, 개인 컴퓨터나 자체 서버에서 운영 사용자마다 작...",
+    "date": "2026-10-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34907",
+    "title": "EmbeddingGemma 2 - 개방형 경량 멀티모달 임베딩 모델",
+    "description": "Google이 텍스트·코드·이미지·영상·오디오를 같은 벡터 공간에 표현해 서로 검색할 수 있는 EmbeddingGemma 2를 출시함. Gemma 4 기반의 7억 4,000...",
+    "date": "2026-10-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34900",
+    "title": "우리가 알던 오픈소스는 죽었다",
+    "description": "AI로 기여를 만드는 비용은 낮아졌지만 검토 비용은 줄지 않아, 오픈소스 유지관리자들이 외부 기여를 제한하거나 차단하고 있음 과거에는 상당한 ...",
+    "date": "2026-10-07"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34868",
+    "title": "Dust - 역전파 없이 트랜스포머 사전학습하기",
+    "description": "Dust는 모델 내부의 계산값에 작은 무작위 변화를 주고, 예측 오류가 줄어드는 방향을 찾아 역전파 없이 트랜스포머를 처음부터 학습하는 방법임 ...",
+    "date": "2026-10-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34865",
+    "title": "AI 시대, 매니저의 길",
+    "description": "AI로 한 사람이 여러 사람 분량의 코드를 만들 수 있어도, 팀이 같은 방향으로 움직이게 하는 일까지 자동으로 해결되지는 않음. 관리자의 기술적 ...",
+    "date": "2026-10-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34857",
+    "title": "전 아마존 부사장에게 묻는 사내 정치의 어두운 면 [영상]",
+    "description": "전 Amazon VP Ethan Evans는 성과만 내고 인정받기를 기다리기보다, 자신의 기여를 알리고 원하는 역할과 승진 조건을 직접 협의해야 한다고 조언...",
+    "date": "2026-10-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34856",
+    "title": "ChatGPT, 가짜 뉴요커 만화에 실제 만화가의 서명까지 넣음",
+    "description": "ChatGPT가 New Yorker 스타일의 만화를 생성하면서 실제 기고 만화가의 서명까지 붙이고 있음. 허가나 보상 없이 서명이 사용된 만화가는 확인된 ...",
+    "date": "2026-10-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34835",
+    "title": "Wikimedia에서 OpenAI의 ‘통제를 벗어난’ 에이전트 활동 발견",
+    "description": "Wikimedia 재단이 OpenAI가 운영한 것으로 추정되는 AI 에이전트의 무승인 편집, 침입 시도와 대량 데이터 수집을 자체 조사에서 확인함 에이전트...",
+    "date": "2026-10-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34833",
+    "title": "Anthropic, Claude를 일기처럼 쓰던 이용자의 총격 위협 신고…여성 체포",
+    "description": "미국 플로리다에서 Claude를 일기장처럼 사용하던 여성이 보안관 사무실에 총격을 가하겠다는 내용을 입력한 뒤, Anthropic의 신고로 체포됨 체포 ...",
+    "date": "2026-10-06"
+  },
+  {
+    "url": "https://news.hada.io/topic?id=34790",
+    "title": "OpenMuse - 브라우저와 터미널로 일하는 오픈소스 개인 AI 에이전트",
+    "description": "Meta Muse처럼 AI에 원하는 결과를 맡기고 작업 과정을 확인하는 개인 에이전트 앱으로, CopilotKit이 오픈소스로 개발 자체 브라우저와 파일, 선...",
+    "date": "2026-10-05"
+  },
+  {
     "url": "https://news.hada.io/topic?id=34744",
     "title": "거의 모든 서비스에 예산을 넘으면 멈추는 기능이 필요해질 것",
     "description": "사용량 기반 서비스와 API에는 월 예산을 넘으면 서비스를 중단하고 오류를 반환하는 강제 상한이 기본으로 필요하며, 경고 이메일만 보내는 방식...",
